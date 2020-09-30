@@ -1,0 +1,122 @@
+:root{
+    --color-rosa: #FAC5BE; 
+    --color-vinho: #482926;
+    --color-texto: #212529;
+    --color-cinza: #E9ECEF;
+    --font-laura: 'Special Elite', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    -webkit-font-smoothing: antialised;
+}
+#header-home {
+    background-color: var(--color-rosa);
+    margin: 0 0;
+    height: 100vh;
+    
+}
+
+#header-home .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 30px 40%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+#header-home .logo{
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 5% 10% auto;
+
+}
+
+#header-home .menu a {
+    color: var(--color-texto);
+    transition-duration: 0.4s;
+}
+
+#header-home .menu a img {
+    max-width: 25px;
+    vertical-align: middle;
+}
+
+#header-home .menu a:hover {
+    font-weight: bold;
+}
+
+.quem-somos a img:hover{
+    background-image: url("/assets/botaoHover.svg");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    
+    /*CONTINUAR A TENTAR MUDAR A IMAGEM*/    
+}
+.loja {
+    background-color: var(--color-cinza);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.loja h1{
+    /* font-family: 'Special Elite', cursive; */
+    font-family: var(--font-laura);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.loja .home-cards-loja {
+    margin: 0 auto;
+    
+}
+
+.loja a {
+    color: var(--color-vinho);
+    background-color: var(--color-rosa);
+    border-radius: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    max-width: 200px;
+    font-size: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: 500ms;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.loja a:hover{
+    background-color: var(--color-vinho);
+    color: var(--color-rosa);
+}
+

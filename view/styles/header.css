@@ -1,0 +1,45 @@
+#header {
+    background-color: var(--color-rosa);
+    margin: 0 0;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    
+}
+
+#header .menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 30px 30%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+#header .logo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+#header .logo img {
+    height: 80px;
+   
+}
+
+#header .menu a {
+    color: var(--color-texto);
+    transition-duration: 0.4s;
+}
+
+#header .menu a img {
+    max-width: 25px;
+    vertical-align: middle;
+}
+
+#header .menu a:hover {
+    font-weight: bold;
+}

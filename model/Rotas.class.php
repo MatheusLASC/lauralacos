@@ -18,9 +18,24 @@ Class Rotas
             return self::get_SiteHOME() .'/' .self::$pasta_view;
         }
 
+
+        static function pag_Sobre() {
+            return self::get_SiteHOME() .'/sobre';
+        }
+
+        static function pag_Produtos() {
+            return self::get_SiteHOME() .'/produtos';
+        }
+
+        static function pag_Contato() {
+            return self::get_SiteHOME() .'/contato';
+        }
+        
         static function pag_Carrinho() {
             return self::get_SiteHOME() .'/carrinho';
         }
+
+
 
         static function get_pagina() {
             if (isset($_GET['pag']))

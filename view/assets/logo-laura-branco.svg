@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="594" height="377" viewBox="0 0 594 377">
+  <defs>
+    <clipPath id="clip-LOGO_BRANCO">
+      <rect width="594" height="377"/>
+    </clipPath>
+  </defs>
+  <g id="LOGO_BRANCO" data-name="LOGO BRANCO" clip-path="url(#clip-LOGO_BRANCO)">
+    <text id="Laços" transform="translate(36 230)" fill="#fff" font-size="359" font-family="Hummingbird"><tspan x="0" y="0">Laços</tspan></text>
+    <text id="Laura" transform="translate(271 140)" fill="#fff" font-size="79" font-family="SourceSansPro-Light, Source Sans Pro" font-weight="300"><tspan x="0" y="0">Laura</tspan></text>
+  </g>
+</svg>

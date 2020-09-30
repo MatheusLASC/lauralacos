@@ -1,0 +1,67 @@
+.quem-somos {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: 0 0;
+    width: auto; 
+    padding: 25px;
+    color: var(--color-texto);
+}
+
+.quem-somos img, .sobre img {
+    vertical-align: middle;
+    margin: 40px 20px 40px 10%;
+    width: 200px;
+}
+
+.quem-somos div {
+    /* margin: 40px 20px 40px 20px; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    /* font-size: 22px; */
+    font-weight: lighter;
+}
+
+.quem-somos a {
+    display: flex;
+    align-items: center;
+}
+
+.quem-somos a img {
+    max-height: 70px;
+    cursor: pointer;
+}
+
+.quem-somos a img:hover{
+    opacity: 50%;
+    /* background-image: url("/assets/botaoHover.svg");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center; */
+    
+    /*CONTINUAR A TENTAR MUDAR A IMAGEM*/    
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: 0 auto; 
+    padding: 25px;
+    color: var(--color-texto);
+}
+.sobre h1{
+    font-family: var(--font-laura);
+    padding-bottom: 10px;
+}
+
+.sobre div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    font-weight: lighter;
+    padding-right: 100px;
+}

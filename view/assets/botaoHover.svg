@@ -1,0 +1,5 @@
+<svg id="_botaoHover" data-name="/botaoHover" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <circle id="Elipse_2" data-name="Elipse 2" cx="40" cy="40" r="40" fill="#482926"/>
+  <line id="Linha_4" data-name="Linha 4" x2="20" y2="20" transform="translate(30.5 20.5)" fill="none" stroke="#fac5be" stroke-linecap="round" stroke-width="10"/>
+  <line id="Linha_5" data-name="Linha 5" x1="20" y2="20" transform="translate(30.5 40.5)" fill="none" stroke="#fac5be" stroke-linecap="round" stroke-width="10"/>
+</svg>
