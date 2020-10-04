@@ -11,7 +11,8 @@ Class Config{
     const BD_HOST = "localhost",
     BD_USER= "root",
     BD_SENHA = "",
-    BD_BANCO = "lauralacos";
+    BD_BANCO = "lauralacos",
+    BD_PREFIX = "";
 
     //PHP MAILLER
     // devo alterar depois
