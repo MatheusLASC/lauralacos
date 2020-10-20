@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-09-23 17:15:40
+/* Smarty version 3.1.36, created on 2020-10-21 00:07:23
   from 'C:\xampp\htdocs\LauraLacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f6b669c6f7776_57979647',
+  'unifunc' => 'content_5f8f5f9b4f8ec7_92153698',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cc513df2fbaf82634c4319a39ac06bc039b6e2b9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\LauraLacos\\view\\index.tpl',
-      1 => 1600874138,
+      1 => 1603231632,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f6b669c6f7776_57979647 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f8f5f9b4f8ec7_92153698 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,23 +32,31 @@ function content_5f6b669c6f7776_57979647 (Smarty_Internal_Template $_smarty_tpl)
     <!-- Fonte 'LAÇOS' errada, trocar futuramente -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
-    <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/styles/main.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/styles/header-home.css">
+/styles/main.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/styles/falsoheader.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/styles/header.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/sobre.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/rodape.css">
-
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/responsive.css">
 
 </head>
 <body>
-    <div id="header-home">
+    <div class="falsoheader">
+        
+    </div>
+    <div id="header">
+        <div class="logo">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/assets/logo-branco.png" alt="Logo Laura laços">
+        </div>
         <nav class="menu">
-            <a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_HOME']->value;?>
 ">HOME</a>
             <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
 ">QUEM SOMOS</a>
@@ -62,64 +70,32 @@ function content_5f6b669c6f7776_57979647 (Smarty_Internal_Template $_smarty_tpl)
 /assets/carrinho.svg" alt="Carrinho">
             </a>
         </nav>
-        <div class="logo">
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/logo-branco.png" alt="Logo Laura laços">
-        </div>
-        
     </div>
     
 
-    <div class="quem-somos">
-        <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/quadrado-vazio.svg" alt="Foto Quem Somos">
-        <div>
-            <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas sagittis elementum. Nam feugiat purus at feugiat gravida.
-            </p>
-            <p> 
-                Etiam id odio eget justo luctus iaculis. Nunc lobortis in justo id aliquet. Mauris metus tortor, auctor id ullamcorper eu, placerat sit amet velit. Donec sed varius turpis. 
-            </p>
-        </div>
-         
-        <a href="#">
-            
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/botao.svg" alt="Ir para QUEM SOMOS">
-        </a>
-            
-    </div>
-    
-    <div class="loja">
-        <h1>Laços Personalizados</h1>
-        <div class="home-cards-loja">
-                        
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/quadrado-vazio.svg" alt="laço1">
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/quadrado-vazio.svg" alt="laço2">
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/quadrado-vazio.svg" alt="laço3">
-                          
-        </div> 
-        <a href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/styles/loja.html"><span></span>IR PARA LOJA</a>
-    </div>
-
-    <div class="rodape">
+                </ul><!--fim do breadcrumb-->
+            <?php 
+            Rotas::get_Pagina();
+            (Rotas::$pag);
+            ?>
+    </div>    <div class="rodape">
         <div class="mapa-do-site">
             <header>MAPA DO SITE</header>
             <div>
                 <nav>
-                    <a href="#">QUEM SOMOS</a>
-                    <a href="#">LOJA</a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
+">QUEM SOMOS</a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
+">LOJA</a>
                     <a href="#"><span></span>PRONTA ENTREGA</a>
                     <a href="#"><span></span>SOB ENCOMENDA</a>
                 </nav>
                     
                 <nav>
-                    <a href="#">CONTATO</a>
-                    <a href="#">CARRINHO</a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">CONTATO</a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+">CARRINHO</a>
                     <a href="#">PERGUNTAS FREQUENTES</a>
                     <a href="#">MÉTODOS DE PAGAMENTO</a>
                 </nav>
