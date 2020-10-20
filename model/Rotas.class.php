@@ -11,7 +11,7 @@ Class Rotas
         }
 
         static function get_SiteRAIZ() {
-            return $_SERVER['DOCUMENT_ROOT'] .'/home' .Config::SITE_PASTA;
+            return $_SERVER['DOCUMENT_ROOT'] .'/' .Config::SITE_PASTA;
         }
 
         static function get_SiteTEMA() {
