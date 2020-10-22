@@ -27,6 +27,7 @@ class ComposerStaticInit2e176cc16ed4a89e82f531eb212654b1
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'Produtos' => __DIR__ . '/../..' . '/model/Produtos.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
+        'Sistema' => __DIR__ . '/../..' . '/model/Sistema.class.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',

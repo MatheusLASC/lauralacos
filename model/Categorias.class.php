@@ -11,7 +11,7 @@ Class Categorias extends Conexao{
     {
         //busca produtos de uma determinada categoria
         // caso o modelo for diferente, possa ter alterações
-        $query = "SELECT * FROM categorias";
+        $query = "SELECT * FROM {$this->prefix}categorias";
 
         $this->ExecuteSQL($query);
 

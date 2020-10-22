@@ -12,7 +12,7 @@ Class Config{
     BD_USER= "root",
     BD_SENHA = "",
     BD_BANCO = "lauralacos",
-    BD_PREFIX = "";
+    BD_PREFIX = "tb_";
 
     //PHP MAILLER
     // devo alterar depois

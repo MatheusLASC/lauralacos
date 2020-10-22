@@ -21,6 +21,40 @@ Class Produtos extends Conexao {
 
     }
 
+    function GetProdutosID($id)
+    {
+        //busca produtos de uma determinada categoria
+        // caso o modelo for diferente, possa ter alterações
+        $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c 
+        ON p.pro_categoria = c.cate_id";
+
+       $query .= "AND pro_id = :id"; // exibe os produtos mais recentes adicionados
+
+       $params = array(':id'=>(int)$id);
+
+        $this->ExecuteSQL($query, $params);
+
+        $this->GetLista();
+
+    }
+
+    function GetProdutosCateID($id)
+    {
+        //busca produtos de uma determinada categoria
+        // caso o modelo for diferente, possa ter alterações
+        $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c 
+        ON p.pro_categoria = c.cate_id";
+
+       $query .= "AND pro_categoria = :id"; // exibe os produtos mais recentes adicionados
+
+       $params = array(':id'=>(int)$id);
+
+        $this->ExecuteSQL($query, $params);
+
+        $this->GetLista();
+
+    }
+
     // Ainda não consegui testar o código devido ao template fixo
     function GetLista()
     {

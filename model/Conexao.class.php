@@ -38,6 +38,13 @@ Class Conexao extends Config{
     function ExecuteSQL($query, array $params = NULL)
     {
         $this->obj = $this->Conectar()->prepare($query);
+
+        if(!empty($params))
+        {
+            foreach($params as $key =>$value){
+                $this->obj->bindValue($key, $value);
+            }
+        }
         return $this->obj->execute();
     }
 
