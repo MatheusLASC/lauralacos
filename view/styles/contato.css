@@ -1,43 +1,43 @@
-#formularioContato{
+.contato{
     margin: 0 10%;
 }
 
-#formularioContato form {
+.contato form {
     padding: 30px 40px 20px 50px;
     box-sizing: border-box;
 }
 
-#formularioContato form h1{
+.contato form h1{
     font-family: var(--font-laura);
     text-align: center;
     margin-bottom: 20px;
 }
 
-#formularioContato form label {
+.contato form label {
     font-size: 18px;
     padding-right: 20px;
     width: 70px;
 }
 
-#formularioContato fieldset {
+.contato fieldset {
     margin-top: 10px;
     border: 0;
     padding: 0 10% 0;
 }
 
-#formularioContato .field, .field-text{
+.contato .field, .field-text{
     margin-bottom: 20px;
     flex: 1;
     display: flex;
     flex-direction: row;
 }
-#formularioContato textarea{
+.contato textarea{
     height: 100px;
     text-align: start;
     padding-top: 10px;
 }
 
-#formularioContato input, textarea {
+.contato input, textarea {
     background-color: var(--color-rosa);
     opacity: 50%;
     border: 0;
@@ -50,16 +50,15 @@
     padding-left: 10px;
 }
 
-#formularioContato form number {
+.contato form number {
     -webkit-animation: none;
     -moz-animation: none;
     animation: none;
 }
 
-#formularioContato form button{
+.contato form button{
     background-color: var(--color-vinho);
     display: flex;
-    /* margin-top: 10px; */
     width: 120px;
     height: 40px;
     border: 0;

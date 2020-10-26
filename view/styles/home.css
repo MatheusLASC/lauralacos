@@ -1,0 +1,53 @@
+.loja {
+    background-color: var(--color-cinza);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.loja h1{
+    font-family: var(--font-laura);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    
+}
+
+.loja .home-cards-loja {
+    margin: 0 auto;
+}
+
+.loja div img {
+    max-width: 40rem;
+    padding: 0 30px;
+}
+
+.loja a {
+    color: var(--color-vinho);
+    background-color: var(--color-rosa);
+    border-radius: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    max-width: 200px;
+    font-size: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: 500ms;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.loja a:hover{
+    background-color: var(--color-vinho);
+    color: var(--color-rosa);
+}
+

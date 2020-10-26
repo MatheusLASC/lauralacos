@@ -1,14 +1,17 @@
+/* ----------------------- GERAIS ----------------------- */
 :root{
     --color-rosa: #FAC5BE; 
     --color-vinho: #482926;
     --color-texto: #212529;
     --color-cinza: #E9ECEF;
     --font-laura: 'Special Elite', cursive;
+    font-size: 62.5%;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -23,100 +26,120 @@ a {
 body {
     -webkit-font-smoothing: antialised;
 }
-#header-home {
+
+/* ----------------------- FALSO HEADER ----------------------- */
+
+.falsoheader {
+    background-color: var(--color-rosa);
+    padding: 5px;
+}
+
+/* ----------------------- HEADER ----------------------- */
+.header {
     background-color: var(--color-rosa);
     margin: 0 0;
-    height: 100vh;
+    display: flex;
+    height: 100px;
+    /*justify-content: space-between;*/
     
 }
 
-#header-home .menu {
+.header .menu {
+    width: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 40px 30px 40%;
-    font-size: 22px;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    padding: 30px 0px 30px 0;
+    /*font-size: 22px;*/
+    font-size: 2rem;
     font-weight: lighter;
 }
 
-#header-home .logo{
-    height: 20em;
+.header .logo{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 25px;
-    margin: 5% 10% auto;
-
+    padding-left: 20px;
 }
 
-#header-home .menu a {
+.header .logo img {
+    height: 80px;
+}
+
+.header .menu a {
     color: var(--color-texto);
     transition-duration: 0.4s;
 }
 
-#header-home .menu a img {
+.header .menu a img {
     max-width: 25px;
     vertical-align: middle;
 }
 
-#header-home .menu a:hover {
+.header .menu a:hover {
     font-weight: bold;
 }
 
-.quem-somos a img:hover{
-    background-image: url("/assets/botaoHover.svg");
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-    
-    /*CONTINUAR A TENTAR MUDAR A IMAGEM*/    
+/* ----------------------- RODAPÉ ----------------------- */
+.rodape{
+    background-color: var(--color-vinho);
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.6rem;
+    margin: 0;
 }
-.loja {
-    background-color: var(--color-cinza);
+
+.rodape a{
+    color: white;
+    
+}
+
+.rodape .mapa-do-site {
+    /* background-color: red; */
+    max-width: 50%;
+    height: 250px;
+    padding-top: 3rem;
+    
+}
+
+.rodape .mapa-do-site header {
+    /* background-color: yellow; */
+    padding-bottom: 10px;
+    color: var(--color-rosa);
+    font-weight: bold;
+}
+
+.rodape nav {
+    /* background-color: #FAC5BE; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px; 
+    column-gap: 20px;
+    line-height: 2;
+}
+
+.rodape .contato {
+    /* background-color: violet; */
+    max-width: 50%;
+    padding-top: 3rem;
+}
+
+.rodape .contato header {
+    /* background-color: aqua; */
+    padding-bottom: 10px;
+    color: var(--color-rosa);
+    font-weight: bold;
+}
+
+.rodape .contato div {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    margin: 20px;
-
+    line-height: 3;
 }
 
-.loja h1{
-    /* font-family: 'Special Elite', cursive; */
-    font-family: var(--font-laura);
-    display: flex;
-    justify-content: space-around;
-    margin-top: 35px;
-    margin-bottom: 20px;
+.rodape .contato img {
+    padding-right: 5px;
+    max-width: 25px;
 }
-
-.loja .home-cards-loja {
-    margin: 0 auto;
-    
-}
-
-.loja a {
-    color: var(--color-vinho);
-    background-color: var(--color-rosa);
-    border-radius: 80px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    width: 100%;
-    max-width: 200px;
-    font-size: 25px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    transition: 500ms;
-    justify-content: center;
-    align-self: center;
-    cursor: pointer;
-}
-
-.loja a:hover{
-    background-color: var(--color-vinho);
-    color: var(--color-rosa);
-}
-
