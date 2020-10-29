@@ -12,7 +12,7 @@
          
         <a href="#">
             
-            <img src="assets/botao.svg" alt="Ir para QUEM SOMOS">
+            <img src="view/assets/botao.svg" alt="Ir para QUEM SOMOS">
         </a>
             
     </div>

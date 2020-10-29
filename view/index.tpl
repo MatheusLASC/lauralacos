@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Laços - Home</title>
-
+    <title>Laura Laços </title>
+    <link rel="icon" href="/assets/laco-preto.svg">
+    <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Fonte 'LAÇOS' errada, trocar futuramente -->
+            <!-- Fonte 'LAÇOS' errada, trocar futuramente -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="{$GET_TEMA}/styles/main.css">
-    <link rel="stylesheet" href="{$GET_TEMA}/styles/falsoheader.css">
-    <link rel="stylesheet" href="{$GET_TEMA}/styles/header.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/home.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/sobre.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/loja.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/contato.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/rodape.css">
+
     <link rel="stylesheet" href="{$GET_TEMA}/styles/responsive.css">
 
 </head>
 <body>
+    <!-- FALSO HEADER -->
     <div class="falsoheader">
         
     </div>
-    <div id="header">
+    <!-- HEADER -->
+    <div class="header">
         <div class="logo">
             <img src="{$GET_TEMA}/assets/logo-branco.png" alt="Logo Laura laços">
         </div>
@@ -36,15 +42,16 @@
         </nav>
     </div>
     
-{* <------ meio da página -------> *}
+    <!-- BREAD CRUMB -->
+    </ul>
+    {php}
+    Rotas::get_Pagina();
+    (Rotas::$pag);
+    {/php}
+    <!-- BREAD CRUMB -->
+    
 
-                </ul><!--fim do breadcrumb-->
-            {php}
-            Rotas::get_Pagina();
-            (Rotas::$pag);
-            {/php}
-    </div>{* 
-<------------ fim do meio da página ----------->  *}
+    <!-- RODAPÉ -->
     <div class="rodape">
         <div class="mapa-do-site">
             <header>MAPA DO SITE</header>
@@ -72,9 +79,9 @@
             </header>
             
             <div>
-                <a href="#">FACEBOOK</a>
-                <a href="#"><img src="{$GET_TEMA}/assets/logo-instagram.svg" alt="logo insta">INSTAGRAM</a>
-                <a href="#"><img src="{$GET_TEMA}/assets/logo-whats.svg" alt=""> WHATSAPP</a>
+                <a href="#"><img src="{$GET_TEMA}/assets/logo-face-redondo.png" alt="Facebook"> FACEBOOK</a>
+                <a href="#"><img src="{$GET_TEMA}/assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
+                <a href="#"><img src="{$GET_TEMA}/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
                 
             </div>
             

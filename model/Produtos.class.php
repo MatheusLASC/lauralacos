@@ -68,7 +68,7 @@ Class Produtos extends Conexao {
             'pro_nome' => $lista['pro_nome'],
             'pro_desc' => $lista['pro_desc'],
             'pro_valor' => $lista['pro_valor'],
-            'pro_img' => $lista['pro_img'],
+            'pro_img' => Rotas::ImageLink($lista['pro_img'], 180, 180),
             'pro_slug' => $lista['pro_slug'],
             'pro_comprimento' => $lista['pro_comprimento'],
             'pro_apliques' => $lista['pro_apliques'],

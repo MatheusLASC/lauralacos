@@ -3,7 +3,6 @@
         <h1>Contato</h1>
 
         <fieldset>
-            
             <div class="field">
                 <label for="name">Nome</label>
                 <input type="text" name="name">      
@@ -25,10 +24,8 @@
                 <textarea name="content" id="" cols="30" rows="5"></textarea>
                 <!-- <input type="text" name="content"> -->
             </div>
-
-
         </fieldset>
-
+        
         <button type="submit">ENVIAR</button>
     </form>
     

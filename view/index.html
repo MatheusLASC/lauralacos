@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/sobre.css">
-    <link rel="stylesheet" href="styles/loja.css">
-    <link rel="stylesheet" href="styles/contato.css">
-    <link rel="stylesheet" href="styles/rodape.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/main.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/home.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/sobre.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/loja.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/contato.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/rodape.css">
 
-    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/responsive.css">
 
 </head>
 <body>
@@ -29,21 +29,25 @@
     <!-- HEADER -->
     <div class="header">
         <div class="logo">
-            <img src="assets/logo-branco.png" alt="Logo Laura laços">
+            <img src="{$GET_TEMA}/assets/logo-branco.png" alt="Logo Laura laços">
         </div>
         <nav class="menu">
-            <a href="home.html">HOME</a>
-            <a href="sobre.html">QUEM SOMOS</a>
-            <a href="loja.html">LOJA</a>
-            <a href="contato.html">CONTATO</a>
-            <a href="#">
-                <img src="assets/carrinho.svg" alt="Carrinho">
+            <a href="{$PAG_HOME}">HOME</a>
+            <a href="{$PAG_SOBRE}">QUEM SOMOS</a>
+            <a href="{$PAG_PRODUTOS}">LOJA</a>
+            <a href="{$PAG_CONTATO}">CONTATO</a>
+            <a href="{$PAG_CARRINHO}">
+                <img src="{$GET_TEMA}/assets/carrinho.svg" alt="Carrinho">
             </a>
         </nav>
     </div>
     
     <!-- BREAD CRUMB -->
-
+    </ul>
+    {php}
+    Rotas::get_Pagina();
+    (Rotas::$pag);
+    {/php}
     <!-- BREAD CRUMB -->
     
 
@@ -53,15 +57,15 @@
             <header>MAPA DO SITE</header>
             <div>
                 <nav>
-                    <a href="#">QUEM SOMOS</a>
-                    <a href="#">LOJA</a>
+                    <a href="{$PAG_SOBRE}">QUEM SOMOS</a>
+                    <a href="{$PAG_PRODUTOS}">LOJA</a>
                     <a href="#"><span></span>PRONTA ENTREGA</a>
                     <a href="#"><span></span>SOB ENCOMENDA</a>
                 </nav>
                     
                 <nav>
-                    <a href="#">CONTATO</a>
-                    <a href="#">CARRINHO</a>
+                    <a href="{$PAG_CONTATO}">CONTATO</a>
+                    <a href="{$PAG_CARRINHO}">CARRINHO</a>
                     <a href="#">PERGUNTAS FREQUENTES</a>
                     <a href="#">MÉTODOS DE PAGAMENTO</a>
                 </nav>
@@ -75,9 +79,9 @@
             </header>
             
             <div>
-                <a href="#"><img src="assets/logo-face-redondo.png" alt="Facebook"> FACEBOOK</a>
-                <a href="#"><img src="assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
-                <a href="#"><img src="assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
+                <a href="#"><img src="{$GET_TEMA}assets/logo-face-redondo.png" alt="Facebook"> FACEBOOK</a>
+                <a href="#"><img src="{$GET_TEMA}assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
+                <a href="#"><img src="{$GET_TEMA}assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
                 
             </div>
             
