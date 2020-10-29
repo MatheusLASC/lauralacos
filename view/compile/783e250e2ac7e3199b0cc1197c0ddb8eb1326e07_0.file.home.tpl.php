@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-10-22 00:26:00
+/* Smarty version 3.1.36, created on 2020-10-29 18:11:03
   from 'C:\xampp\htdocs\lauralacos\view\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f90b57825e055_07021859',
+  'unifunc' => 'content_5f9af7a76c6e55_10997829',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '783e250e2ac7e3199b0cc1197c0ddb8eb1326e07' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\home.tpl',
-      1 => 1603318976,
+      1 => 1603990079,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f90b57825e055_07021859 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f9af7a76c6e55_10997829 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="home">
     <div class="quem-somos">
         <img src="view/assets/quadrado-vazio.svg" alt="Foto Quem Somos">
@@ -35,7 +35,7 @@ function content_5f90b57825e055_07021859 (Smarty_Internal_Template $_smarty_tpl)
          
         <a href="#">
             
-            <img src="assets/botao.svg" alt="Ir para QUEM SOMOS">
+            <img src="view/assets/botao.svg" alt="Ir para QUEM SOMOS">
         </a>
             
     </div>

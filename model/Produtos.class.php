@@ -13,7 +13,7 @@ Class Produtos extends Conexao {
         $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c 
         ON p.pro_categoria = c.cate_id";
 
-        $query .= "ORDER BY pro_id DESC"; // exibe os produtos mais recentes adicionados
+        $query .= " ORDER BY pro_id DESC"; // exibe os produtos mais recentes adicionados
 
         $this->ExecuteSQL($query);
 
