@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Laços </title>
@@ -15,10 +16,12 @@
     <link rel="stylesheet" href="{$GET_TEMA}/styles/home.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/sobre.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/loja.css">
-    <link rel="stylesheet" href="{$GET_TEMA}/styles/contato.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/contatos/contato.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/rodape.css">
 
     <link rel="stylesheet" href="{$GET_TEMA}/styles/responsive.css">
+  <!-- Tentativa falha de chamar o arquivo .js -->
+    <script src="./contatos/contato.js" defer></script>
 
 </head>
 <body>

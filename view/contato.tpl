@@ -1,32 +1,39 @@
 <div class="contato"> 
-    <form action="">
+    <form action="envio" id="frmcontato" method="Post">
         <h1>Contato</h1>
-
         <fieldset>
             <div class="field">
                 <label for="name">Nome</label>
-                <input type="text" name="name">      
+                <input  id="txtnome" placeholder="Insira seu nome" required="required" type="text" name="name">      
             </div>   
+
+                 <!-- Finalizar verificação com o arquivo contato.js do curso-->
             <div class="field">
                 <label for="email">E-mail</label>
-                <input type="text" name="email">
+                <input id="txtemail" placeholder="Insira seu e-mail" required="required" type="email" onblur="validarEmail()" onfocus="redefinirMsg()" name="email">
+                <span id="error-email"></span>
             </div>
+            
+             <!-- Fazer verificação de formato do número de telefone -->
             <div class="field">
                 <label for="celular">Celular</label>
-                <input type="number" name="celular">
+                <input id="txtcelular" placeholder="Insira seu número de celular" required="required" type="tel" name="celular">
             </div>
+           
             <div class="field">
-                <label for="subject">Assunto</label>
-                <input type="text" name="subject">
+                <label for="assunto">Assunto</label>
+                <input id="txtassunto" placeholder="Insira o assunto" required="required" type="text" name="assunto">
             </div>
+        
+
             <div class="field-text">
                 <label for="content">Texto</label>
-                <textarea name="content" id="" cols="30" rows="5"></textarea>
-                <!-- <input type="text" name="content"> -->
+                <textarea name="texto" id="txttexto" placeholder ="Digite sua mensagem" required="required" cols="30" rows="6"></textarea>
             </div>
+             <button id="btnenviar" name="enviar" type="submit">ENVIAR</button>
         </fieldset>
         
-        <button type="submit">ENVIAR</button>
+       
     </form>
     
 </div>

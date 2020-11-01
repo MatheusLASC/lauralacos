@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-10-29 18:11:03
+/* Smarty version 3.1.36, created on 2020-11-01 22:32:49
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f9af7a757dfe7_22843685',
+  'unifunc' => 'content_5f9f2981a8e987_39325870',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1603990079,
+      1 => 1604266365,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f9af7a757dfe7_22843685 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f9f2981a8e987_39325870 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Laços </title>
@@ -49,6 +50,10 @@ function content_5f9af7a757dfe7_22843685 (Smarty_Internal_Template $_smarty_tpl)
 
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/responsive.css">
+  <!-- Tentativa falha de chamar o arquivo .js -->
+    <?php echo '<script'; ?>
+ src="./contatos/js/contato.js" defer><?php echo '</script'; ?>
+>
 
 </head>
 <body>
