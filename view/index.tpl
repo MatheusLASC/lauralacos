@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Laços </title>
-    <link rel="icon" href="/assets/laco-preto.svg">
+    <link rel="icon" href="view/assets/laco-preto.svg">
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
             <!-- Fonte 'LAÇOS' errada, trocar futuramente -->

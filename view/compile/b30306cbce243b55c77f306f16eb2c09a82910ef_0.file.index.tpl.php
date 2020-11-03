@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-01 23:00:34
+/* Smarty version 3.1.36, created on 2020-11-03 04:24:36
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f9f3002246015_09049019',
+  'unifunc' => 'content_5fa0cd747c4a23_20332885',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1604268031,
+      1 => 1604373874,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f9f3002246015_09049019 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fa0cd747c4a23_20332885 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -28,7 +28,7 @@ function content_5f9f3002246015_09049019 (Smarty_Internal_Template $_smarty_tpl)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Laços </title>
-    <link rel="icon" href="/assets/laco-preto.svg">
+    <link rel="icon" href="view/assets/laco-preto.svg">
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
             <!-- Fonte 'LAÇOS' errada, trocar futuramente -->
