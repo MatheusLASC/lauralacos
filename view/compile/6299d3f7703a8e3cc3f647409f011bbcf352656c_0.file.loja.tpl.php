@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-10-29 18:56:12
+/* Smarty version 3.1.36, created on 2020-11-08 23:54:36
   from 'C:\xampp\htdocs\lauralacos\view\loja.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f9b023ca6c5c7_82507069',
+  'unifunc' => 'content_5fa8772ce9ed79_00610369',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6299d3f7703a8e3cc3f647409f011bbcf352656c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\loja.tpl',
-      1 => 1603993937,
+      1 => 1604864960,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f9b023ca6c5c7_82507069 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fa8772ce9ed79_00610369 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="loja"> 
     <main>
         <div class="categorias">
@@ -52,8 +52,6 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                         <h3><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
 </h3>
         
-                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                        <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
                     </div>
                 </a>    
             </div>

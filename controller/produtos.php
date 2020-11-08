@@ -17,6 +17,8 @@ $smarty->assign('PAG_HOME', Rotas::pag_Home());
 
 
 $smarty->assign('PRO', $produtos->GetItens());
+
+$smarty->assign('PRO_INFO', Rotas::pag_ProdutosInfo());
 //var_dump($produtos->GetProdutos()); -- o null estava aqui pois ele estava acessando a getprodutos
 
 echo '<pre>';

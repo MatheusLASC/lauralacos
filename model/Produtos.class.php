@@ -21,6 +21,7 @@ Class Produtos extends Conexao {
 
     }
 
+
     function GetProdutosID($id)
     {
         //busca produtos de uma determinada categoria
@@ -28,7 +29,7 @@ Class Produtos extends Conexao {
         $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c 
         ON p.pro_categoria = c.cate_id";
 
-       $query .= "AND pro_id = :id"; // exibe os produtos mais recentes adicionados
+       $query .= " AND pro_id = :{$id}"; // exibe os produtos mais recentes adicionados
 
        $params = array(':id'=>(int)$id);
 

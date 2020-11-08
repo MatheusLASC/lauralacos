@@ -6,70 +6,36 @@
         </div>
         <ul style="list-style: none">
         
-        {foreach from=$PRO item=P}
+        {foreach from=$PRO item=P } 
+		           
+		        <li class="cards">
 
-        
-            
 
-        <li class="cards">
-            <div class="thumbnail">
-                <a href "">
-                    <img src="{$P.pro_img}" alt="">
-
-                    <div class="caption">
-                        <h2>{$P.pro_nome}</h2>
-                        Sob encomenda
-                        <h3>{$P.pro_valor}</h3>
-        
-                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                        <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
-                    </div>
                 </a>    
-            </div>
-{*             <div class="card">
-                <img src="view/assets/quadrado-vazio.svg" alt="LAÇO 002">
+		                <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
 
-                <div class="conteudo">
-                    <h2>LAÇO 002</h2>
-                    Pronta Entrega
-                    <h3>R$ 15,00</h3>
-    
-                    <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                    <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
+		                    <img src="{$P.pro_img}" width="200" height="200" alt="" > 
 
-                </div>
+		                    <div class="caption">
 
-            </div> *}
-{*             <div class="card">
-                <img src="view/assets/quadrado-vazio.svg" alt="LAÇO 001">
+		                        <h2 {$P.pro_nome}</h2> 
 
-                <div class="conteudo">
-                    <h2>LAÇO 001</h2>
-                    Sob encomenda
-                    <h3>R$ 10,00</h3>
-    
-                    <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                    <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
-                </div>
-            </div> *}
-{*             <div class="card">
-                <img src="view/assets/quadrado-vazio.svg" alt="LAÇO 002">
+		                        <h3 {$P.pro_valor}</h3>
+                                
+                                <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
+                                <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
+                            
 
-                <div class="conteudo">
-                    <h2>LAÇO 002</h2>
-                    Pronta Entrega
-                    <h3>R$ 15,00</h3>
-    
-                    <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                    <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
+		                    </div>
 
-                </div>
+		                </a>
 
-            </div> *}
-            
-            
-        </li>
-        {/foreach}
+		            </div>
+
+
+		        </li>
+
+		        {/foreach}
         
     </main>
 
