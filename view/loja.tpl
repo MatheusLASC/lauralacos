@@ -1,42 +1,38 @@
 <div id="loja"> 
     <main>
-        <div class="categorias">
-            <a href="#">PRONTA ENTREGA</a>
-            <a href="#">SOB ENCOMENDA</a>
+        <div class="lista-categorias">
+            <span class="list-group-item-nome active">Categorias</span>
+
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right">aaaaaaaa</span></a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right">bbbbbbbbbb</span></a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right">ccccccccc</span></a>
+            
         </div>
         <ul style="list-style: none">
         
         {foreach from=$PRO item=P } 
 		           
-		        <li class="cards">
+            <li class="cards">
+            </a>    
+                    <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
 
+                        <img class="foto-produto" src="{$P.pro_img}" width="200" height="200" alt="" > 
 
-                </a>    
-		                <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
+                        <div class="caption">
 
-		                    <img src="{$P.pro_img}" width="200" height="200" alt="" > 
+                            <h2 class="text-center"> {$P.pro_nome}</h2> 
 
-		                    <div class="caption">
+                            <h3 class="text-center text-danger">{$P.pro_valor}</h3>
 
-		                        <h2 class="text-center"> {$P.pro_nome}</h2> 
+                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">		                    
+                        </div>
 
-		                        <h3 class="text-center text-danger">{$P.pro_valor}</h3>
+                    </a>
 
-                            <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                            <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
-		                    
-                            </div>
+                </div>
+            </li>
 
-		                </a>
-
-                    
-		            </div>
-
-
-		        </li>
-
-		        {/foreach}
-        
+        {/foreach}
     </main>
 
 </div>

@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="{$GET_TEMA}/styles/sobre.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/loja.css">
     <link rel="stylesheet" href="{$GET_TEMA}/contatos/contato.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/carrinho.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/rodape.css">
 
+    
     <link rel="stylesheet" href="{$GET_TEMA}/styles/responsive.css">
   <!-- Tentativa falha de chamar o arquivo .js -->
     <script src="./contatos/contato.js" defer></script>

@@ -1,0 +1,72 @@
+.carrinho{
+    margin-left: 50px;
+}
+
+.carrinho h3 {
+    font-size: 45px;
+    font-family: var(--font-laura);
+    margin: 25px;
+}
+
+.carrinho .comprar-mais {
+    font-size: 16px;
+    margin-left: 25px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-rosa);
+}
+
+.carrinho .tabela-carrinho {
+    margin: 25px;
+    width: 800px;
+    font-size: 18px;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.carrinho .cabecalho {
+    color: var(--color-vinho);
+    font-weight: bold;
+    font-size: 24px;
+}
+.carrinho .total-limpar {
+    display: flex;
+    align-items: center;
+}
+
+.carrinho .total-limpar h4 {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 25px;
+}
+
+.carrinho .limpar {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-cinza);
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 16px;
+    border-width: 0;
+}
+
+.carrinho .limpar img {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.carrinho .confirmar {
+    margin-left: 25px;
+    background-color: var(--color-rosa);
+    width: 800px;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: 0;
+}
+
+.carrinho .confirmar:hover {
+    box-shadow: 0 5px 10px 0 rgba(238, 207, 207, 0.911);
+}
