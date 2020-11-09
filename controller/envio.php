@@ -3,17 +3,17 @@
 //Caso não funcione quando for subir no servidor pode alterar o post por GET
 //Warning: mail(): Ocorre pois o site não está no servidor e não consegue identificar a porta
 //destinatário
-$dest = $_POST['email'];
+$dest = $_GET['txtinputemail'];
 //nome do destinatário
-$nome = $_POST['name'];
+$nome = $_GET['txtinputnome'];
 //celular
-$cel = $_POST['celular'];
+$cel = $_GET['celular'];
 //remetente
 $to = Config::EMAIL_USER;
 //assunto
-$subject = 'Assunto: ' . $_POST['assunto'];
+$subject = 'Assunto: ' . $_GET['txtinputassunto'];
 //mensagem
-$message = 'Email de : ' . $nome . "\r\n" .'Celular: ' .$cel . "\r\n" . $_POST['texto'];
+$message = 'Email de : ' . $nome . "\r\n" .'Celular: ' .$cel . "\r\n" . $_GET['txtinputtexto'];
 
 $headers = "From: ".$dest;
 

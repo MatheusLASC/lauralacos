@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Out-2020 às 19:47
+-- Tempo de geração: 09-Nov-2020 às 00:01
 -- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.9
+-- versão do PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -68,7 +68,7 @@ CREATE TABLE `tb_produtos` (
 --
 
 INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_frete_free`) VALUES
-(1, 1, 'Laço Double Cor', '2 Laços com cores diferentes', 10.90, 'laco1', 'lacodouble', 2, 2.00, 1, 1, 1.50, '1', 'Não');
+(1, 1, 'Laço Double Cor', '2 Laços com cores diferentes', 10.90, 'laco1', 'laco-flor', 2, 2.00, 1, 1, 1.50, '1', 'Não');
 
 --
 -- Índices para tabelas despejadas

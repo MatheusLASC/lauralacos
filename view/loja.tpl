@@ -18,18 +18,18 @@
 
 		                    <div class="caption">
 
-		                        <h2 {$P.pro_nome}</h2> 
+		                        <h2 class="text-center"> {$P.pro_nome}</h2> 
 
-		                        <h3 {$P.pro_valor}</h3>
-                                
-                                <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
-                                <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
-                            
+		                        <h3 class="text-center text-danger">{$P.pro_valor}</h3>
 
-		                    </div>
+                            <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">
+                            <img class="coracao" src="view/assets/coracao.png" alt="Adicionar aos favoritos">
+		                    
+                            </div>
 
 		                </a>
 
+                    
 		            </div>
 
 
@@ -40,5 +40,3 @@
     </main>
 
 </div>
-
-    
