@@ -19,10 +19,10 @@ Class Categorias extends Conexao{
 
     }
 
+    //listando todas as categorias
     function GetLista()
     {
-        //conseguindo todas as informações de produto a produto
-        // não se coloca aqui os atributos dependentes de outras tabelas
+     
         $i = 1;
 
         while($lista = $this->ListarDados()):
@@ -30,6 +30,7 @@ Class Categorias extends Conexao{
             'cate_id' => $lista['cate_id'],
             'cate_nome' => $lista['cate_nome'],
             'cate_slug' => $lista['cate_slug'],
+            //forma a URL para o filtro
             'cate_link' => Rotas::pag_Produtos(). '/' .$lista['cate_id']. '/' .$lista['cate_slug'],
         );
         $i++;

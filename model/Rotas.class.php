@@ -49,25 +49,29 @@ Class Rotas
             $imagem = self::get_ImageURL() ."thumb.php?src={$img},&w={$largura}&h={$altura}&zc=1";
             return $imagem;
         }
-        static function get_pagina() {
-            if (isset($_GET['pag']))
-            {
-                $pagina = $_GET['pag'];
 
+        static function get_Pagina(){
+            if(isset($_GET['pag'])){
+    
+                $pagina = $_GET['pag'];
+    
                 self::$pag = explode('/', $pagina);
-            
-             $pagina = 'controller/' .self::$pag[0] . '.php';
-       
-                if(file_exists($pagina))
-                {
+                
+                  //echo '<pre>';
+                 //var_dump(self::$pag);
+                 //echo '</pre>';
+    
+    
+                $pagina = 'controller/' .self::$pag[0] . '.php';
+
+                
+                if(file_exists($pagina)){
                     include $pagina;
-                }
-                else
-                {
-                    include 'erro.php';
-                }
+                }else{
+                include 'erro.php';
             }
-           
+    
+            }
         }
         
     }

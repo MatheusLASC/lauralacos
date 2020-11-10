@@ -2,14 +2,18 @@
     <main>
         <div class="lista-categorias">
             <span class="list-group-item-nome active">Categorias</span>
-
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right">aaaaaaaa</span></a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right">bbbbbbbbbb</span></a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right">ccccccccc</span></a>
+            <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right">Produtos</span></a>
+            {foreach from=$CATEGORIAS item=C}
+            <a href="{$C.cate_link}" class="list-group-item"><span class="glyphicon glyphicon-menu-right">{$C.cate_nome}</span></a>
+            {/foreach}
             
         </div>
         <ul style="list-style: none">
-        
+
+<!--Aviso ao usuário quando uma categoria está vazia -->
+{if $PRO_TOTAL < 1 } 
+<H1 class="alert alert-danger">Ops... Nosso estoque está esgotado, volte mais tarde !</H2>
+{/if}
         {foreach from=$PRO item=P } 
 		           
             <li class="cards">
@@ -24,11 +28,13 @@
 
                             <h3 class="text-center text-danger">{$P.pro_valor}</h3>
 
-                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">		                    
-                        </div>
-
+                        <!--  Ao fazer o filtro e mostrar o produto pela segunda vez, a imagem do carrinho acaba não aparecendo 
+                        Acredito que o carrinho deveria estar somente na PaginasInfo
+                        ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
+                        Pelo jeito não se carrega 2 vezes a mesma imagem-->        
+                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">       
+                        </div>     
                     </a>
-
                 </div>
             </li>
 
