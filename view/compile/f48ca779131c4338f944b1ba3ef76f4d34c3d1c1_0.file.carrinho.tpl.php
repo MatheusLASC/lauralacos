@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-09 05:47:19
+/* Smarty version 3.1.36, created on 2020-11-11 23:35:19
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fa8c9d7469982_22756368',
+  'unifunc' => 'content_5fac6727da49e2_32473979',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1604897236,
+      1 => 1605134107,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fa8c9d7469982_22756368 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fac6727da49e2_32473979 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="carrinho">
     <h3>Meu Carrinho</h3>
     <!-- botoes e opções de cima -->
