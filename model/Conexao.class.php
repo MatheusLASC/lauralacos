@@ -5,6 +5,10 @@ Class Conexao extends Config{
 
     protected $obj, $itens = array(), $prefix;
 
+    public $paginacao_links,$totalpags,$limite,$inicio;
+
+
+
     function __construct()
     {
         $this->host = self::BD_HOST;
@@ -63,7 +67,49 @@ Class Conexao extends Config{
        return $this->itens;
     }
 
+    function PaginacaoLinks($campo, $tabela){
 
+        $pag = new Paginacao();
+        $pag->GetPaginacao($campo, $tabela);
+		$this->paginacao_links = $pag->link;
+
+		$this->totalpags = $pag->totalpags;
+		$this->limite = $pag->limite;
+		$this->inicio = $pag->inicio;
+
+		$inicio = $pag->inicio;
+		$limite = $pag->limite;
+
+		if($this->totalpags > 0){
+			return " limit {$inicio}, {$limite}";
+		}else{
+			return " ";
+		}
+    }
+
+    protected function Paginacao($paginas=array()){
+        $pag = '<ul class="pagination">';
+        //Link para voltar ao início, pode tirar caso queira
+		$pag .= '<li><a href="?p=1"> << Inicio</a></li>';
+
+		foreach($paginas as $p):
+			$pag .= '<li><a href="?p='.$p.'">'.$p.'</a></li>';
+			endforeach;
+
+		$pag .= '<li><a href="?p='. $this->totalpags .'"> ...'.$this->totalpags.'>></a></li>';
+
+		$pag .= '</ul>';
+
+		if($this->totalpags > 1){
+		return $pag;
+		}
+	}
+
+	function ShowPaginacao(){
+		return $this->Paginacao($this->paginacao_links);
+	}
+
+ 
 }
 
 

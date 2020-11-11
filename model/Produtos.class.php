@@ -15,6 +15,8 @@ Class Produtos extends Conexao {
 
         $query .= " ORDER BY pro_id DESC"; // exibe os produtos mais recentes adicionados
 
+        $query .= $this->PaginacaoLinks("pro_id", $this->prefix."produtos");
+
         $this->ExecuteSQL($query);
 
         $this->GetLista();

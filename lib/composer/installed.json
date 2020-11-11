@@ -143,5 +143,6 @@
             "install-path": "../smarty/smarty"
         }
     ],
-    "dev": true
+    "dev": true,
+    "dev-package-names": []
 }

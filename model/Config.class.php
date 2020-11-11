@@ -12,7 +12,9 @@ Class Config{
     BD_USER= "root",
     BD_SENHA = "",
     BD_BANCO = "lauralacos",
-    BD_PREFIX = "tb_";
+    BD_PREFIX = "tb_",
+    //alterar conforme a necessidade por página
+    BD_LIMIT_PAG = 3;
 
     //PHP MAILLER
     // devo alterar depois
