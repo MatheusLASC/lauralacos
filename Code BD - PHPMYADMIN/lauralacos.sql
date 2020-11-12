@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Nov-2020 às 00:01
+-- Tempo de geração: 13-Nov-2020 às 00:01
 -- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.11
+-- versão do PHP: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,6 +39,28 @@ CREATE TABLE `tb_categorias` (
 
 INSERT INTO `tb_categorias` (`cate_id`, `cate_nome`, `cate_slug`) VALUES
 (1, 'Pronta Entrega', 'prontaentrega');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_clientes`
+--
+
+CREATE TABLE `tb_clientes` (
+  `cli_id` int(11) NOT NULL,
+  `cli_nome` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_telefone` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_email` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_cpf` int(12) NOT NULL,
+  `cli_endereco` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_numero` varchar(6) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_complemento` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_bairro` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_cidade` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_uf` varchar(2) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_cep` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_pass` varchar(40) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -81,6 +103,12 @@ ALTER TABLE `tb_categorias`
   ADD PRIMARY KEY (`cate_id`);
 
 --
+-- Índices para tabela `tb_clientes`
+--
+ALTER TABLE `tb_clientes`
+  ADD PRIMARY KEY (`cli_id`);
+
+--
 -- Índices para tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
@@ -95,6 +123,12 @@ ALTER TABLE `tb_produtos`
 --
 ALTER TABLE `tb_categorias`
   MODIFY `cate_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de tabela `tb_clientes`
+--
+ALTER TABLE `tb_clientes`
+  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `tb_produtos`
