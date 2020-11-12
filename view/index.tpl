@@ -23,7 +23,7 @@
     
     <link rel="stylesheet" href="{$GET_TEMA}/styles/responsive.css">
   <!-- Tentativa falha de chamar o arquivo .js -->
-    <script src="./contatos/contato.js" defer></script>
+     <script src="{$GET_TEMA}/carrinhos/carrinho.js" type="text/javascript"></script>
 
 </head>
 <body>
