@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-11 23:28:26
+/* Smarty version 3.1.36, created on 2020-11-12 02:54:41
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fac658a7a01b6_13607257',
+  'unifunc' => 'content_5fac95e1ddc2b1_45627612',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605133698,
+      1 => 1605146077,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fac658a7a01b6_13607257 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fac95e1ddc2b1_45627612 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -128,13 +128,13 @@ function content_5fac658a7a01b6_13607257 (Smarty_Internal_Template $_smarty_tpl)
             </header>
             
             <div>
-                <a href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/logo-face-redondo.png" alt="Facebook"> FACEBOOK</a>
-                <a href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+                <a href="https://www.facebook.com/" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/assets/logo-face-redondo.png" alt="Facebook" > FACEBOOK</a>
+                <a href="https://instagram.com/" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
-                <a href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+                <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
-                
+              
             </div>
             
         </div>

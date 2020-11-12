@@ -84,10 +84,10 @@
             </header>
             
             <div>
-                <a href="#"><img src="{$GET_TEMA}/assets/logo-face-redondo.png" alt="Facebook"> FACEBOOK</a>
-                <a href="#"><img src="{$GET_TEMA}/assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
-                <a href="#"><img src="{$GET_TEMA}/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
-                
+                <a href="https://www.facebook.com/" target="_blank"><img src="{$GET_TEMA}/assets/logo-face-redondo.png" alt="Facebook" > FACEBOOK</a>
+                <a href="https://instagram.com/" target="_blank"><img src="{$GET_TEMA}/assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
+                <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="{$GET_TEMA}/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
+              
             </div>
             
         </div>
