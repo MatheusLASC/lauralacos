@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-13 01:31:30
+/* Smarty version 3.1.36, created on 2020-11-13 23:56:30
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fadd3e2504299_22319668',
+  'unifunc' => 'content_5faf0f1e0be3a9_71305944',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605220926,
+      1 => 1605308130,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fadd3e2504299_22319668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5faf0f1e0be3a9_71305944 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -107,8 +107,27 @@ function content_5fadd3e2504299_22319668 (Smarty_Internal_Template $_smarty_tpl)
 ">QUEM SOMOS</a>
                     <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 ">LOJA</a>
-                    <a href="#"><span></span>PRONTA ENTREGA</a>
-                    <a href="#"><span></span>SOB ENCOMENDA</a>
+
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'C');
+$_smarty_tpl->tpl_vars['C']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
+$_smarty_tpl->tpl_vars['C']->do_else = false;
+?>
+                    <?php if ($_smarty_tpl->tpl_vars['C']->value['cate_nome'] == 'Pronta Entrega') {?> 
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['C']->value['cate_link'];?>
+"><span></span>PRONTA ENTREGA</a>
+                    <?php }?>
+
+                    <?php if ($_smarty_tpl->tpl_vars['C']->value['cate_nome'] == 'Sob Encomenda') {?> 
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['C']->value['cate_link'];?>
+"><span></span>SOB ENCOMENDA</a>
+                    <?php }?>
+
+                    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
                 </nav>
                     
                 <nav>
@@ -116,8 +135,10 @@ function content_5fadd3e2504299_22319668 (Smarty_Internal_Template $_smarty_tpl)
 ">CONTATO</a>
                     <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
 ">CARRINHO</a>
-                    <a href="#">PERGUNTAS FREQUENTES</a>
-                    <a href="#">MÉTODOS DE PAGAMENTO</a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_FAQ']->value;?>
+">PERGUNTAS FREQUENTES</a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PAG']->value;?>
+">MÉTODOS DE PAGAMENTO</a>
                 </nav>
 
             </div>  
@@ -129,12 +150,12 @@ function content_5fadd3e2504299_22319668 (Smarty_Internal_Template $_smarty_tpl)
             </header>
             
             <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+                <a href="https://www.facebook.com/Lauraalacos/" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/logo-face-redondo.png" alt="Facebook" > FACEBOOK</a>
-                <a href="https://instagram.com/" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+                <a href="https://www.instagram.com/lauralacos_/" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
                 <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
+/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP - (54) 99709 1864</a>
               
             </div>
             

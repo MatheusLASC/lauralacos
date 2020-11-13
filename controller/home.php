@@ -1,8 +1,6 @@
 <?php
 
 $smarty = new Template();
-$smarty->assign ('HOME', 'Home');
-$smarty->display('home.tpl');
 
 /* require './lib/autoload.php';
 $smarty = new Template();
@@ -20,7 +18,27 @@ $smarty->assign('PAG_HOME', Rotas::pag_Home());
 
 /* echo Rotas :: pag_Carrinho() .'<br>'; */
 
+// Código a ser utilizado para carregar as imagens das 3 produtos mais recentes (já está ordenado)
+// Deve-se fazer na home.tpl uma logica com if para exibir somente os três primeiros
+// Deixo aqui embaixo todas as chamada possíveis a serem utilizas
+$produtos = new Produtos();
 
+if(isset(Rotas::$pag[1]))
+{
+    //gerando o nova caminho pra fazer o filtro
+    // Ele verifica aonde está a rota através do caminho no Cate_Link na classe Categorias
+    $smarty->assign('PROCAT', $produtos->GetProdutosCateID(Rotas::$pag[1]));
+}
+else
+{
+    $produtos->GetProdutos();
+}
+$smarty->assign('PRO', $produtos->GetItens());
+$smarty->assign('PRO_INFO', Rotas::pag_ProdutosInfo());
+$smarty->assign('PRO_TOTAL', $produtos->TotalDados());
+// trecho a ser utilizado
 
+$smarty->assign ('HOME', 'Home');
+$smarty->display('home.tpl');
 
 ?>

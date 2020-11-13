@@ -64,15 +64,25 @@
                 <nav>
                     <a href="{$PAG_SOBRE}">QUEM SOMOS</a>
                     <a href="{$PAG_PRODUTOS}">LOJA</a>
-                    <a href="#"><span></span>PRONTA ENTREGA</a>
-                    <a href="#"><span></span>SOB ENCOMENDA</a>
+
+                    {foreach from=$CATEGORIAS item=C}
+                    {if $C.cate_nome == 'Pronta Entrega' } 
+                    <a href="{$C.cate_link}"><span></span>PRONTA ENTREGA</a>
+                    {/if}
+
+                    {if $C.cate_nome == 'Sob Encomenda' } 
+                    <a href="{$C.cate_link}"><span></span>SOB ENCOMENDA</a>
+                    {/if}
+
+                    {/foreach}
+
                 </nav>
                     
                 <nav>
                     <a href="{$PAG_CONTATO}">CONTATO</a>
                     <a href="{$PAG_CARRINHO}">CARRINHO</a>
-                    <a href="#">PERGUNTAS FREQUENTES</a>
-                    <a href="#">MÉTODOS DE PAGAMENTO</a>
+                    <a href="{$PAG_FAQ}">PERGUNTAS FREQUENTES</a>
+                    <a href="{$PAG_PAG}">MÉTODOS DE PAGAMENTO</a>
                 </nav>
 
             </div>  
@@ -84,9 +94,9 @@
             </header>
             
             <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="{$GET_TEMA}/assets/logo-face-redondo.png" alt="Facebook" > FACEBOOK</a>
-                <a href="https://instagram.com/" target="_blank"><img src="{$GET_TEMA}/assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
-                <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="{$GET_TEMA}/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP</a>
+                <a href="https://www.facebook.com/Lauraalacos/" target="_blank"><img src="{$GET_TEMA}/assets/logo-face-redondo.png" alt="Facebook" > FACEBOOK</a>
+                <a href="https://www.instagram.com/lauralacos_/" target="_blank"><img src="{$GET_TEMA}/assets/logo-insta-redondo.png" alt="Instagram">INSTAGRAM</a>
+                <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="{$GET_TEMA}/assets/logo-whats-redondo.png" alt="WhatsApp"> WHATSAPP - (54) 99709 1864</a>
               
             </div>
             

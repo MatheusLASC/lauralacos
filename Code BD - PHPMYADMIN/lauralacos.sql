@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Nov-2020 às 04:10
+-- Tempo de geração: 13-Nov-2020 às 16:33
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.9
 
@@ -82,8 +82,22 @@ CREATE TABLE `tb_pedidos` (
   `ped_pagforma` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `ped_pagtipo` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `ped_pagcod` varchar(220) COLLATE utf8_unicode_ci NOT NULL,
-  `ped_fretevalor` double(9,2) NOT NULL,
-  `ped_fretetipo` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+  `ped_fretevalor` double(9,2) DEFAULT 0.00,
+  `ped_fretetipo` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_pedidositens`
+--
+
+CREATE TABLE `tb_pedidositens` (
+  `item_id` int(11) NOT NULL,
+  `item_produto` int(11) NOT NULL,
+  `item_valor` double(9,2) NOT NULL,
+  `item_qtd` int(6) NOT NULL,
+  `item_pedcod` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -101,6 +115,7 @@ CREATE TABLE `tb_produtos` (
   `pro_img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pro_slug` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `pro_estoque` int(11) NOT NULL,
+  `pro_ref` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `pro_comprimento` double(9,2) NOT NULL,
   `pro_apliques` int(11) NOT NULL,
   `pro_cores` int(11) NOT NULL,
@@ -113,9 +128,9 @@ CREATE TABLE `tb_produtos` (
 -- Extraindo dados da tabela `tb_produtos`
 --
 
-INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_frete_free`) VALUES
-(1, 1, 'Laço Double Cor', 'Laços com cores diferentes', 10.90, 'laco1.jpg', 'laco-flor', 2, 2.00, 1, 1, 1.50, '1', 'Não'),
-(2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, 2.00, 1, 2, 1.50, '1', 'Não');
+INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_ref`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_frete_free`) VALUES
+(1, 1, 'Laço Double Cor', 'Laços com cores diferentes', 10.90, 'laco1.jpg', 'laco-flor', 2, '01111111', 2.00, 1, 1, 1.50, '1', 'Não'),
+(2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, '01222222', 2.00, 1, 2, 1.50, '1', 'Não');
 
 --
 -- Índices para tabelas despejadas
@@ -138,6 +153,12 @@ ALTER TABLE `tb_clientes`
 --
 ALTER TABLE `tb_pedidos`
   ADD PRIMARY KEY (`ped_id`);
+
+--
+-- Índices para tabela `tb_pedidositens`
+--
+ALTER TABLE `tb_pedidositens`
+  ADD PRIMARY KEY (`item_id`);
 
 --
 -- Índices para tabela `tb_produtos`
@@ -166,6 +187,12 @@ ALTER TABLE `tb_clientes`
 --
 ALTER TABLE `tb_pedidos`
   MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `tb_pedidositens`
+--
+ALTER TABLE `tb_pedidositens`
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `tb_produtos`

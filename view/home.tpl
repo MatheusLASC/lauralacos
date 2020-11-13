@@ -10,7 +10,7 @@
             </p>
         </div>
          
-        <a href="#">
+        <a href="{$PAG_SOBRE}">
             
             <img src="view/assets/botao.svg" alt="Ir para QUEM SOMOS">
         </a>

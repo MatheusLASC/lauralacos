@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-13 04:23:24
+/* Smarty version 3.1.36, created on 2020-11-13 15:25:30
   from 'C:\xampp\htdocs\lauralacos\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fadfc2c781874_55976638',
+  'unifunc' => 'content_5fae975a818550_73992129',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd331aff8f062a8d55c3e5ac09ba8e89443317b88' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\produtos_info.tpl',
-      1 => 1605237803,
+      1 => 1605277482,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fadfc2c781874_55976638 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fae975a818550_73992129 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;

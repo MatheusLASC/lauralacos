@@ -40,6 +40,16 @@ Class Rotas
             return self::get_SiteHOME() .'/carrinho';
         }
 
+        static function pag_PerguntasFrequentes()
+        {
+            return self::get_SiteHOME() .'/faq';
+        }
+
+        static function pag_MetodosPagamentos()
+        {
+            return self::get_SiteHOME() .'/pag';
+        }
+        
         static function get_ImagePasta(){
             return 'media/images/';
         }
@@ -54,6 +64,12 @@ Class Rotas
     
             return $imagem;
         }
+
+        	//MÉTODO PARA REDIRECIONAR
+	static function Redirecionar($tempo, $pagina){
+		$url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">';
+		echo $url;
+	}
 
         static function get_Pagina(){
             if(isset($_GET['pag'])){
