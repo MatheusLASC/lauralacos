@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-13 02:20:14
+/* Smarty version 3.1.36, created on 2020-11-13 04:19:12
   from 'C:\xampp\htdocs\lauralacos\view\loja.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5faddf4e8ef679_95384500',
+  'unifunc' => 'content_5fadfb300a6419_23525120',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6299d3f7703a8e3cc3f647409f011bbcf352656c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\loja.tpl',
-      1 => 1605230276,
+      1 => 1605237549,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5faddf4e8ef679_95384500 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fadfb300a6419_23525120 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="loja"> 
     <main>
         <div class="lista-categorias">
@@ -61,7 +61,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 /<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_slug'];?>
 ">
 
-                        <img class="foto-produto" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+                        <img class="thumbnail" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
 " width="200" height="200" alt="" > 
 
                         <div class="caption">
@@ -77,7 +77,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                         ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
                         Pelo jeito não se carrega 2 vezes a mesma imagem--> 
 
-                        <!--  src="view/assets/carrinho.svg"-->      
+                          
                         <img class="carrinho" alt="Adicionar ao carrinho">       
                         </div>     
                     </a>

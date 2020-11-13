@@ -20,7 +20,7 @@
             </a>    
                     <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
 
-                        <img class="foto-produto" src="{$P.pro_img}" width="200" height="200" alt="" > 
+                        <img class="thumbnail" src="{$P.pro_img}" width="200" height="200" alt="" > 
 
                         <div class="caption">
 
@@ -33,7 +33,7 @@
                         ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
                         Pelo jeito não se carrega 2 vezes a mesma imagem--> 
 
-                        <!--  src="view/assets/carrinho.svg"-->      
+                        {* <img class="carrinho"  src="view/assets/carrinho.svg">  *}  
                         <img class="carrinho" alt="Adicionar ao carrinho">       
                         </div>     
                     </a>

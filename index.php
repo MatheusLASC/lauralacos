@@ -7,6 +7,10 @@ require './lib/autoload.php';
 $smarty = new Template();
 /* Rotas :: get_pagina(); */
 
+/* <---------------------REDIRECIONAMENTO PARA HOME----------------->
+header('Location: https://www.facebook.com/', true, 301);
+  exit();
+ */
 //valores para o Template
 /* $smarty->assign('NOME', 'MATHEUS'); */
 $smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
