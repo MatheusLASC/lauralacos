@@ -39,14 +39,19 @@ Class Rotas
         static function pag_Carrinho() {
             return self::get_SiteHOME() .'/carrinho';
         }
+
         static function get_ImagePasta(){
             return 'media/images/';
         }
+    
         static function get_ImageURL(){
             return self::get_SiteHOME() .'/' .self::get_ImagePasta();
+    
         }
+    
         static function ImageLink($img, $largura, $altura){
-            $imagem = self::get_ImageURL() ."thumb.php?src={$img},&w={$largura}&h={$altura}&zc=1";
+            $imagem = self::get_ImageURL() ."thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
+    
             return $imagem;
         }
 

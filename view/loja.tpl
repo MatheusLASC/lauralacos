@@ -31,8 +31,10 @@
                         <!--  Ao fazer o filtro e mostrar o produto pela segunda vez, a imagem do carrinho acaba não aparecendo 
                         Acredito que o carrinho deveria estar somente na PaginasInfo
                         ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
-                        Pelo jeito não se carrega 2 vezes a mesma imagem-->        
-                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">       
+                        Pelo jeito não se carrega 2 vezes a mesma imagem--> 
+
+                        <!--  src="view/assets/carrinho.svg"-->      
+                        <img class="carrinho" alt="Adicionar ao carrinho">       
                         </div>     
                     </a>
                 </div>

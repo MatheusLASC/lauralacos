@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-12 02:54:41
+/* Smarty version 3.1.36, created on 2020-11-13 01:31:30
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fac95e1ddc2b1_45627612',
+  'unifunc' => 'content_5fadd3e2504299_22319668',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605146077,
+      1 => 1605220926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fac95e1ddc2b1_45627612 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fadd3e2504299_22319668 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -54,8 +54,9 @@ function content_5fac95e1ddc2b1_45627612 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/responsive.css">
   <!-- Tentativa falha de chamar o arquivo .js -->
-    <?php echo '<script'; ?>
- src="./contatos/contato.js" defer><?php echo '</script'; ?>
+     <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/carrinhos/carrinho.js" type="text/javascript"><?php echo '</script'; ?>
 >
 
 </head>

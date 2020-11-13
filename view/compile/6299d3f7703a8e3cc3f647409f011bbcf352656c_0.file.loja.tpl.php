@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-11 04:08:00
+/* Smarty version 3.1.36, created on 2020-11-13 02:20:14
   from 'C:\xampp\htdocs\lauralacos\view\loja.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fab5590571de5_93528112',
+  'unifunc' => 'content_5faddf4e8ef679_95384500',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6299d3f7703a8e3cc3f647409f011bbcf352656c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\loja.tpl',
-      1 => 1604966642,
+      1 => 1605230276,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fab5590571de5_93528112 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5faddf4e8ef679_95384500 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="loja"> 
     <main>
         <div class="lista-categorias">
@@ -75,8 +75,10 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                         <!--  Ao fazer o filtro e mostrar o produto pela segunda vez, a imagem do carrinho acaba não aparecendo 
                         Acredito que o carrinho deveria estar somente na PaginasInfo
                         ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
-                        Pelo jeito não se carrega 2 vezes a mesma imagem-->        
-                        <img class="carrinho" src="view/assets/carrinho.svg" alt="Adicionar ao carrinho">       
+                        Pelo jeito não se carrega 2 vezes a mesma imagem--> 
+
+                        <!--  src="view/assets/carrinho.svg"-->      
+                        <img class="carrinho" alt="Adicionar ao carrinho">       
                         </div>     
                     </a>
                 </div>
