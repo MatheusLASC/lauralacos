@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-13 23:56:30
+/* Smarty version 3.1.36, created on 2020-11-14 22:58:49
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5faf0f1e0be3a9_71305944',
+  'unifunc' => 'content_5fb05319cd9695_05304354',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605308130,
+      1 => 1605391127,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5faf0f1e0be3a9_71305944 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb05319cd9695_05304354 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,8 +31,7 @@ function content_5faf0f1e0be3a9_71305944 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="icon" href="view/assets/laco-preto.svg">
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-            <!-- Fonte 'LAÇOS' errada, trocar futuramente -->
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
@@ -47,6 +46,8 @@ function content_5faf0f1e0be3a9_71305944 (Smarty_Internal_Template $_smarty_tpl)
 /contatos/contato.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /carrinhos/carrinho.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/styles/login-cadastro.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/rodape.css">
 
@@ -135,11 +136,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 ">CONTATO</a>
                     <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
 ">CARRINHO</a>
-                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_FAQ']->value;?>
-">PERGUNTAS FREQUENTES</a>
-                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PAG']->value;?>
-">MÉTODOS DE PAGAMENTO</a>
-                </nav>
+                                    </nav>
 
             </div>  
         </div>

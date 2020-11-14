@@ -1,0 +1,134 @@
+.login {
+    margin: 50px 100px;
+}
+
+.login .campos {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+}
+
+.login .campos input {
+    border-color: var(--color-rosa);
+    border-radius: 6px;
+    border-style: dotted;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.login button {
+    background-color: var(--color-vinho);
+    color: var(--color-rosa);
+    line-height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    border-width: 0;
+    border-radius: 15px;
+}
+
+.login button:hover {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.login .esqueceu {
+    padding: 10px 20%;
+    font-size: 16px;
+    color: #666666;
+
+    
+}
+
+.login .esqueceu a {   
+    font-weight: bold;
+    color: var(--color-rosa);
+}
+
+/* 
+
+
+
+
+PÁGINA CADASTRO 
+
+
+
+
+*/
+
+.cadastro {
+    margin: 50px 100px;
+}
+
+.cadastro fieldset {
+    border: 0;
+}
+
+.cadastro body, input, select, textarea, button {
+    font-size: 16px;
+}
+
+.cadastro .grupo:before, .cadastro .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.cadastro .grupo:after {
+    clear: both;
+}
+
+.cadastro .campo {
+    margin-bottom: 1em;
+}
+
+.cadastro .campo label {
+    margin-bottom: 0.2em;
+    display: block;
+    font-size: 20px;
+}
+
+.cadastro fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.cadastro .campo input[type="text"],
+.cadastro .campo input[type="email"],
+.cadastro .campo input[type="url"],
+.cadastro .campo input[type="tel"],
+.cadastro .campo select {
+    padding: 0.2em;
+    border: 2px dotted var(--color-rosa);
+    border-radius: 6px;
+    display: block;
+}
+
+
+.cadastro .campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #f0f0f0;
+}
+
+
+.cadastro .botao {
+    font-size: 1.5em;
+    background: var(--color-rosa);
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    color: var(--color-vinho);
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.cadastro .botao:hover {
+    background: var(--color-vinho);
+    color: var(--color-rosa);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.cadastro .botao, select, label.checkbox {
+    cursor: pointer;
+}

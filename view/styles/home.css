@@ -1,13 +1,64 @@
-.loja {
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 450px;
+    margin: 0 0;
+    width: auto; 
+    padding: 25px;
+    color: var(--color-texto);
+}
+
+.quem-somos img {
+    vertical-align: middle;
+    max-width: 150px;
+}
+
+.quem-somos div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+
+.home .quem-somos div p{
+    width: auto;
+    margin: 20px 20%;
+}
+
+.quem-somos a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.quem-somos a img {
+    max-height: 50px;
+    cursor: pointer;
+}
+
+.quem-somos a img:hover{
+    opacity: 50%;  
+}
+
+.quem-somos p{
+    font-size: 18px;
+}
+
+.lojaX {
     background-color: var(--color-cinza);
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 100px;
 }
 
-.loja h1{
+.lojaX h1{
     font-family: var(--font-laura);
     display: flex;
     justify-content: space-around;
@@ -17,16 +68,16 @@
     
 }
 
-.loja .home-cards-loja {
+.lojaX .home-cards-loja {
     margin: 0 auto;
 }
 
-.loja div img {
+.lojaX div img {
     max-width: 40rem;
     padding: 0 30px;
 }
 
-.loja a {
+.lojaX a {
     color: var(--color-vinho);
     background-color: var(--color-rosa);
     border-radius: 80px;
@@ -34,7 +85,7 @@
     font-weight: bold;
     width: 100%;
     max-width: 200px;
-    font-size: 25px;
+    font-size: 2rem;
     height: 35px;
     display: flex;
     align-items: center;
@@ -46,7 +97,7 @@
     cursor: pointer;
 }
 
-.loja a:hover{
+.lojaX a:hover{
     background-color: var(--color-vinho);
     color: var(--color-rosa);
 }

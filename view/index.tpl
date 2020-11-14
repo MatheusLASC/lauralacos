@@ -8,8 +8,7 @@
     <link rel="icon" href="view/assets/laco-preto.svg">
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-            <!-- Fonte 'LAÇOS' errada, trocar futuramente -->
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{$GET_TEMA}/styles/main.css">
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="{$GET_TEMA}/styles/loja.css">
     <link rel="stylesheet" href="{$GET_TEMA}/contatos/contato.css">
     <link rel="stylesheet" href="{$GET_TEMA}/carrinhos/carrinho.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/login-cadastro.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/rodape.css">
 
     
@@ -81,8 +81,8 @@
                 <nav>
                     <a href="{$PAG_CONTATO}">CONTATO</a>
                     <a href="{$PAG_CARRINHO}">CARRINHO</a>
-                    <a href="{$PAG_FAQ}">PERGUNTAS FREQUENTES</a>
-                    <a href="{$PAG_PAG}">MÉTODOS DE PAGAMENTO</a>
+                    {* <a href="{$PAG_FAQ}">PERGUNTAS FREQUENTES</a>
+                    <a href="{$PAG_PAG}">MÉTODOS DE PAGAMENTO</a> *}
                 </nav>
 
             </div>  

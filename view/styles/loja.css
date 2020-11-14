@@ -41,21 +41,44 @@
     background-color: var(--color-cinza);
     border-radius: 10px;
     padding: 30px;
-    margin: 25px auto;
+    margin: 25px 15px;
     display: flex;
     font-size: 20px;
+    
+    width: 260px;
 }
+
+/* #loja main .cards + .cards {
+    margin: auto;
+} */
 
 #loja .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #loja main .carrinho {
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    margin: auto;
     max-width: 50px;
     max-height: 35px;
 }
 
 #loja main .cards div {
     color: black;
+}
+
+#loja main .cards h2{
+    font-size: 22px;
+}
+
+#loja main .cards h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#loja main .grid {
+    width: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
