@@ -40,16 +40,39 @@ Class Rotas
             return self::get_SiteHOME() .'/carrinho';
         }
 
-        static function pag_PerguntasFrequentes()
-        {
-            return self::get_SiteHOME() .'/faq';
+        static function pag_MinhaConta(){
+            return  self::get_SiteHOME(). '/minhaconta';
         }
 
-        static function pag_MetodosPagamentos()
-        {
-            return self::get_SiteHOME() .'/pag';
+        static function pag_Logoff(){
+            return  self::get_SiteHOME(). '/logoff';
         }
-        
+
+        static function pag_ClienteLogin(){
+            return  self::get_SiteHOME(). '/login';
+        }
+
+        static function pag_ClienteConta(){
+            return  self::get_SiteHOME(). '/minhaconta';
+        }
+
+        static function pag_ClientePedidos(){
+            return  self::get_SiteHOME(). '/clientes_pedidos';
+        }
+
+        static function pag_ClienteItens(){
+            return  self::get_SiteHOME(). '/clientes_itens';
+        }
+
+        static function pag_ClienteDados(){
+            return  self::get_SiteHOME(). '/clientes_dados';
+        }
+
+
+        static function pag_ClienteSenha(){
+            return  self::get_SiteHOME(). '/clientes_senha';
+        }    
+
         static function get_ImagePasta(){
             return 'media/images/';
         }

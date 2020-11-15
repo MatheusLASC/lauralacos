@@ -1,1 +1,0 @@
-  <h2> Tela do Métodos de Pagamentos </h2>

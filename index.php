@@ -34,8 +34,6 @@ $smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
 $smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
 $smarty->assign('PAG_HOME', Rotas::pag_Home());
-$smarty->assign('PAG_FAQ', Rotas::pag_PerguntasFrequentes());
-$smarty->assign('PAG_PAG', Rotas::pag_MetodosPagamentos());
 
 /* echo Rotas :: pag_Carrinho() .'<br>'; */
 

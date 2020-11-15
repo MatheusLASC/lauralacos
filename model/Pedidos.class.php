@@ -37,6 +37,20 @@ Class Pedidos extends Conexao{
    
     }
 
+    function GetPedidosCliente($cliente= null)
+    {
+        $query = "SELECT * FROM {$this->prefix}pedidos p INNER JOIN {$this->prefix}clientes c";
+        $query .= " ON p.ped_cliente = c.cli_id";
+        if($cliente != null)
+        {
+            $cli = (int)$cliente;
+            $query .= " WHERE p.ped_cliente = {$cli}";
+        }
+
+        $this->ExecuteSQL($query);
+        $this->GetLista();
+    }
+
     function ItensGravar ($codpedido)
     {
         $carrinho = new Carrinho();
@@ -55,6 +69,35 @@ Class Pedidos extends Conexao{
             $this->ExecuteSQL($query,$params); 
         }  
           
+    }
+
+    private function GetLista(){
+        
+        $i = 1;
+        while ($lista = $this->ListarDados()):
+            
+        $this->itens[$i] = array(
+                'ped_id'    => $lista['ped_id'],
+                'ped_data'  => Sistema::Fdata($lista['ped_data']),
+                'ped_data_us'  => $lista['ped_data'],
+                'ped_hora'   => $lista['ped_hora'],
+                'ped_cliente' => $lista['ped_cliente'],
+                'ped_cod'   => $lista['ped_cod'],
+                'ped_ref'     => $lista['ped_ref'],
+                'ped_pagstatus' => $lista['ped_pagstatus'],
+                'ped_pagforma'   => $lista['ped_pagforma'],
+                'ped_pagtipo'    => $lista['ped_pagtipo'],
+                'ped_pagcod'   => $lista['ped_pagcod'],
+                'ped_fretevalor' => $lista['ped_fretevalor'],
+                'ped_fretetipo'  => $lista['ped_fretetipo'],
+                'cli_nome'  => $lista['cli_nome'],
+            );
+          
+            $i++;
+        
+        endwhile;
+        
+        
     }
 
     function LimparSessao(){
