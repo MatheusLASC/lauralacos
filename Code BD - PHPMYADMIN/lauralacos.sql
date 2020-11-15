@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Nov-2020 às 16:33
+-- Tempo de geração: 15-Nov-2020 às 22:38
 -- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.9
+-- versão do PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -130,7 +130,9 @@ CREATE TABLE `tb_produtos` (
 
 INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_ref`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_frete_free`) VALUES
 (1, 1, 'Laço Double Cor', 'Laços com cores diferentes', 10.90, 'laco1.jpg', 'laco-flor', 2, '01111111', 2.00, 1, 1, 1.50, '1', 'Não'),
-(2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, '01222222', 2.00, 1, 2, 1.50, '1', 'Não');
+(2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, '01222222', 2.00, 1, 2, 1.50, '1', 'Não'),
+(3, 1, 'LAÇO AMARELO', 'LAÇO AMARELO COMPRIDO', 12.56, 'laco3.jpg', 'as', 123, 'asd', 12.60, 123, 132, 123.10, 'a', 'Não'),
+(4, 2, 'laço vermelho', 'laço vermelho curto', 45.50, 'laco4.jpg', 'asd', 123, 'asd', 123.10, 1432, 132, 132.10, 'a', 'Não');
 
 --
 -- Índices para tabelas despejadas
@@ -198,7 +200,7 @@ ALTER TABLE `tb_pedidositens`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `pro_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pro_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-14 20:08:47
+/* Smarty version 3.1.36, created on 2020-11-15 21:36:02
   from 'C:\xampp\htdocs\lauralacos\view\loja.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb02b3fa7cc96_70619917',
+  'unifunc' => 'content_5fb19132eb5d12_53342443',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6299d3f7703a8e3cc3f647409f011bbcf352656c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\loja.tpl',
-      1 => 1605380926,
+      1 => 1605472552,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb02b3fa7cc96_70619917 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb19132eb5d12_53342443 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="loja"> 
     <main>
         <div class="lista-categorias">
@@ -85,6 +85,15 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
     </main>
+        </section>
+    
+    
+     <!--  paginação inferior   -->  
+    <section id="pagincao" class="row">
+    <center>
+    <?php echo $_smarty_tpl->tpl_vars['PAGINAS']->value;?>
 
+    </center>
+    </section>
 </div><?php }
 }

@@ -30,6 +30,7 @@ $smarty->assign('CATEGORIAS', $categorias->GetItens());
 $smarty->assign('PRO', $produtos->GetItens());
 $smarty->assign('PRO_INFO', Rotas::pag_ProdutosInfo());
 $smarty->assign('PRO_TOTAL', $produtos->TotalDados());
+$smarty->assign('PAGINAS', $produtos->ShowPaginacao());
 
 //var_dump($produtos->GetProdutos()); -- o null estava aqui pois ele estava acessando a getprodutos
 

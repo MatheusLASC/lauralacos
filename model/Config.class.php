@@ -15,7 +15,8 @@ Class Config{
     BD_PREFIX = "tb_",
     //alterar conforme a necessidade por página
     BD_LIMIT_PAG = 3;
-
+  /*   BD_LIMIT_PAG = 6; */
+  
     //PHP MAILLER
     // devo alterar depois
     const EMAIL_HOST = "smtp.gmail.com";

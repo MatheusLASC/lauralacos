@@ -22,7 +22,6 @@ class Paginacao extends Conexao{
 		//TESTAR NA PRÁTICA
 		$this->inicio = ($p * $this->limite) - $this->limite;
 
-
 		//Quantidade de Links da Paginação - Mostra 1,2,3,4
 		$tolerancia = 4;
 		$mostrar = $p + $tolerancia;
