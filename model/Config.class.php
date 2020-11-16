@@ -16,13 +16,15 @@ Class Config{
     //alterar conforme a necessidade por página
     BD_LIMIT_PAG = 3;
   /*   BD_LIMIT_PAG = 6; */
+  //alter depois
+  const SITE_CEP = '18114070';
   
     //PHP MAILLER
     // devo alterar depois
     const EMAIL_HOST = "smtp.gmail.com";
     const EMAIL_USER = "matheuslima.tipi@gmail.com";
     const EMAIL_NOME = "Contato Laura Laços";
-    const EMAIL_SENHA = "lauralacos";
+    const EMAIL_SENHA = "seagull2018";
     const EMAIL_PORTA= 587;
     const EMAIL_SMTPAUTH= true;
     const EMAIL_SMTPSECURE= "tls";

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Nov-2020 às 22:38
+-- Tempo de geração: 16-Nov-2020 às 01:48
 -- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.11
+-- versão do PHP: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -131,8 +131,8 @@ CREATE TABLE `tb_produtos` (
 INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_ref`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_frete_free`) VALUES
 (1, 1, 'Laço Double Cor', 'Laços com cores diferentes', 10.90, 'laco1.jpg', 'laco-flor', 2, '01111111', 2.00, 1, 1, 1.50, '1', 'Não'),
 (2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, '01222222', 2.00, 1, 2, 1.50, '1', 'Não'),
-(3, 1, 'LAÇO AMARELO', 'LAÇO AMARELO COMPRIDO', 12.56, 'laco3.jpg', 'as', 123, 'asd', 12.60, 123, 132, 123.10, 'a', 'Não'),
-(4, 2, 'laço vermelho', 'laço vermelho curto', 45.50, 'laco4.jpg', 'asd', 123, 'asd', 123.10, 1432, 132, 132.10, 'a', 'Não');
+(3, 1, 'LAÇO AMARELO', 'LAÇO AMARELO COMPRIDO', 12.56, 'laco3.jpg', 'laco-amarelo', 123, '01333333', 12.60, 123, 132, 123.10, '1', 'Não'),
+(4, 2, 'laço vermelho', 'laço vermelho curto', 45.50, 'laco4.jpg', 'laco-vermelho', 123, '01444444', 123.10, 1432, 132, 132.10, '1', 'Não');
 
 --
 -- Índices para tabelas despejadas

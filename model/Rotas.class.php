@@ -40,6 +40,18 @@ Class Rotas
             return self::get_SiteHOME() .'/carrinho';
         }
 
+        static function pag_CarrinhoAlterar(){
+            return  self::get_SiteHOME(). '/carrinho_alterar';
+        }
+
+        static function pag_PedidoConfirmar(){
+            return  self::get_SiteHOME(). '/pedido_confirmar';
+        }
+
+        static function pag_PedidoFinalizar(){
+            return  self::get_SiteHOME(). '/pedido_finalizar';
+        }
+    
         static function pag_MinhaConta(){
             return  self::get_SiteHOME(). '/minhaconta';
         }
