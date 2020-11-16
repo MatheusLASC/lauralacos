@@ -30,10 +30,18 @@ $smarty->assign('CATEGORIAS', $categorias->GetItens());
 $smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
 $smarty->assign('GET_HOME', Rotas::get_SiteHOME());
 $smarty->assign('PAG_SOBRE', Rotas::pag_Sobre());
+$smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
 $smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
-$smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
+$smarty->assign('PAG_MINHACONTA', Rotas::pag_MinhaConta());
 $smarty->assign('PAG_HOME', Rotas::pag_Home());
+$smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
+$smarty->assign('LOGADO', Login::Logado());
+
+if(Login::Logado()){
+	$smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
+}
+
 
 /* echo Rotas :: pag_Carrinho() .'<br>'; */
 

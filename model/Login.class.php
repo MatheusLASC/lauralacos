@@ -35,7 +35,11 @@ class Login extends Conexao{
         $_SESSION['CLI']['cli_cpf'] =  $lista['cli_cpf'];
         $_SESSION['CLI']['cli_endereco']  =  $lista['cli_endereco'];
         $_SESSION['CLI']['cli_numero'] =  $lista['cli_numero'];
-        $_SESSION['CLI']['cli_complemento'] =  $lista['cli_complemento'];
+
+        if($lista['cli_complemento'] != null)
+        {
+            $_SESSION['CLI']['cli_complemento'] =  $lista['cli_complemento'];
+        }
         $_SESSION['CLI']['cli_bairro'] =  $lista['cli_bairro'];
         $_SESSION['CLI']['cli_cidade']  =  $lista['cli_cidade'];
         $_SESSION['CLI']['cli_uf'] =  $lista['cli_uf'];
@@ -43,13 +47,12 @@ class Login extends Conexao{
         $_SESSION['CLI']['cli_pass']   =  $lista['cli_pass']; 
         $_SESSION['CLI']['cli_datacad']  =  $lista['cli_datacad'];
         $_SESSION['CLI']['cli_horacad']  =  $lista['cli_horacad'];
-         
-
+        
         Rotas::Redirecionar(0, Rotas::pag_CLienteLogin());
     }
     else
     {
-        echo 'Login não efetuado';
+
     }
     
     }
@@ -61,7 +64,7 @@ class Login extends Conexao{
 
     private function setSenha($senha)
     {
-        $this->senha = Sistema::Criptografia($senha);
+        $this->senha = /*Sistema::Criptografia(*/$senha/*)*/;
     }
 
     function getUser()
@@ -75,7 +78,8 @@ class Login extends Conexao{
     }
 
     static function AcessoNegado(){
-		echo '<div class="alert alert-danger"><a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a> Acesso Negado, faça Login</div>';
+        echo '<div class="alert alert-danger"> Acesso Negado, faça o Login</div>';
+        // botão caso queira colocar: <a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a>
     }
     
     static function Logado(){
@@ -84,7 +88,14 @@ class Login extends Conexao{
 		}else{
 			return FALSE;
 		}
-	}
+    }
+    
+    static function Logoff()
+    {
+        unset($_SESSION['CLI']);
+        echo '<h4 class="aler alert-success"> Saindo...</h4>';
+        Rotas::Redirecionar(2,Rotas::pag_Home());
+    }
 
 
     	//funcao para mostrar o menu do cliente

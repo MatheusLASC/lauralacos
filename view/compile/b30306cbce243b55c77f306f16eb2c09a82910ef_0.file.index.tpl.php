@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-14 22:58:49
+/* Smarty version 3.1.36, created on 2020-11-16 21:32:48
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb05319cd9695_05304354',
+  'unifunc' => 'content_5fb2e1f0254640_60985988',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605391127,
+      1 => 1605558583,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb05319cd9695_05304354 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb2e1f0254640_60985988 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -86,6 +86,16 @@ function content_5fb05319cd9695_05304354 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/carrinho.svg" alt="Carrinho">
             </a>
+            <!-- Caso a pessoa esteja já logada, vai para conta dela, senão direciona para o Login -->
+            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+">MINHA CONTA</a>
+            <!-- Aqui abaixo editar o botão, só manter as questões lógicas
+            Pode até ser colocado em outro local da página caso queira -->
+            <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
+            Olá: <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
+ <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGOFF']->value;?>
+" class="btn btn-geral"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+            <?php }?>
         </nav>
     </div>
     

@@ -1,7 +1,9 @@
+{if $LOGADO == true}
+
+{else}
 <section class="login">
 
     <form name="cliente_login" method="post" action="" >
-
         <div class="campos">
     
             <label>E-mail: </label>
@@ -26,4 +28,4 @@
     </form>
       
 </section>
-
+{/if}

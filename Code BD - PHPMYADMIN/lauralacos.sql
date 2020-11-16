@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Nov-2020 às 01:48
+-- Tempo de geração: 16-Nov-2020 às 22:11
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.9
 
@@ -52,10 +52,10 @@ CREATE TABLE `tb_clientes` (
   `cli_nome` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
   `cli_telefone` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
   `cli_email` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
-  `cli_cpf` int(12) NOT NULL,
+  `cli_cpf` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
   `cli_endereco` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `cli_numero` varchar(6) COLLATE utf8_unicode_ci NOT NULL,
-  `cli_complemento` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `cli_complemento` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `cli_bairro` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
   `cli_cidade` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `cli_uf` varchar(2) COLLATE utf8_unicode_ci NOT NULL,
@@ -64,6 +64,14 @@ CREATE TABLE `tb_clientes` (
   `cli_datacad` date NOT NULL,
   `cli_horacad` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `tb_clientes`
+--
+
+INSERT INTO `tb_clientes` (`cli_id`, `cli_nome`, `cli_telefone`, `cli_email`, `cli_cpf`, `cli_endereco`, `cli_numero`, `cli_complemento`, `cli_bairro`, `cli_cidade`, `cli_uf`, `cli_cep`, `cli_pass`, `cli_datacad`, `cli_horacad`) VALUES
+(1, 'Matheus Lima de Almeida', '15998340909', 'matheuslima.tipi@gmail.com', '48487164897', 'Rua Bernardino de Campos', '305', NULL, 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '123', '2020-11-16', '15:30:32'),
+(2, 'Amanda Perrone Degrande', '15998124356', 'amanda.perrone@gmail.com', '1234567891', 'Rua da Facens', '40', 'Bloco A', 'Vila Universitária', 'Sorocaba', 'SP', '18140090', 'amofacens10', '2020-11-16', '16:17:00');
 
 -- --------------------------------------------------------
 
@@ -182,7 +190,7 @@ ALTER TABLE `tb_categorias`
 -- AUTO_INCREMENT de tabela `tb_clientes`
 --
 ALTER TABLE `tb_clientes`
-  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidos`

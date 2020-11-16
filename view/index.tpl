@@ -44,6 +44,13 @@
             <a href="{$PAG_CARRINHO}">
                 <img src="{$GET_TEMA}/assets/carrinho.svg" alt="Carrinho">
             </a>
+            <!-- Caso a pessoa esteja já logada, vai para conta dela, senão direciona para o Login -->
+            <a href="{$PAG_MINHACONTA}">MINHA CONTA</a>
+            <!-- Aqui abaixo editar o botão, só manter as questões lógicas
+            Pode até ser colocado em outro local da página caso queira -->
+            {if $LOGADO == true}
+            Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-geral"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+            {/if}
         </nav>
     </div>
     

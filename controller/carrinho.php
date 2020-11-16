@@ -18,7 +18,7 @@ $smarty->display('carrinho.tpl');
 else
 {
 	echo '<h4 class="alert alert-danger"> Não possui produtos no carrinho! </h4>';
-	Rotas::Redirecionar(3, Rotas::pag_Produtos());
+	Rotas::Redirecionar(2, Rotas::pag_Produtos());
 }
 
 ?>

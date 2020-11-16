@@ -13,7 +13,7 @@
 <section class="row ">
 
 
-   
+   <!--  Manter o alerta -->
     <center>
     <div class="alert alert-success">Pedido Finalizado com Sucesso</div>
     <table class="table table-bordered" style="width: 95%">
