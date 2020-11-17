@@ -4,7 +4,7 @@ if(isset($_SESSION['PROC'])) {
 
 $smarty = new Template();
 $carrinho = new Carrinho();
-$smarty->assign ('PROC', $carrinho->GetCarrinhos()); 
+$smarty->assign('PROC', $carrinho->GetCarrinhos()); 
 $smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
 $smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 $smarty->assign('PAG_CARRINHO_ALTERAR', Rotas::pag_CarrinhoAlterar());

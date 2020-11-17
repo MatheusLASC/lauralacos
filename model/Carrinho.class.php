@@ -11,6 +11,8 @@ class Carrinho
     {
         //peso eu acredito que é uma quantidade fixa, perguntar para a Laura qual o peso de um laço
         $i = 1; $sub = 1.00; $peso = 0;
+
+        
         //o que eu passo na sessão cai no array lista
         // o PROC é igual ao PRO do carrinho que tá no tutorial
         foreach ($_SESSION['PROC'] as $lista)
@@ -54,8 +56,65 @@ class Carrinho
 
 	function GetPeso(){
 		return $this->total_peso;
+    }
+    function CarrinhoADD($id){
+        $produtos = new Produtos();
+        $produtos->GetProdutosID($id);
+        foreach ($produtos->GetItens() as $pro){
+            $ID = $pro['pro_id'];
+            $NOME  = $pro['pro_nome'];
+            $VALOR_US = $pro['pro_valor_us'];
+            $VALOR  = $pro['pro_valor'];
+            /* $PESO  = $proc['proc_peso']; */
+            $QTD   = 1;
+            $IMG   = $pro['pro_img'];
+            $LINK  = Rotas::pag_ProdutosInfo().'/'.$ID.'/'.$pro['pro_slug'];
+            $ACAO  = $_POST['acao'];
+
+        }
+        switch ($ACAO) {
+			case 'add':
+					if(!isset($_SESSION['PROC'][$ID]['ID'])){
+						$_SESSION['PROC'][$ID]['ID'] = $ID;
+						$_SESSION['PROC'][$ID]['NOME']  = $NOME;
+					    $_SESSION['PROC'][$ID]['VALOR'] = $VALOR;
+					    $_SESSION['PROC'][$ID]['VALOR_US'] = $VALOR_US;
+					    /* $_SESSION['PROC'][$ID]['PESO']  = $PESO; */
+					    $_SESSION['PROC'][$ID]['QTD']   = $QTD;
+					    $_SESSION['PROC'][$ID]['IMG']   = $IMG;
+					    $_SESSION['PROC'][$ID]['LINK']  = $LINK;  
+					}else{
+						 $_SESSION['PROC'][$ID]['QTD']   += $QTD;
+					}
+
+					echo '<h4 class="alert alert-success"> Produto Inserido! </h4>';
+
+				break;
+
+			case 'del':
+				$this->CarrinhoDEL($id);
+				echo '<h4 class="alert alert-success"> Produto Removido! </h4>';
+				break;
+
+			case 'limpar':
+				$this->CarrinhoLimpar();
+				echo '<h4 class="alert alert-success"> Produtos Removidos! </h4>';
+				break;
+			
+            
+		}
+    }
+    private function CarrinhoDEL($id){
+		unset($_SESSION['PRO'][$id]);
 	}
+
+	private function CarrinhoLimpar(){
+		unset($_SESSION['PRO']);
+	}
+    
 }
+
+
 
 
 ?>

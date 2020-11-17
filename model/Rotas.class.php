@@ -40,8 +40,8 @@ Class Rotas
             return self::get_SiteHOME() .'/carrinho';
         }
 
-        static function pag_CarrinhoAlterar(){
-            return  self::get_SiteHOME(). '/carrinho_alterar';
+        static function pag_CarrinhoAlterar() {
+            return self::get_SiteHOME() .'/carrinho_alterar';
         }
 
         static function pag_PedidoConfirmar(){

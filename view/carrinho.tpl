@@ -64,18 +64,20 @@ $(document).ready(function(){
                 <td></td> 
                 
             </tr>
-        
+            {foreach from=$PROC item=P}
+                
+            
             <tr>
                 
-                <td> <img src="" alt=""> </td>
-                <td> NOME </td>
-                <td> VALOR </td>
-                <td> QUANTIDADE  </td>
-                <td> SUBTOTAL </td>
+                <td> <img src="{$P.proc_img}" alt="{$P.proc_nome}"> </td>
+                <td> {$P.proc_nome} </td>
+                <td> {$P.proc_valor} </td>
+                <td> {$P.proc_qtd}  </td>
+                <td> {$P.proc_subTotal} </td>
                 <td> 
-                    <form name="carrinho_dell" method="post" action="">
+                    <form name="carrinho_dell" method="post" action="{$PAG_CARRINHO_ALTERAR}">
                     
-                        <input type="hidden" name="pro_id" value="">    
+                        <input type="hidden" name="pro_id" value="{$P.proc_id}">    
                         <input type="hidden" name="acao" value="del">    
                         
                         <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
@@ -83,7 +85,7 @@ $(document).ready(function(){
                 </td>
                 
             </tr>
-            
+            {/foreach}
         </table>
 
     </section><!-- fim da listagem itens -->
@@ -126,12 +128,12 @@ $(document).ready(function(){
                 <div class="col-md-4 text-right">
             
                 </div>
-                <h4> Total : R$ </h4>
+                <h4> Total : R$ {$TOTAL} </h4>
                 
                 <!-- botão de limpar-->
                 <div class="col-md-4">
 
-                    <form name="limpar" method="post" action="">
+                    <form name="limpar" method="post" action="{$PAG_CARRINHO_ALTERAR}">
                         <input type="hidden" name="acao" value="limpar">
                         <input type="hidden" name="pro_id" value="1">
 
