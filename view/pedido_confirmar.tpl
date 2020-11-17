@@ -34,22 +34,22 @@
             <td></td> 
             <td>Produto</td> 
             <td>Valor R$</td> 
-            <td>X</td> 
+            <td>Quantidade</td> 
             <td>Sub Total R$</td> 
             
             
         </tr>
      
         
-       {foreach from=$PRO item=P}
+       {foreach from=$PROC item=P}
         
         <tr>
             
-            <td> <img src="{$P.pro_img}" alt="{$P.pro_nome}"> </td>
-            <td>  {$P.pro_nome} </td>
-            <td>  {$P.pro_valor} </td>
-            <td> {$P.pro_qtd}  </td>
-            <td>  {$P.pro_subTotal} </td>
+            <td> <img src="{$P.proc_img}" alt="{$P.proc_nome}"> </td>
+            <td>  {$P.proc_nome} </td>
+            <td>  {$P.proc_valor} </td>
+            <td>  {$P.proc_qtd}  </td>
+            <td>  R$ {$P.proc_subTotal} </td>
             
             
             
@@ -89,7 +89,7 @@
             <div class="col-md-4 ">
 
                
-                    <form name="pedido_finalizar" id="pedido_finalizar"" method="post" action="{$PAG_FINALIZAR}">
+                    <form name="pedido_finalizar" id="pedido_finalizar" method="post" action="{$PAG_FINALIZAR}">
                      <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-ok"></i> Finalizar Pedido </button>
                  </form>
 

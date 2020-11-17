@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-17 07:41:20
+/* Smarty version 3.1.36, created on 2020-11-17 23:28:26
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb370900ea933_66473376',
+  'unifunc' => 'content_5fb44e8a565381_26692082',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1605595279,
+      1 => 1605652100,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb370900ea933_66473376 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb44e8a565381_26692082 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- JS de validação do frete-->
 <?php echo '<script'; ?>
 >
@@ -64,7 +64,8 @@ $(document).ready(function(){
     <section class="row">
         
         <div>
-            <a href="" class="comprar-mais" title="">Comprar Mais</a>
+            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
+" class="comprar-mais" title="">Comprar Mais</a>
         </div>
                 
     </section>
@@ -79,8 +80,9 @@ $(document).ready(function(){
                 <td></td> 
                 <td>Produto</td> 
                 <td>Valor R$</td> 
-                <td>X</td> 
-                <td>Sub Total R$</td> 
+                <td>Quantidade</td> 
+                <td>Sub Total R$</td>
+                <td>Remover</td> 
                 <td></td> 
                 
             </tr>
@@ -103,8 +105,21 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
  </td>
                 <td> <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_qtd'];?>
   </td>
-                <td> <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_subTotal'];?>
+                <td> R$ <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_subTotal'];?>
  </td>
+                <td> 
+                
+           <!--  Estilizar botão - mander os paremetros do form e do input iguais -->
+                    <form name="carrinho_dell" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO_ALTERAR']->value;?>
+">
+                    
+                        <input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['proc_id'];?>
+">    
+                        <input type="hidden" name="acao" value="del">    
+                        
+                        <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
+                    </form>
+                </td>
                 
             </tr>
             <?php

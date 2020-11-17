@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_SESSION['PRO'])) {
+if(isset($_SESSION['PROC'])) {
 
 
 	if(!isset($_POST['frete_radio'])){
@@ -8,14 +8,13 @@ if(isset($_SESSION['PRO'])) {
 		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
 	}
 
-
 	$smarty = new Template();
 
 	$carrinho = new Carrinho();
 
 
 
-	$smarty->assign('PRO', $carrinho->GetCarrinhos());
+	$smarty->assign('PROC', $carrinho->GetCarrinhos());
 
 	$_SESSION['PED']['frete'] = $_POST['frete_radio'];
 	$_SESSION['PED']['total_com_frete'] = ($_POST['frete_radio']+ $carrinho->GetTotal());

@@ -39,7 +39,7 @@ $(document).ready(function(){
     <section class="row">
         
         <div>
-            <a href="" class="comprar-mais" title="">Comprar Mais</a>
+            <a href="{$PAG_PRODUTOS}" class="comprar-mais" title="">Comprar Mais</a>
         </div>
         {* <div class="col-md-4">
             
@@ -59,8 +59,9 @@ $(document).ready(function(){
                 <td></td> 
                 <td>Produto</td> 
                 <td>Valor R$</td> 
-                <td>X</td> 
-                <td>Sub Total R$</td> 
+                <td>Quantidade</td> 
+                <td>Sub Total R$</td>
+                <td>Remover</td> 
                 <td></td> 
                 
             </tr>
@@ -73,8 +74,10 @@ $(document).ready(function(){
                 <td> {$P.proc_nome} </td>
                 <td> {$P.proc_valor} </td>
                 <td> {$P.proc_qtd}  </td>
-                <td> {$P.proc_subTotal} </td>
+                <td> R$ {$P.proc_subTotal} </td>
                 <td> 
+                
+           <!--  Estilizar botão - mander os paremetros do form e do input iguais -->
                     <form name="carrinho_dell" method="post" action="{$PAG_CARRINHO_ALTERAR}">
                     
                         <input type="hidden" name="pro_id" value="{$P.proc_id}">    

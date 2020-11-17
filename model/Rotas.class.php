@@ -45,11 +45,11 @@ Class Rotas
         }
 
         static function pag_PedidoConfirmar(){
-            return  self::get_SiteHOME(). '/pedido_confirmar';
+            return  self::get_SiteHOME(). '/pedidoconfirmar';
         }
 
         static function pag_PedidoFinalizar(){
-            return  self::get_SiteHOME(). '/pedido_finalizar';
+            return  self::get_SiteHOME(). '/pedidofinalizar';
         }
     
         static function pag_MinhaConta(){

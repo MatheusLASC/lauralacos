@@ -100,16 +100,30 @@ class Carrinho
 				$this->CarrinhoLimpar();
 				echo '<h4 class="alert alert-success"> Produtos Removidos! </h4>';
 				break;
-			
-            
+            default:
+            break;
 		}
     }
     private function CarrinhoDEL($id){
-		unset($_SESSION['PRO'][$id]);
+        
+
+        if($_SESSION['PROC'][$id]['QTD']>=2)
+        {
+            $_SESSION['PROC'][$id]['QTD']-=1;
+        }
+        else
+        {
+            unset($_SESSION['PROC'][$id]);
+        }
+
+        if(count($_SESSION['PROC'])<=0)
+        {
+            unset($_SESSION['PROC']);
+        }
 	}
 
 	private function CarrinhoLimpar(){
-		unset($_SESSION['PRO']);
+		unset($_SESSION['PROC']);
 	}
     
 }
