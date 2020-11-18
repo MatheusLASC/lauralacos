@@ -4,13 +4,15 @@ if(!isset($_SESSION))
     session_start();
 }
 
-
-if(!isset($_SESSION['pedido']))
-{
-  //código único baseado no momento do acesso
-  //com codificação md5
-  $_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
+/*
+if(!isset($_SESSION['PED']['pedido'])){
+	$_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
 }
+
+if(!isset($_SESSION['PED']['ref'])){
+	$_SESSION['ref'] = date('ymdHms');
+}
+*/
 
 require './lib/autoload.php';
 $smarty = new Template();

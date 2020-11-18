@@ -38,12 +38,12 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
             <td style="width: 10%">{$P.ped_ref}</td>
           
             
-            {if $P.ped_pag_status == 'NAO'} 
-             <td style="width: 15%"><span class="label label-danger">{$P.ped_pag_status}</span></td>
-            {elseif $P.ped_pag_status == 'Pago'}
-              <td style="width: 15%"><span class="label label-success">{$P.ped_pag_status}</span></td>
+            {if $P.ped_pagstatus == 'NAO'} 
+             <td style="width: 15%"><span class="label label-danger">{$P.ped_pagstatus}</span></td>
+            {elseif $P.ped_pagstatus == 'Pago'}
+              <td style="width: 15%"><span class="label label-success">{$P.ped_pagstatus}</span></td>
             {else}
-              <td style="width: 15%">{$P.ped_pag_status}</td>
+              <td style="width: 15%">{$P.ped_pagstatus}</td>
             {/if}
              
         <form name="itens" method="post" action="{$PAG_ITENS}">

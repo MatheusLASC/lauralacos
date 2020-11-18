@@ -119,10 +119,8 @@ class Login extends Conexao{
            $smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
            $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
            $smarty->assign('PAG_CLIENTE_PEDIDOS', Rotas::pag_ClientePedidos());
-           /*
            $smarty->assign('PAG_CLIENTE_DADOS', Rotas::pag_ClienteDados());
            $smarty->assign('PAG_CLIENTE_SENHA', Rotas::pag_ClienteSenha());
-           */
 
            $smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
            

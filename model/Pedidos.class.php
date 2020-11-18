@@ -101,7 +101,7 @@ Class Pedidos extends Conexao{
     }
 
     function LimparSessoes(){
-		unset($_SESSION['PRO']);
+		unset($_SESSION['PROC']);
 		unset($_SESSION['PED']['pedido']);
         unset($_SESSION['PED']['ref']);	
 	}

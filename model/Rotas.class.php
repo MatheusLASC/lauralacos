@@ -64,6 +64,14 @@ Class Rotas
             return  self::get_SiteHOME(). '/login';
         }
 
+        static function pag_ClienteCadastro(){
+            return  self::get_SiteHOME(). '/cadastro';
+        }
+
+         static function pag_ClienteRecovery(){
+            return  self::get_SiteHOME(). '/clientes_recovery';
+        }
+
         static function pag_ClienteConta(){
             return  self::get_SiteHOME(). '/minhaconta';
         }

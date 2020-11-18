@@ -1,4 +1,27 @@
-<!-- Parte em que a pessoa finaliza o seu pedido-->
+<?php
+/* Smarty version 3.1.36, created on 2020-11-18 01:01:03
+  from 'C:\xampp\htdocs\lauralacos\view\pedido_finalizar.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_5fb4643fa2e9f0_11966812',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8386e0657fbd4ca1b796afb8299a65f4dbbc8e96' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_finalizar.tpl',
+      1 => 1605657517,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5fb4643fa2e9f0_11966812 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- Parte em que a pessoa finaliza o seu pedido-->
   <h3>Finalizar Pedido</h3>
 <hr>
 <!-- botoes e opções de cima -->
@@ -36,21 +59,32 @@
         </tr>
      
         
-       {foreach from=$PROC item=P}
+       <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PROC']->value, 'P');
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
+?>
         
         <tr>
             
            
-            <td>  {$P.proc_nome} </td>
-            <td>  {$P.proc_valor} </td>
-            <td> {$P.proc_qtd}  </td>
-            <td>  {$P.proc_subTotal} </td>
+            <td>  <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_nome'];?>
+ </td>
+            <td>  <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_valor'];?>
+ </td>
+            <td> <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_qtd'];?>
+  </td>
+            <td>  <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_subTotal'];?>
+ </td>
             
             
             
         </tr>
         
-       {/foreach}
+       <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
     </table>
   
@@ -68,13 +102,16 @@
             
             <div class="col-md-12 text-right text-danger bg-warning" align="right">
             <h4>
-               Total : R$ {$TOTAL}
+               Total : R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+
             </h4>
             <h4>
-               Frete : R$ {$FRETE}
+               Frete : R$ <?php echo $_smarty_tpl->tpl_vars['FRETE']->value;?>
+
             </h4>
             <h4>
-               Total do Pedido : R$ {$TOTAL_FRETE}
+               Total do Pedido : R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL_FRETE']->value;?>
+
             </h4>
             </div>
             
@@ -113,7 +150,8 @@
             Você pode ou gerar um texto ou imagem para exibir no site
             Pode ser replicado em outros locais -->
 
-            <img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> 
+            <img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
+/images/logo-pagseguro.png"  alt=""> 
 
 
                 
@@ -131,4 +169,5 @@
        <br>
        <br>
        <br>
-       <br>
+       <br><?php }
+}

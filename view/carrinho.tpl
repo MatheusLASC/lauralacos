@@ -1,4 +1,5 @@
-<!-- JS de validação do frete-->
+<div class="carrinho">
+
 <script>
 $(document).ready(function(){    
 
@@ -33,7 +34,6 @@ $(document).ready(function(){
 
 </script>
 
-<div class="carrinho">
     <h3>Meu Carrinho</h3>
     <!-- botoes e opções de cima -->
     <section class="row">
@@ -95,35 +95,30 @@ $(document).ready(function(){
     
            <!--  bloco frete Editar Aqui Amanda (mander os names e id iguais)
            Manter tbm o id da session "dadosfrete" -->
-           <section class="row" id="dadosfrete">
+   <section class="row" id="dadosfrete">
 
+       <div class="col-md-4"></div>
+           
+           
+       <div class="col-md-4">
+           
+           <!-- campos para tratar  do  frete -->
+           <input type="hidden" name="peso_frete" id="peso_frete" value="{$PESO}" class="form-control " readonly>
+    
+           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
+          
+           
+           <input type="hidden" name="frete_valor" id="frete_valor" value="0">
+                    
+       </div> 
+           
+           <div class="col-md-4">
+               <!-- botão frete -->
+               <button class="btn btn-warning btn-block" id="buscar_frete" name="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
                
-               <div class="col-md-4"></div>
-                   
-                   
-               <div class="col-md-4">
-                   
-                   <!-- campos para tratar  do  frete -->
-                   <input type="hidden" name="peso_frete" id="peso_frete" value="{$PESO}" class="form-control " readonly>
-                   
-                   <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
-                  
-                   
-                   <input type="hidden" name="frete_valor" id="frete_valor" value="0">
-                   
-                   
-               </div> 
-               
-              
-                   <div class="col-md-4">
-                       <!-- botão frete -->
-                       <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
-                      
-                   </div>          
-                                     
-                                
-          </section>  <!-- fim da seção do frete -->
- 
+           </div>          
+                                               
+  </section>
 
             <!-- botoes de baixo e valor total -->
             <section class="total-limpar" id="total">

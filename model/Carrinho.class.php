@@ -4,7 +4,7 @@ class Carrinho
 {
     //$lacounit- peso para calcular o frete, os valores são todos iguais - colocar o valor do peso aqui
     // o  peso dever ser em kg - ou seja 50g = 0.050 Kg
-    private $total_valor, $total_peso,$lacounit=0.050, $itens = array();
+    private $total_valor, $total_peso,$lacounit=0.05, $itens = array();
 
     //Os erros que aparecem serão corrigidos no próximo tutorial
     function GetCarrinhos($sessao=NULL)

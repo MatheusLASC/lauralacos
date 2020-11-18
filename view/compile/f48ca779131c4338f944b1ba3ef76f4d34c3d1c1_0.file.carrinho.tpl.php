@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-17 23:28:26
+/* Smarty version 3.1.36, created on 2020-11-18 18:06:32
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb44e8a565381_26692082',
+  'unifunc' => 'content_5fb55498b04155_87700991',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1605652100,
+      1 => 1605719042,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb44e8a565381_26692082 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- JS de validação do frete-->
+function content_5fb55498b04155_87700991 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="carrinho">
+
 <?php echo '<script'; ?>
 >
 $(document).ready(function(){    
@@ -58,7 +59,6 @@ $(document).ready(function(){
 <?php echo '</script'; ?>
 >
 
-<div class="carrinho">
     <h3>Meu Carrinho</h3>
     <!-- botoes e opções de cima -->
     <section class="row">
@@ -131,36 +131,31 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     
            <!--  bloco frete Editar Aqui Amanda (mander os names e id iguais)
            Manter tbm o id da session "dadosfrete" -->
-           <section class="row" id="dadosfrete">
+   <section class="row" id="dadosfrete">
 
-               
-               <div class="col-md-4"></div>
-                   
-                   
-               <div class="col-md-4">
-                   
-                   <!-- campos para tratar  do  frete -->
-                   <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
+       <div class="col-md-4"></div>
+           
+           
+       <div class="col-md-4">
+           
+           <!-- campos para tratar  do  frete -->
+           <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
 " class="form-control " readonly>
-                   
-                   <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
-                  
-                   
-                   <input type="hidden" name="frete_valor" id="frete_valor" value="0">
-                   
-                   
-               </div> 
+    
+           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
+          
+           
+           <input type="hidden" name="frete_valor" id="frete_valor" value="0">
+                    
+       </div> 
+           
+           <div class="col-md-4">
+               <!-- botão frete -->
+               <button class="btn btn-warning btn-block" id="buscar_frete" name="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
                
-              
-                   <div class="col-md-4">
-                       <!-- botão frete -->
-                       <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
-                      
-                   </div>          
-                                     
-                                
-          </section>  <!-- fim da seção do frete -->
- 
+           </div>          
+                                               
+  </section>
 
             <!-- botoes de baixo e valor total -->
             <section class="total-limpar" id="total">

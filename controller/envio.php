@@ -7,7 +7,7 @@ $dest = $_GET['txtinputemail'];
 //nome do destinatário
 $nome = $_GET['txtinputnome'];
 //celular
-$cel = $_GET['celular'];
+$cel = $_GET['txtcelular'];
 //remetente
 $to = Config::EMAIL_USER;
 //assunto

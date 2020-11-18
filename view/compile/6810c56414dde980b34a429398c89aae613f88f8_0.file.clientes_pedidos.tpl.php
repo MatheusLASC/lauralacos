@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-17 23:40:45
+/* Smarty version 3.1.36, created on 2020-11-18 01:13:15
   from 'C:\xampp\htdocs\lauralacos\view\clientes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb4516d6dc739_81997188',
+  'unifunc' => 'content_5fb4671b2399e4_08041689',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6810c56414dde980b34a429398c89aae613f88f8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_pedidos.tpl',
-      1 => 1605412287,
+      1 => 1605658385,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb4516d6dc739_81997188 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb4671b2399e4_08041689 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h2> Esta é a Pagina de Clientes </h2>
 <!--  Esta página mostra os pedidos do cliente 
 Deixarei numa pasta chamada referências a imagem da tela
@@ -69,14 +69,14 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 </td>
           
             
-            <?php if ($_smarty_tpl->tpl_vars['P']->value['ped_pag_status'] == 'NAO') {?> 
-             <td style="width: 15%"><span class="label label-danger"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_pag_status'];?>
+            <?php if ($_smarty_tpl->tpl_vars['P']->value['ped_pagstatus'] == 'NAO') {?> 
+             <td style="width: 15%"><span class="label label-danger"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_pagstatus'];?>
 </span></td>
-            <?php } elseif ($_smarty_tpl->tpl_vars['P']->value['ped_pag_status'] == 'Pago') {?>
-              <td style="width: 15%"><span class="label label-success"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_pag_status'];?>
+            <?php } elseif ($_smarty_tpl->tpl_vars['P']->value['ped_pagstatus'] == 'Pago') {?>
+              <td style="width: 15%"><span class="label label-success"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_pagstatus'];?>
 </span></td>
             <?php } else { ?>
-              <td style="width: 15%"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_pag_status'];?>
+              <td style="width: 15%"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_pagstatus'];?>
 </td>
             <?php }?>
              

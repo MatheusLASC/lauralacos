@@ -2,12 +2,12 @@
 
 if(isset($_SESSION['PROC'])) {
 
-
+/*
 	if(!isset($_POST['frete_radio'])){
 		Rotas::Redirecionar(2, Rotas::pag_Carrinho().'#dadosfrete');
 		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
 	}
-
+*/
 	$smarty = new Template();
 
 	$carrinho = new Carrinho();

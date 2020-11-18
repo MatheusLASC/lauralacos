@@ -18,10 +18,10 @@
         <div class="esqueceu">
         
             <span>Não tem cadastro?</span>
-            <a href="">Me Cadastrar</a>
+            <a href="{$PAG_CADASTRO}">Me Cadastrar</a>
             <br>
             <span>Esqueceu a senha?</span>
-            <a href="">Esqueci a Senha</a>
+            <a href="{$PAG_RECOVERY}">Esqueci a Senha</a>
                    
         </div>
 

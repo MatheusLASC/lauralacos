@@ -11,9 +11,9 @@ Dai você monta estrutura conforme você imagina, mantendo o que precisamos
         
         <a href="{$PAG_CLIENTE_PEDIDOS}" class="btn btn-success"><i class="glyphicon glyphicon-barcode"></i> Pedidos</a>
         
-        <a href="" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> Meus Dados </a>
+        <a href="{$PAG_CLIENTE_DADOS}" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> Meus Dados </a>
         <a href="{$PAG_CARRINHO}" class="btn btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a>
-        <a href="" class="btn btn-warning"> Alterar Senha </a>
+        <a href="{$PAG_CLIENTE_SENHA}" class="btn btn-warning"> Alterar Senha </a>
         <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a>
            
         

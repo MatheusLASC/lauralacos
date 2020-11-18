@@ -23,10 +23,10 @@ if(Login::Logado()){
 
 //Verifica se o cliente está logado e manda lá pra login.tpl
 $smarty->assign('LOGADO', Login::Logado());
-/*
-//$smarty->assign('PAG_CADASTRO', Rotas::pag_ClienteCadastro());
-//$smarty->assign('PAG_RECOVERY', Rotas::pag_ClienteRecovery());
-*/
+
+$smarty->assign('PAG_CADASTRO', Rotas::pag_ClienteCadastro());
+$smarty->assign('PAG_RECOVERY', Rotas::pag_ClienteRecovery());
+
 
 
 $smarty->display('login.tpl');

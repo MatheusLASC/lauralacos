@@ -4,14 +4,13 @@ if(!Login::Logado()){
 	Login::AcessoNegado();
 	Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
 }else{
-	if(isset($_SESSION['PRO'])) {
-
-
+	if(isset($_SESSION['PROC'])) {
+/*
 	if(!isset($_SESSION['PED']['frete'])){
 		Rotas::Redirecionar(2, Rotas::pag_Carrinho().'#dadosfrete');
 		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
 	}	
-
+*/
 
 
 	$smarty = new Template();
@@ -29,7 +28,7 @@ if(!Login::Logado()){
 			$_SESSION['PED']['ref'] = $ref_cod_pedido;
 		}
 
-	$smarty->assign('PRO', $carrinho->GetCarrinhos());
+	$smarty->assign('PROC', $carrinho->GetCarrinhos());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
 	$smarty->assign('NOME_CLIENTE', $_SESSION['CLI']['cli_nome']);
 	$smarty->assign('SITE_NOME', Config::SITE_NOME);
