@@ -3,7 +3,7 @@ class Correios{
 	
         public       
   	        $frete = array(), $error,       
-		$servico, $servico2, $cepOrigem, $cepDestino, $peso, $formato = '1',
+		$servico, $servico2, $empresa, $senha,$cepOrigem, $cepDestino, $peso, $formato = '1',
 		$comprimento, $altura, $largura, $diametro, $maoPropria = 'N',
 		$valordeclarado = '0', $avisoRecebimento = 'N',
 		$retorno = 'xml';
@@ -28,11 +28,18 @@ class Correios{
 				$this->cepDestino 	= $destino;
 				
 				//peso em kilogramas
+				//dados da caixa de envio
 				$this->peso 		= $peso;
 				$this->comprimento      = '35';//em cm
 				$this->altura 		= '35';//em cm
 				$this->largura     	= '35';//em cm
-				$this->diametro 	= '90';//em cm
+				$this->diametro 	= '0';//em cm
+				//Pode ser que pare de funcionar a qualquer momento pois é um código fornecido na WEB
+				//Caso as donas da loja tenha o seu código da empresa e a senha podemos usar com segurança
+				//Ou alterar para 1 tipo de serviço de entrega (ou até mesmo 2 caso seja)
+				$this->empresa = '08082650';
+                $this->senha = '564321';
+
             
         }
 
@@ -43,9 +50,11 @@ class Correios{
 			
 			
 			$cURL = curl_init(sprintf(
-				$this->url.'?nCdServico=%s,%s&sCepOrigem=%s&sCepDestino=%s&nVlPeso=%s&nCdFormato=%s&nVlComprimento=%s&nVlAltura=%s&nVlLargura=%s&nVlDiametro=%s&sCdMaoPropria=%s&nVlValorDeclarado=%s&sCdAvisoRecebimento=%s&StrRetorno=%s',
+				$this->url.'?nCdServico=%s,%s&nCdEmpresa=%s&sDsSenha=%s&sCepOrigem=%s&sCepDestino=%s&nVlPeso=%s&nCdFormato=%s&nVlComprimento=%s&nVlAltura=%s&nVlLargura=%s&nVlDiametro=%s&sCdMaoPropria=%s&nVlValorDeclarado=%s&sCdAvisoRecebimento=%s&StrRetorno=%s',
 				$this->servico,
 				$this->servico2,
+				$this->empresa,
+                $this->senha,
 				$this->cepOrigem,
 				$this->cepDestino,
 				$this->peso,
@@ -80,13 +89,15 @@ class Correios{
                     foreach ($xml->cServico as $servico):
                 
 
-						  switch( $servico->Codigo):
-                            case $this->pac   : $this->frete[$i]['tipo']   = 'PAC';
+						  switch ( $servico->Codigo):
+                                                          case $this->pac   : $this->frete[$i]['tipo']   = 'PAC';
 								  break;
-                            case $this->sedex : $this->frete[$i]['tipo']   = 'SEDEX';
+                                                          case $this->sedex : $this->frete[$i]['tipo']   = 'SEDEX';
 								  break;
-							default:
-							echo "Sem opções de Frete";
+
+								  default:
+
+								  break;
 						  endswitch;
                             
                 
@@ -101,7 +112,7 @@ class Correios{
 					  
 					endforeach; 
  
-                                     //var_dump($xml);
+                                    // var_dump($xml);
                 return $xml;
 			
 			endif;

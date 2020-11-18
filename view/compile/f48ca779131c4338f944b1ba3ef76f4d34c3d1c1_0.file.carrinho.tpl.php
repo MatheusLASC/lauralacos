@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-18 18:06:32
+/* Smarty version 3.1.36, created on 2020-11-18 23:43:29
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb55498b04155_87700991',
+  'unifunc' => 'content_5fb5a3913c0cb4_28527395',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1605719042,
+      1 => 1605739238,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb55498b04155_87700991 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb5a3913c0cb4_28527395 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="carrinho">
 
 <?php echo '<script'; ?>
@@ -142,9 +142,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
            <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
 " class="form-control " readonly>
     
-           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
+           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="Digite seu CEP" >
           
-           
            <input type="hidden" name="frete_valor" id="frete_valor" value="0">
                     
        </div> 
@@ -187,7 +186,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         Você pode mudar para onde ficar melhor-->
             <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
 ">
-                <span id="frete"></span>
+            <span id="frete"></span>
             <button class="confirmar" type="submit" >  <i class="glyphicon glyphicon-ok"></i> Confirmar Pedido </button>
             </form>
             

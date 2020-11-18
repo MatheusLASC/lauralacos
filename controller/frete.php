@@ -7,11 +7,10 @@ require_once '../lib/autoload.php';
 
 	// chamando a classe Correios
         $frete = new Correios($destino, $peso);
-	
 	//chamo meu metodo para calcular
 	$calc = $frete->Calcular();
 	
-	//verifica se foi calculado, se sim retorna xml , caso n�o, mostra erros
+	//verifica se foi calculado, se sim retorna xml , caso não, mostra erros
 	if(!$calc):
 	
 		$error = $frete->error();
@@ -113,6 +112,4 @@ require_once '../lib/autoload.php';
     }
   }
 } 
- 
- *  /
- */
+*/

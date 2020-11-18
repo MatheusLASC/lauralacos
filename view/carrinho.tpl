@@ -105,9 +105,8 @@ $(document).ready(function(){
            <!-- campos para tratar  do  frete -->
            <input type="hidden" name="peso_frete" id="peso_frete" value="{$PESO}" class="form-control " readonly>
     
-           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
+           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="Digite seu CEP" >
           
-           
            <input type="hidden" name="frete_valor" id="frete_valor" value="0">
                     
        </div> 
@@ -147,7 +146,7 @@ $(document).ready(function(){
              <!--Aqui abaixo no span frete exibe o valor calculado do frete baseado no JS
                         Você pode mudar para onde ficar melhor-->
             <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_CONFIRMAR}">
-                <span id="frete"></span>
+            <span id="frete"></span>
             <button class="confirmar" type="submit" >  <i class="glyphicon glyphicon-ok"></i> Confirmar Pedido </button>
             </form>
             

@@ -5,12 +5,12 @@ if(!Login::Logado()){
 	Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
 }else{
 	if(isset($_SESSION['PROC'])) {
-/*
+
 	if(!isset($_SESSION['PED']['frete'])){
 		Rotas::Redirecionar(2, Rotas::pag_Carrinho().'#dadosfrete');
 		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
 	}	
-*/
+
 
 
 	$smarty = new Template();
@@ -42,6 +42,7 @@ if(!Login::Logado()){
 
 
 	$pedido = new Pedidos();
+	//por enquanto o cliente fica único no pedido, alterar isso depois
 	$cliente = 1;
 	$cod = $_SESSION['PED']['pedido'];
 	$ref = $_SESSION['PED']['ref'];
