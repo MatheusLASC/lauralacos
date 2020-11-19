@@ -6,7 +6,7 @@ Class Config{
     const SITE_PASTA = "lauralacos";
     const SITE_NOME = "Laura Laços";
     //Alterar e-mail para pessoa que for usar
-    const SITE_EMAIL_ADM = "matheuslima.tipi@gmail.com";
+    const SITE_EMAIL_ADM = "gaivotaxp@gmail.com";
     //BANCO DE DADOS
     const BD_HOST = "localhost",
     BD_USER= "root",
@@ -22,9 +22,9 @@ Class Config{
     //PHP MAILLER
      //Alterar e-mail para pessoa que for usar
     const EMAIL_HOST = "smtp.gmail.com";
-    const EMAIL_USER = "matheuslima.tipi@gmail.com";
-    const EMAIL_NOME = "Contato Laura Laços";
-    const EMAIL_SENHA = "seagull2018";
+    const EMAIL_USER = "gaivotaxp@gmail.com";
+    const EMAIL_NOME = "Pedido - Laura Laços";
+    const EMAIL_SENHA = "gq.gxp2020";
     const EMAIL_PORTA= 587;
     const EMAIL_SMTPAUTH= true;
     const EMAIL_SMTPSECURE= "tls";
