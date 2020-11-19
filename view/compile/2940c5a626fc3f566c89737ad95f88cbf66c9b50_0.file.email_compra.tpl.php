@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-18 01:00:58
+/* Smarty version 3.1.36, created on 2020-11-19 07:51:05
   from 'C:\xampp\htdocs\lauralacos\view\email_compra.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb4643a3149b7_82801045',
+  'unifunc' => 'content_5fb615d9f27447_62586349',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2940c5a626fc3f566c89737ad95f88cbf66c9b50' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\email_compra.tpl',
-      1 => 1605657640,
+      1 => 1605766712,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb4643a3149b7_82801045 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb615d9f27447_62586349 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .tabela {
     border-collapse: collapse;
