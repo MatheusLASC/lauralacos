@@ -6,10 +6,10 @@ require_once '../lib/autoload.php';
         $peso    = $_GET['pesofrete'];
 
 	// chamando a classe Correios
-        $frete = new Correios($destino, $peso);
+     $frete = new Correios($destino, $peso);
 	//chamo meu metodo para calcular
 	$calc = $frete->Calcular();
-	
+  
 	//verifica se foi calculado, se sim retorna xml , caso não, mostra erros
 	if(!$calc):
 	
@@ -43,8 +43,9 @@ require_once '../lib/autoload.php';
 
             echo '</span><br>';
       
-	  endif;
-        
+    endif;
+    
+  
 	
         /*
 
@@ -113,3 +114,5 @@ require_once '../lib/autoload.php';
   }
 } 
 */
+
+?> 

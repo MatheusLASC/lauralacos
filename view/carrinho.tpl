@@ -23,6 +23,7 @@ $(document).ready(function(){
         // carrego o combo com os bairros
        
         $('#frete').load('controller/frete.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE);
+        $('#frete').load('controller/pedidofinalizar.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE);
  
  } // fim do IF digitei o CEP
       

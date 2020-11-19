@@ -116,8 +116,7 @@ class Correios{
                 return $xml;
 			
 			endif;
-}
-		
+}	
 		/*
 		* mostrando erros 
 		*/

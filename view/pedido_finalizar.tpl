@@ -98,21 +98,20 @@
                         
   </section>
 
-
+<!--
    <section class="row">
             <h3 class="text-center"> Formas de pagamento </h3>     
             
             <div class="col-md-4">
               
             </div>
-            <!-- botao de pagamento  -->
+            botao de pagamento  
             <div class="col-md-4">
 
 
-            <!--FORMAS DE PAGAMENTO AQUI
+            FORMAS DE PAGAMENTO AQUI
             Você pode ou gerar um texto ou imagem para exibir no site
-            Pode ser replicado em outros locais -->
-
+            Pode ser replicado em outros locais 
             <img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> 
 
 
@@ -126,6 +125,7 @@
          
             
         </section>
+-->
 
 
        <br>

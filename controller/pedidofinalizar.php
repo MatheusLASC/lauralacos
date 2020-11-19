@@ -1,5 +1,4 @@
 <?php
-
 if(!Login::Logado()){
 	Login::AcessoNegado();
 	Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
@@ -10,8 +9,6 @@ if(!Login::Logado()){
 		Rotas::Redirecionar(2, Rotas::pag_Carrinho().'#dadosfrete');
 		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
 	}	
-
-
 
 	$smarty = new Template();
 
@@ -39,7 +36,7 @@ if(!Login::Logado()){
 
 	$smarty->assign('FRETE', Sistema::MoedaBR($_SESSION['PED']['frete']));
 	$smarty->assign('TOTAL_FRETE', Sistema::MoedaBR($_SESSION['PED']['total_com_frete']));
-
+ 
 
 	$pedido = new Pedidos();
 	//por enquanto o cliente fica único no pedido, alterar isso depois
@@ -47,7 +44,8 @@ if(!Login::Logado()){
 	$cod = $_SESSION['PED']['pedido'];
 	$ref = $_SESSION['PED']['ref'];
 	$frete = $_SESSION['PED']['frete'];
-
+	
+	
 
 
 

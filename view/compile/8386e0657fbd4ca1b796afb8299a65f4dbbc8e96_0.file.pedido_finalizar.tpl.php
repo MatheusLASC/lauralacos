@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-18 01:01:03
+/* Smarty version 3.1.36, created on 2020-11-19 19:13:02
   from 'C:\xampp\htdocs\lauralacos\view\pedido_finalizar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb4643fa2e9f0_11966812',
+  'unifunc' => 'content_5fb6b5ae5c10e9_64219924',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8386e0657fbd4ca1b796afb8299a65f4dbbc8e96' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_finalizar.tpl',
-      1 => 1605657517,
+      1 => 1605809531,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb4643fa2e9f0_11966812 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb6b5ae5c10e9_64219924 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Parte em que a pessoa finaliza o seu pedido-->
   <h3>Finalizar Pedido</h3>
 <hr>
@@ -135,21 +135,20 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         
   </section>
 
-
+<!--
    <section class="row">
             <h3 class="text-center"> Formas de pagamento </h3>     
             
             <div class="col-md-4">
               
             </div>
-            <!-- botao de pagamento  -->
+            botao de pagamento  
             <div class="col-md-4">
 
 
-            <!--FORMAS DE PAGAMENTO AQUI
+            FORMAS DE PAGAMENTO AQUI
             Você pode ou gerar um texto ou imagem para exibir no site
-            Pode ser replicado em outros locais -->
-
+            Pode ser replicado em outros locais 
             <img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
 /images/logo-pagseguro.png"  alt=""> 
 
@@ -164,6 +163,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
          
             
         </section>
+-->
 
 
        <br>

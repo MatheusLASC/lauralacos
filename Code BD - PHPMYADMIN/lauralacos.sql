@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Nov-2020 às 22:11
+-- Tempo de geração: 19-Nov-2020 às 22:55
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.9
 
@@ -71,7 +71,8 @@ CREATE TABLE `tb_clientes` (
 
 INSERT INTO `tb_clientes` (`cli_id`, `cli_nome`, `cli_telefone`, `cli_email`, `cli_cpf`, `cli_endereco`, `cli_numero`, `cli_complemento`, `cli_bairro`, `cli_cidade`, `cli_uf`, `cli_cep`, `cli_pass`, `cli_datacad`, `cli_horacad`) VALUES
 (1, 'Matheus Lima de Almeida', '15998340909', 'matheuslima.tipi@gmail.com', '48487164897', 'Rua Bernardino de Campos', '305', NULL, 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '123', '2020-11-16', '15:30:32'),
-(2, 'Amanda Perrone Degrande', '15998124356', 'amanda.perrone@gmail.com', '1234567891', 'Rua da Facens', '40', 'Bloco A', 'Vila Universitária', 'Sorocaba', 'SP', '18140090', 'amofacens10', '2020-11-16', '16:17:00');
+(2, 'Amanda Perrone Degrande', '15998124356', 'amanda.perrone@gmail.com', '1234567891', 'Rua da Facens', '40', 'Bloco A', 'Vila Universitária', 'Sorocaba', 'SP', '18140090', 'amofacens10', '2020-11-16', '16:17:00'),
+(3, 'Lorraine Paloschi', '15988267473', 'lorraine.paloschi@gmail.com', '48478963420', 'Rua Maluca', '15', NULL, 'Centro', 'Araçoiaba da Serra', 'SP', '18190000', '100', '2020-11-19', '14:49:52');
 
 -- --------------------------------------------------------
 
@@ -190,19 +191,19 @@ ALTER TABLE `tb_categorias`
 -- AUTO_INCREMENT de tabela `tb_clientes`
 --
 ALTER TABLE `tb_clientes`
-  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidos`
 --
 ALTER TABLE `tb_pedidos`
-  MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidositens`
 --
 ALTER TABLE `tb_pedidositens`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de tabela `tb_produtos`
