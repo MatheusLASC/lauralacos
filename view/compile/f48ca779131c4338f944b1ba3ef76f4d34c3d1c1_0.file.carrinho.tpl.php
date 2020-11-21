@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-19 20:19:01
+/* Smarty version 3.1.36, created on 2020-11-20 20:41:49
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb6c52584c424_31316244',
+  'unifunc' => 'content_5fb81bfd22d030_15773006',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1605812801,
+      1 => 1605816261,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb6c52584c424_31316244 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb81bfd22d030_15773006 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="carrinho">
 
 <?php echo '<script'; ?>
@@ -47,6 +47,7 @@ $(document).ready(function(){
         // carrego o combo com os bairros
        
         $('#frete').load('controller/frete.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE);
+        $('#frete').load('controller/pedidofinalizar.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE);
  
  } // fim do IF digitei o CEP
       

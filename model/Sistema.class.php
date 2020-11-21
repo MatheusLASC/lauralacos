@@ -144,7 +144,7 @@ class Sistema {
          echo '<script> function goBack() {
                     window.history.back();
                     } </script>';
-         echo '<button onclick="goBack()" class="btn btn-default">'
+         echo '<button onclick="goBack()" class="botao">'
          . '<i class="glyphicon glyphicon-circle-arrow-left" ></i> Voltar </button> ';
      }
     

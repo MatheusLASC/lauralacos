@@ -52,7 +52,7 @@ Class Config{
   //const EMAIL_SENHA = "gq.gxp2020";
     const EMAIL_SENHA = "facens";
     const EMAIL_PORTA= 587;
-   // const EMAIL_SMTPAUTH= true;
+    const EMAIL_SMTPAUTH= true;
     const EMAIL_SMTPSECURE= "STARTTLS";
     const EMAIL_COPIA= "pa.integra2020@gmail.com";
 }
