@@ -14,7 +14,7 @@ $smarty->assign('PAG_SOBRE', Rotas::pag_Sobre());
 $smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
 $smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
-$smarty->assign('PAG_HOME', Rotas::pag_Home());
+
 
 /* echo Rotas :: pag_Carrinho() .'<br>'; */
 
@@ -38,7 +38,7 @@ $smarty->assign('PRO_INFO', Rotas::pag_ProdutosInfo());
 $smarty->assign('PRO_TOTAL', $produtos->TotalDados());
 // trecho a ser utilizado
 
-$smarty->assign ('HOME', 'Home');
+//$smarty->assign ('HOME', 'Home');
 $smarty->display('home.tpl');
 
 ?>

@@ -17,9 +17,11 @@ Class Rotas
         static function get_SiteTEMA() {
             return self::get_SiteHOME() .'/' .self::$pasta_view;
         }
+        /*
         static function pag_Home() {
             return self::get_SiteHOME() .'/home';
         }
+       */
 
         static function pag_Sobre() {
             return self::get_SiteHOME() .'/sobre';
@@ -114,29 +116,25 @@ Class Rotas
 		echo $url;
 	}
 
-        static function get_Pagina(){
-            if(isset($_GET['pag'])){
-    
-                $pagina = $_GET['pag'];
-    
-                self::$pag = explode('/', $pagina);
-                
-                  //echo '<pre>';
-                 //var_dump(self::$pag);
-                 //echo '</pre>';
-    
-    
-                $pagina = 'controller/' .self::$pag[0] . '.php';
+    static function get_Pagina(){
+		if(isset($_GET['pag'])){
 
-                
-                if(file_exists($pagina)){
-                    include $pagina;
-                }else{
-                include 'erro.php';
-            }
-    
-            }
-        }
+			$pagina = $_GET['pag'];
+
+            self::$pag = explode('/', $pagina);
+            
+			$pagina = 'controller/' .self::$pag[0] . '.php';
+			
+			if(file_exists($pagina)){
+				include $pagina;
+			}else{
+			include 'erro.php';
+		}
+
+		}else{
+			include 'home.php';
+		}
+	}
         
     }
 

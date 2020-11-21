@@ -36,7 +36,7 @@
             <img src="{$GET_TEMA}/assets/logo-branco.png" alt="Logo Laura laços">
         </div>
         <nav class="menu">
-            <a href="{$PAG_HOME}">HOME</a>
+            <a href="{$GET_HOME}">HOME</a>
             <a href="{$PAG_SOBRE}">QUEM SOMOS</a>
             <a href="{$PAG_PRODUTOS}">LOJA</a>
             <a href="{$PAG_CONTATO}">CONTATO</a>

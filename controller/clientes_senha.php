@@ -29,7 +29,7 @@ if(isset($_POST['cli_senha_atual']) && isset($_POST['cli_senha'])){
     Rotas::Redirecionar(0, Rotas::pag_MinhaConta());
 
 }else{
-	$smarty->display('cliente_senha.tpl');
+	$smarty->display('clientes_senha.tpl');
 }
 
 

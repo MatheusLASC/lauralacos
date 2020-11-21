@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-20 19:41:01
+/* Smarty version 3.1.36, created on 2020-11-21 18:45:47
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb80dbd13c4a1_12456735',
+  'unifunc' => 'content_5fb98a8baa1b00_68254796',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605897639,
+      1 => 1605994958,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb80dbd13c4a1_12456735 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb98a8baa1b00_68254796 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -75,7 +75,7 @@ function content_5fb80dbd13c4a1_12456735 (Smarty_Internal_Template $_smarty_tpl)
 /assets/logo-branco.png" alt="Logo Laura laços">
         </div>
         <nav class="menu">
-            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_HOME']->value;?>
+            <a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
 ">HOME</a>
             <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
 ">QUEM SOMOS</a>

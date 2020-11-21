@@ -4,12 +4,30 @@ $smarty = new Template();
 
 Login::MenuCliente();
 
-foreach($_SESSION['CLI'] as $campo => $valor){
-         // conteúdo - echo var_dump($valor);
-         // nome do campo - echo var_dump($campo);
-         //$_SESSION['CLI']['cli_complemento'] - não aparece
-         $smarty->assign(strtoupper($campo), $valor);
-     }
+//Chamando os dados da sessão do cliente
+$smarty->assign('CLI_NOME', $_SESSION['CLI']['cli_nome']);
+$smarty->assign('CLI_TELEFONE', $_SESSION['CLI']['cli_telefone']);
+$smarty->assign('CLI_EMAIL', $_SESSION['CLI']['cli_email']);
+$smarty->assign('CLI_CPF', $_SESSION['CLI']['cli_cpf']);
+$smarty->assign('CLI_CEP', $_SESSION['CLI']['cli_cep']);
+$smarty->assign('CLI_CEP', $_SESSION['CLI']['cli_cep']);
+$smarty->assign('CLI_ENDERECO', $_SESSION['CLI']['cli_endereco']);
+$smarty->assign('CLI_NUMERO', $_SESSION['CLI']['cli_numero']);
+
+//lógica para complementos nulos
+if(isset( $_SESSION['CLI']['cli_complemento']))
+{
+  $smarty->assign('CLI_COMPLEMENTO', $_SESSION['CLI']['cli_complemento']);
+}
+else
+{
+    $smarty->assign('CLI_COMPLEMENTO', '');
+}
+
+$smarty->assign('CLI_BAIRRO', $_SESSION['CLI']['cli_bairro']);
+$smarty->assign('CLI_CIDADE', $_SESSION['CLI']['cli_cidade']);
+$smarty->assign('CLI_UF', $_SESSION['CLI']['cli_uf']);
+
 
      if(isset($_POST['nome']) && 
      isset($_POST['telefone']) &&
@@ -31,14 +49,10 @@ foreach($_SESSION['CLI'] as $campo => $valor){
     $cli_cep = $_POST['cep'];
     $cli_endereco = $_POST['endereco'];
     $cli_numero = $_POST['numero'];
-    if(isset($_POST['complemento']))
-    {
-        $cli_complemento = NULL;
-    }
-    else
-    {
-        $cli_complemento = $_POST['complemento'];
-    }
+    //lógica para atualizar sessão de complementos nulos
+    $cli_complemento = $_POST['complemento'];
+    $_SESSION['CLI']['cli_complemento'] = $_POST['complemento'];
+
     $cli_bairro = $_POST['bairro'];
     $cli_cidade = $_POST['cidade'];
     $cli_uf = $_POST['estado'];

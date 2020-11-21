@@ -23,7 +23,7 @@ if(isset($_POST['nome']) &&
     $cli_numero = $_POST['numero'];
     if(isset($_POST['complemento']))
     {
-        $cli_complemento = NULL;
+        $cli_complemento = '';
     }
     else
     {

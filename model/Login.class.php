@@ -52,7 +52,7 @@ class Login extends Conexao{
     }
     else
     {
-
+        echo '<script> alert("Dados Incorretos"); </script>';
     }
     
     }
@@ -94,7 +94,7 @@ class Login extends Conexao{
     {
         unset($_SESSION['CLI']);
         echo '<h4 class="aler alert-success"> Saindo...</h4>';
-        Rotas::Redirecionar(2,Rotas::pag_Home());
+        Rotas::Redirecionar(2,Rotas::get_SiteHOME());
     }
 
 

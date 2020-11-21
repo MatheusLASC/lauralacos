@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-21 07:00:50
+/* Smarty version 3.1.36, created on 2020-11-21 19:51:24
   from 'C:\xampp\htdocs\lauralacos\view\clientes_dados.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb8ad120d0449_45737033',
+  'unifunc' => 'content_5fb961ac508823_27264537',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1d0f697025853250fb3a0408db566202c3e1ac39' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_dados.tpl',
-      1 => 1605938425,
+      1 => 1605984676,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb8ad120d0449_45737033 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb961ac508823_27264537 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--Importando Script Jquery-->
 	<?php echo '<script'; ?>
  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"><?php echo '</script'; ?>
