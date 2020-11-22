@@ -31,8 +31,8 @@
                     Acredito que o carrinho deveria estar somente na PaginasInfo
                     ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
                     Pelo jeito não se carrega 2 vezes a mesma imagem--> 
-  
-                    <img class="carrinho" alt="Adicionar ao carrinho" src="view/assets/carrinho.svg">       
+                    <p>Ver mais</p>
+                    {* <img class="carrinho" alt="Adicionar ao carrinho" src="view/assets/carrinho.svg"> *}       
                     </div>     
                 </a>
             </li>
@@ -44,8 +44,6 @@
     
      <!--  paginação inferior   -->  
     <section id="pagincao" class="row">
-    <center>
-    {$PAGINAS}
-    </center>
+    <center> {$PAGINAS} </center>
     </section>
 </div>

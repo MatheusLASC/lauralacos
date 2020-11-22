@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-21 19:39:27
+/* Smarty version 3.1.36, created on 2020-11-22 01:37:54
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb9971fe97764_88645374',
+  'unifunc' => 'content_5fb9eb22e9c606_37786597',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1605998365,
+      1 => 1606019873,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb9971fe97764_88645374 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb9eb22e9c606_37786597 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="carrinho">
 
 <?php echo '<script'; ?>
@@ -131,28 +131,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     
            <!--  bloco frete Editar Aqui Amanda (mander os names e id iguais)
            Manter tbm o id da session "dadosfrete" -->
-   <section class="row" id="dadosfrete">
+   <section class=dadosfrete id="dadosfrete">
 
-       <div class="col-md-4"></div>
-           
-           
-       <div class="col-md-4">
+       <div>
            
            <!-- campos para tratar  do  frete -->
            <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
 " class="form-control " readonly>
     
-           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="Digite seu CEP" >
+           <input type="text" name="cep_frete" class="cep" id="cep_frete" value="" placeholder="Digite seu CEP">
           
            <input type="hidden" name="frete_valor" id="frete_valor" value="0">
                     
        </div> 
            
-           <div class="col-md-4">
-               <!-- botão frete -->
-               <button class="btn btn-warning btn-block" id="buscar_frete" name="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
-               
-           </div>          
+        <div>
+            <!-- botão frete -->
+            <button class="frete" id="buscar_frete" name="buscar_frete">Calcular Frete </button>
+        </div>          
                                                
   </section>
 
@@ -187,7 +183,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
 ">
             <span id="frete"></span>
-            <button class="confirmar" type="submit" >  <i class="glyphicon glyphicon-ok"></i> Confirmar Pedido </button>
+            <button class="confirmar" type="submit"> Confirmar Pedido </button>
             </form>
             
             

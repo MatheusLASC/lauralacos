@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-15 21:36:02
+/* Smarty version 3.1.36, created on 2020-11-22 00:08:59
   from 'C:\xampp\htdocs\lauralacos\view\loja.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb19132eb5d12_53342443',
+  'unifunc' => 'content_5fb9d64b7b6b69_72847963',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6299d3f7703a8e3cc3f647409f011bbcf352656c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\loja.tpl',
-      1 => 1605472552,
+      1 => 1606014538,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb19132eb5d12_53342443 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb9d64b7b6b69_72847963 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="loja"> 
     <main>
         <div class="lista-categorias">
@@ -75,8 +75,8 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                     Acredito que o carrinho deveria estar somente na PaginasInfo
                     ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
                     Pelo jeito não se carrega 2 vezes a mesma imagem--> 
-  
-                    <img class="carrinho" alt="Adicionar ao carrinho" src="view/assets/carrinho.svg">       
+                    <p>Ver mais</p>
+                           
                     </div>     
                 </a>
             </li>
@@ -90,10 +90,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     
      <!--  paginação inferior   -->  
     <section id="pagincao" class="row">
-    <center>
-    <?php echo $_smarty_tpl->tpl_vars['PAGINAS']->value;?>
-
-    </center>
+    <center> <?php echo $_smarty_tpl->tpl_vars['PAGINAS']->value;?>
+ </center>
     </section>
 </div><?php }
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{$GET_TEMA}/styles/home.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/sobre.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/loja.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/styles/pedido.css">
     <link rel="stylesheet" href="{$GET_TEMA}/contatos/contato.css">
     <link rel="stylesheet" href="{$GET_TEMA}/carrinhos/carrinho.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/login-cadastro.css">

@@ -26,5 +26,9 @@
 .sobre img {
     padding: 0 35px;
     vertical-align: middle;
-    max-width: 200px;
+    max-width: 300px;
+}
+
+.sobre p {
+    font-size: 25px;
 }

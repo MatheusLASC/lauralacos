@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-14 20:28:14
+/* Smarty version 3.1.36, created on 2020-11-21 23:49:13
   from 'C:\xampp\htdocs\lauralacos\view\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb02fceaf3e72_36748227',
+  'unifunc' => 'content_5fb9d1a9514132_61096079',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '783e250e2ac7e3199b0cc1197c0ddb8eb1326e07' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\home.tpl',
-      1 => 1605382080,
+      1 => 1606013352,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb02fceaf3e72_36748227 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb9d1a9514132_61096079 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="home">
     <div class="quem-somos">
-        <img src="view/assets/quadrado-vazio.svg" alt="Foto Quem Somos">
+        <img src="view/assets/lauraemaria.png" alt="Foto Quem Somos">
         <div>
             <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas sagittis elementum. Nam feugiat purus at feugiat gravida.
-                Etiam id odio eget justo luctus iaculis. Nunc lobortis in justo id aliquet. Mauris metus tortor, auctor id ullamcorper eu, placerat sit amet velit. Donec sed varius turpis. 
+                Criando laços e enfeites personalizados com amor desde 2019.
             </p>
         </div>
          

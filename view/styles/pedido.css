@@ -1,0 +1,51 @@
+.pedido h3 {
+    font-size: 45px;
+    font-family: var(--font-laura);
+    margin: 25px;
+}
+
+.pedido .voltarcarrinho {
+    margin: 25px;
+    color: var(--color-rosa);
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.pedido .tabela-pedido{
+    margin: 25px;
+    width: 800px;
+    font-size: 18px;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.pedido .tabela-pedido .cabecalho {
+    color: var(--color-vinho);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pedido .tabela-pedido td {
+    padding: 10px;
+}
+
+.pedido .total {
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.pedido .total h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.pedido .finalizar {
+    background-color: var(--color-rosa);
+    width: 800px;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: 0;
+}

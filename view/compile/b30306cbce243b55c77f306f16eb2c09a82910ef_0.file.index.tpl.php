@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-21 18:45:47
+/* Smarty version 3.1.36, created on 2020-11-22 01:43:55
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb98a8baa1b00_68254796',
+  'unifunc' => 'content_5fb9ec8bb92736_85143910',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1605994958,
+      1 => 1606020151,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb98a8baa1b00_68254796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb9ec8bb92736_85143910 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -42,6 +42,8 @@ function content_5fb98a8baa1b00_68254796 (Smarty_Internal_Template $_smarty_tpl)
 /styles/sobre.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /styles/loja.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/styles/pedido.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /contatos/contato.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>

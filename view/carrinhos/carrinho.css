@@ -28,15 +28,20 @@
 .carrinho .cabecalho {
     color: var(--color-vinho);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
 }
+
+.carrinho td {
+    padding: 10px;
+}
+
 .carrinho .total-limpar {
     display: flex;
     align-items: center;
 }
 
 .carrinho .total-limpar h4 {
-    font-size: 18px;
+    font-size: 25px;
     margin-right: 20px;
     margin-left: 25px;
 }
@@ -69,4 +74,20 @@
 
 .carrinho .confirmar:hover {
     box-shadow: 0 5px 10px 0 rgba(238, 207, 207, 0.911);
+}
+
+.carrinho .cep {
+    background-color: whitesmoke;
+    border-width: 0.5px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.carrinho .frete {
+    background-color: var(--color-cinza);
+    padding: 5px;
+    margin-left: 25px;
+    font-weight: bold;
+    border-width: 0;
+    margin-bottom: 15px;
 }

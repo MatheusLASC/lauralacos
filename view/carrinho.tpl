@@ -95,27 +95,23 @@ $(document).ready(function(){
     
            <!--  bloco frete Editar Aqui Amanda (mander os names e id iguais)
            Manter tbm o id da session "dadosfrete" -->
-   <section class="row" id="dadosfrete">
+   <section class=dadosfrete id="dadosfrete">
 
-       <div class="col-md-4"></div>
-           
-           
-       <div class="col-md-4">
+       <div>
            
            <!-- campos para tratar  do  frete -->
            <input type="hidden" name="peso_frete" id="peso_frete" value="{$PESO}" class="form-control " readonly>
     
-           <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="Digite seu CEP" >
+           <input type="text" name="cep_frete" class="cep" id="cep_frete" value="" placeholder="Digite seu CEP">
           
            <input type="hidden" name="frete_valor" id="frete_valor" value="0">
                     
        </div> 
            
-           <div class="col-md-4">
-               <!-- botão frete -->
-               <button class="btn btn-warning btn-block" id="buscar_frete" name="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
-               
-           </div>          
+        <div>
+            <!-- botão frete -->
+            <button class="frete" id="buscar_frete" name="buscar_frete">Calcular Frete </button>
+        </div>          
                                                
   </section>
 
@@ -147,7 +143,7 @@ $(document).ready(function(){
                         Você pode mudar para onde ficar melhor-->
             <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_CONFIRMAR}">
             <span id="frete"></span>
-            <button class="confirmar" type="submit" >  <i class="glyphicon glyphicon-ok"></i> Confirmar Pedido </button>
+            <button class="confirmar" type="submit"> Confirmar Pedido </button>
             </form>
             
             

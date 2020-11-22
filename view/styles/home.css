@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 450px;
+    height: 300px;
     margin: 0 0;
     width: auto; 
     padding: 25px;
@@ -12,7 +12,7 @@
 
 .quem-somos img {
     vertical-align: middle;
-    max-width: 150px;
+    max-width: 200px;
 }
 
 .quem-somos div {
@@ -22,12 +22,12 @@
     justify-content: center;
     font-size: 3rem;
     font-weight: lighter;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .home .quem-somos div p{
     width: auto;
-    margin: 20px 20%;
+    margin: 10px;
 }
 
 .quem-somos a {
@@ -46,7 +46,8 @@
 }
 
 .quem-somos p{
-    font-size: 18px;
+    font-size: 24px;
+    font-family: var(--font-laura);
 }
 
 .lojaX {
