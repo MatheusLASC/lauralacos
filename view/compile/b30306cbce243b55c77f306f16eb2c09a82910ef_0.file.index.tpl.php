@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 01:43:55
+/* Smarty version 3.1.36, created on 2020-11-22 11:32:03
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb9ec8bb92736_85143910',
+  'unifunc' => 'content_5fba76636c23a5_20633922',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1606020151,
+      1 => 1606055522,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb9ec8bb92736_85143910 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fba76636c23a5_20633922 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -98,7 +98,7 @@ function content_5fb9ec8bb92736_85143910 (Smarty_Internal_Template $_smarty_tpl)
             <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
             Olá: <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
  <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGOFF']->value;?>
-" class="btn btn-geral"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+" style="font-weight: bold">Sair </a> 
             <?php }?>
         </nav>
     </div>

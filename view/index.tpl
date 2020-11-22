@@ -49,7 +49,7 @@
             <!-- Aqui abaixo editar o botão, só manter as questões lógicas
             Pode até ser colocado em outro local da página caso queira -->
             {if $LOGADO == true}
-            Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-geral"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+            Olá: {$USER} <a href="{$PAG_LOGOFF}" style="font-weight: bold">Sair </a> 
             {/if}
         </nav>
     </div>

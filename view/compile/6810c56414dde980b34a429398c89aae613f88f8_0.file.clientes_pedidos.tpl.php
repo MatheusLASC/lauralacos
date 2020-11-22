@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-21 21:22:40
+/* Smarty version 3.1.36, created on 2020-11-22 11:51:57
   from 'C:\xampp\htdocs\lauralacos\view\clientes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb9af508c5864_11499077',
+  'unifunc' => 'content_5fba7b0dd870c9_88780464',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6810c56414dde980b34a429398c89aae613f88f8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_pedidos.tpl',
-      1 => 1606004557,
+      1 => 1606056716,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb9af508c5864_11499077 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fba7b0dd870c9_88780464 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--  Esta página mostra os pedidos do cliente 
 Deixarei numa pasta chamada referências a imagem da tela
 Dai você monta estrutura conforme você imagina, mantendo o que precisamos
@@ -34,21 +34,18 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
 -->
 
 <br>
-<br>
 
-<section class="row" id="pedidos">
-        <center>
-    <h4 class="text-center">Meus Pedidos</h4>
-    
-
-    <?php if ($_smarty_tpl->tpl_vars['PEDIDOS_TOTAL']->value > 0) {?>
-    <table class="table table-bordered" style="width: 90%">
+<section id="pedidos" style="margin: 25px">
         
-        <tr class="text-danger bg-danger">
+    <h4 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Meus Pedidos</h4>
+    
+    <?php if ($_smarty_tpl->tpl_vars['PEDIDOS_TOTAL']->value > 0) {?>
+    <table style="width: 80%; border-style: dashed; border-width: 1px; padding: 15px">
+        
+        <tr style="color: var(--color-vinho); font-weight: bold; font-size: 20px;">
             <td>Data</td>
             <td>Hora</td>
             <td>Ref</td>
-           
             <td>Status</td>
             <td></td>
         </tr>
@@ -59,7 +56,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 $_smarty_tpl->tpl_vars['P']->do_else = false;
 ?>
-        <tr>
+        <tr style="font-size: 18px;">
             
             <td style="width: 10%"><?php echo $_smarty_tpl->tpl_vars['P']->value['ped_data'];?>
 </td>
@@ -85,7 +82,13 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
             
              <input type="hidden" name="cod_pedido" id="cod_pedido" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['ped_cod'];?>
 ">
-             <td style="width: 10%"><button class="btn btn-default"><i class="glyphicon glyphicon-menu-hamburger"></i> Detalhes</button></td>
+             <td style="width: 10%"><button style="background-color: var(--color-rosa);
+              width: 100px;
+              padding: 8px;
+              font-size: 18px;
+              font-weight: bold;
+              border-radius: 8px;
+              border-width: 0;">Detalhes</button></td>
        
         </form>    
         </tr>
@@ -97,7 +100,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <!-- Mensagem para estilizar da forma que prefirir-->
           Você não possui ainda um pedido, faça agora mesmo a sua compra!
         <?php }?>
-      </center>
+      
     
     
 </section>

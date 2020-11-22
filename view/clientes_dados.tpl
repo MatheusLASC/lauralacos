@@ -1,6 +1,6 @@
 <!--Importando Script Jquery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<h3>Meus Dados</h3>
+<h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
 
 <div class="cadastro">
     <form name="cadcliente" id="cadcliente" method="post" action="">
@@ -115,9 +115,10 @@
 		});
 	</script>
 
-    <label>Digite sua senha atual por segurança<br>(<small>sua senha não será alterada</small>)</label>
+    <label style="font-size: 20px">Digite sua senha atual por segurança<br><small style="font-size: 10px;">(sua senha não será alterada)</small></label>
+    <br>
            <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
-            <button type="submit" name="submit" class="botao">Gravar</button>
+            <button type="submit" name="submit" class="botao" style="font-weight: bold">Gravar</button>
         </fieldset>
     </form>
 </div>

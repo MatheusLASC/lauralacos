@@ -2,21 +2,19 @@
 Deixarei numa pasta chamada referências a imagem da tela
 Dai você monta estrutura conforme você imagina, mantendo o que precisamos
 -->
-<h4 class="text-center text-danger"> Olá <b>{$USER}</b>, seja bem vindo! O que deseja fazer agora?</h4> 
-<section class="row">
-    
-    <div class="text-center">
+<div id="menuCliente" style="margin: 25px">
+    <h4 style="font-size: 30px; font-family: var(--font-laura)"> Olá <b>{$USER}</b>, seja bem vindo! O que deseja fazer agora?</h4> 
+    <br>
+    <section style="display: flex">
+
+        <a href="{$PAG_CONTA}" style="padding: 10px; margin: 15px; background:var(--color-cinza); border-radius: 8px; font-size: 20px; color: var(--color-vinho)">Minha Conta</a>
         
-        <a href="{$PAG_CONTA}" class="btn btn-success"><i class="glyphicon glyphicon-home"></i> Minha Conta</a>
+        <a href="{$PAG_CLIENTE_PEDIDOS}" style="padding: 10px; margin: 15px; background:var(--color-cinza); border-radius: 8px; font-size: 20px; color: var(--color-vinho)">Pedidos</a>
         
-        <a href="{$PAG_CLIENTE_PEDIDOS}" class="btn btn-success"><i class="glyphicon glyphicon-barcode"></i> Pedidos</a>
-        
-        <a href="{$PAG_CLIENTE_DADOS}" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> Meus Dados </a>
-        <a href="{$PAG_CARRINHO}" class="btn btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a>
-        <a href="{$PAG_CLIENTE_SENHA}" class="btn btn-warning"> Alterar Senha </a>
-        <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a>
-           
-        
-    </div>              
-    
-</section>
+        <a href="{$PAG_CLIENTE_DADOS}" style="padding: 10px; margin: 15px; background:var(--color-cinza); border-radius: 8px; font-size: 20px; color: var(--color-vinho)">Meus Dados</a>
+        <a href="{$PAG_CARRINHO}" style="padding: 10px; margin: 15px; background:var(--color-cinza); border-radius: 8px; font-size: 20px; color: var(--color-vinho)">Carrinho</a>
+        <a href="{$PAG_CLIENTE_SENHA}" style="padding: 10px; margin: 15px; background:var(--color-cinza); border-radius: 8px; font-size: 20px; color: var(--color-vinho)">Alterar Senha</a>
+        <a href="{$PAG_LOGOFF}" style="padding: 10px; margin: 15px; background:var(--color-cinza); border-radius: 8px; font-size: 20px; color: var(--color-vinho)">Sair</a>
+
+    </section>
+</div>

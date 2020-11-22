@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-21 19:51:24
+/* Smarty version 3.1.36, created on 2020-11-22 11:55:27
   from 'C:\xampp\htdocs\lauralacos\view\clientes_dados.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb961ac508823_27264537',
+  'unifunc' => 'content_5fba7bdf1c79f0_00379359',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1d0f697025853250fb3a0408db566202c3e1ac39' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_dados.tpl',
-      1 => 1605984676,
+      1 => 1606056926,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb961ac508823_27264537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fba7bdf1c79f0_00379359 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--Importando Script Jquery-->
 	<?php echo '<script'; ?>
  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"><?php echo '</script'; ?>
 >
-<h3>Meus Dados</h3>
+<h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
 
 <div class="cadastro">
     <form name="cadcliente" id="cadcliente" method="post" action="">
@@ -154,9 +154,10 @@ function content_5fb961ac508823_27264537 (Smarty_Internal_Template $_smarty_tpl)
 	<?php echo '</script'; ?>
 >
 
-    <label>Digite sua senha atual por segurança<br>(<small>sua senha não será alterada</small>)</label>
+    <label style="font-size: 20px">Digite sua senha atual por segurança<br><small style="font-size: 10px;">(sua senha não será alterada)</small></label>
+    <br>
            <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
-            <button type="submit" name="submit" class="botao">Gravar</button>
+            <button type="submit" name="submit" class="botao" style="font-weight: bold">Gravar</button>
         </fieldset>
     </form>
 </div><?php }

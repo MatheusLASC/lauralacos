@@ -11,27 +11,24 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
 -->
 
 <br>
-<br>
 
-<section class="row" id="pedidos">
-        <center>
-    <h4 class="text-center">Meus Pedidos</h4>
-    
-
-    {if $PEDIDOS_TOTAL > 0}
-    <table class="table table-bordered" style="width: 90%">
+<section id="pedidos" style="margin: 25px">
         
-        <tr class="text-danger bg-danger">
+    <h4 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Meus Pedidos</h4>
+    
+    {if $PEDIDOS_TOTAL > 0}
+    <table style="width: 80%; border-style: dashed; border-width: 1px; padding: 15px">
+        
+        <tr style="color: var(--color-vinho); font-weight: bold; font-size: 20px;">
             <td>Data</td>
             <td>Hora</td>
             <td>Ref</td>
-           
             <td>Status</td>
             <td></td>
         </tr>
         
         {foreach from=$PEDIDOS item=P}
-        <tr>
+        <tr style="font-size: 18px;">
             
             <td style="width: 10%">{$P.ped_data}</td>
             <td style="width: 10%">{$P.ped_hora}</td>
@@ -49,7 +46,13 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
         <form name="itens" method="post" action="{$PAG_ITENS}">
             
              <input type="hidden" name="cod_pedido" id="cod_pedido" value="{$P.ped_cod}">
-             <td style="width: 10%"><button class="btn btn-default"><i class="glyphicon glyphicon-menu-hamburger"></i> Detalhes</button></td>
+             <td style="width: 10%"><button style="background-color: var(--color-rosa);
+              width: 100px;
+              padding: 8px;
+              font-size: 18px;
+              font-weight: bold;
+              border-radius: 8px;
+              border-width: 0;">Detalhes</button></td>
        
         </form>    
         </tr>
@@ -59,7 +62,7 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
         <!-- Mensagem para estilizar da forma que prefirir-->
           Você não possui ainda um pedido, faça agora mesmo a sua compra!
         {/if}
-      </center>
+      
     
     
 </section>
