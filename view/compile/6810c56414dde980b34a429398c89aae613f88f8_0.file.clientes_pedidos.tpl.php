@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-18 01:13:15
+/* Smarty version 3.1.36, created on 2020-11-21 21:22:40
   from 'C:\xampp\htdocs\lauralacos\view\clientes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb4671b2399e4_08041689',
+  'unifunc' => 'content_5fb9af508c5864_11499077',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6810c56414dde980b34a429398c89aae613f88f8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_pedidos.tpl',
-      1 => 1605658385,
+      1 => 1606004557,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb4671b2399e4_08041689 (Smarty_Internal_Template $_smarty_tpl) {
-?><h2> Esta é a Pagina de Clientes </h2>
-<!--  Esta página mostra os pedidos do cliente 
+function content_5fb9af508c5864_11499077 (Smarty_Internal_Template $_smarty_tpl) {
+?><!--  Esta página mostra os pedidos do cliente 
 Deixarei numa pasta chamada referências a imagem da tela
 Dai você monta estrutura conforme você imagina, mantendo o que precisamos
 
@@ -38,10 +37,11 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
 <br>
 
 <section class="row" id="pedidos">
-    
+        <center>
     <h4 class="text-center">Meus Pedidos</h4>
     
-    <center>
+
+    <?php if ($_smarty_tpl->tpl_vars['PEDIDOS_TOTAL']->value > 0) {?>
     <table class="table table-bordered" style="width: 90%">
         
         <tr class="text-danger bg-danger">
@@ -88,13 +88,15 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
              <td style="width: 10%"><button class="btn btn-default"><i class="glyphicon glyphicon-menu-hamburger"></i> Detalhes</button></td>
        
         </form>    
-            
         </tr>
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-        
     </table>
+       <?php } else { ?>
+        <!-- Mensagem para estilizar da forma que prefirir-->
+          Você não possui ainda um pedido, faça agora mesmo a sua compra!
+        <?php }?>
       </center>
     
     

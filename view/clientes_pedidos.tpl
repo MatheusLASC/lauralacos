@@ -1,4 +1,3 @@
-<h2> Esta é a Pagina de Clientes </h2>
 <!--  Esta página mostra os pedidos do cliente 
 Deixarei numa pasta chamada referências a imagem da tela
 Dai você monta estrutura conforme você imagina, mantendo o que precisamos
@@ -15,10 +14,11 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
 <br>
 
 <section class="row" id="pedidos">
-    
+        <center>
     <h4 class="text-center">Meus Pedidos</h4>
     
-    <center>
+
+    {if $PEDIDOS_TOTAL > 0}
     <table class="table table-bordered" style="width: 90%">
         
         <tr class="text-danger bg-danger">
@@ -52,11 +52,13 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
              <td style="width: 10%"><button class="btn btn-default"><i class="glyphicon glyphicon-menu-hamburger"></i> Detalhes</button></td>
        
         </form>    
-            
         </tr>
         {/foreach}
-        
     </table>
+       {else}
+        <!-- Mensagem para estilizar da forma que prefirir-->
+          Você não possui ainda um pedido, faça agora mesmo a sua compra!
+        {/if}
       </center>
     
     

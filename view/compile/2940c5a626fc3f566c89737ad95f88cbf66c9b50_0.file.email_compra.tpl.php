@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-19 19:55:13
+/* Smarty version 3.1.36, created on 2020-11-21 21:27:06
   from 'C:\xampp\htdocs\lauralacos\view\email_compra.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb6bf91c46ac6_93243089',
+  'unifunc' => 'content_5fb9b05ab53135_89762903',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2940c5a626fc3f566c89737ad95f88cbf66c9b50' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\email_compra.tpl',
-      1 => 1605812028,
+      1 => 1605812894,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb6bf91c46ac6_93243089 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb9b05ab53135_89762903 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .tabela {
     border-collapse: collapse;
@@ -151,10 +151,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
    <!-- botoes de baixo e valor total -->
         <div class="sessao">
 
-              <p class="cep">      
-              <b>CEP do Destinatário :</b> <?php echo $_smarty_tpl->tpl_vars['CEP']->value;?>
-
-              </p>
                <p class="total">
                <b>Total :</b> R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
 

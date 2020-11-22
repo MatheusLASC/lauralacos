@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Nov-2020 às 07:11
+-- Tempo de geração: 22-Nov-2020 às 02:10
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.9
 
@@ -71,10 +71,10 @@ CREATE TABLE `tb_clientes` (
 
 INSERT INTO `tb_clientes` (`cli_id`, `cli_nome`, `cli_telefone`, `cli_email`, `cli_cpf`, `cli_endereco`, `cli_numero`, `cli_complemento`, `cli_bairro`, `cli_cidade`, `cli_uf`, `cli_cep`, `cli_pass`, `cli_datacad`, `cli_horacad`) VALUES
 (2, 'Amanda Perrone Degrande', '15998124356', 'amanda.perrone@gmail.com', '1234567891', 'Rua da Facens', '40', 'Bloco A', 'Vila Universitária', 'Sorocaba', 'SP', '18140090', 'amofacens10', '2020-11-16', '16:17:00'),
-(3, 'Lorraine Paloschi', '15988267473', 'lorraine.paloschi@gmail.com', '48478963420', 'Rua Maluca', '15', NULL, 'Centro', 'Araçoiaba da Serra', 'SP', '18190000', '100', '2020-11-19', '14:49:52'),
-(7, 'Jacira Machado', '15998218513', 'jacirabaltazar@gmail.com', '04903731863', 'Rua Bernardino de Campos', '305', NULL, 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '7a8ac4181dd1db5adef0fb02bf12e4ab08bc10d3', '2020-11-21', '03:06:51'),
-(8, 'Baltazar Domingues', '15998300909', 'pa.integra2020@gmail.com', '03211866809', 'Rua Davina da Silva Rosa Gurgel', '60', NULL, 'Jardim Campos do Conde II', 'Sorocaba', 'SP', '18104070', 'a121f47c643015472f3bc4280fe928a7466e9d1d', '2020-11-21', '03:23:14'),
-(11, 'Matheus Lima de Almeida', '15998310909', 'matheuslima.tipi@gmail.com', '48487164897', 'Rua Nelson dos Santos', '10', NULL, 'Santa Quitéria', 'Curitiba', 'PR', '80310370', '6178e18d6e2e8cff27bfd0be4964336f', '0000-00-00', '00:00:00');
+(3, 'Lorraine Paloschi', '15988267473', 'lorraine.paloschi@gmail.com', '48478963420', 'Rua Maluca', '15', '', 'Centro', 'Araçoiaba da Serra', 'SP', '18190000', '100', '2020-11-19', '14:49:52'),
+(7, 'Jacira Machado', '15998218513', 'jacirabaltazar@gmail.com', '04903731863', 'Rua Bernardino de Campos', '305', '', 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '7a8ac4181dd1db5adef0fb02bf12e4ab08bc10d3', '2020-11-21', '03:06:51'),
+(8, 'Baltazar Domingues', '15998300909', 'pa.integra2020@gmail.com', '03211866809', 'Rua Davina da Silva Rosa Gurgel', '60', '', 'Jardim Campos do Conde II', 'Sorocaba', 'SP', '18104070', 'a121f47c643015472f3bc4280fe928a7466e9d1d', '2020-11-21', '03:23:14'),
+(12, 'Matheus Lima de Almeida', '15998218513', 'matheuslima.tipi@gmail.com', '48487164897', 'Rua Bernardino de Campos', '305', '', 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '6178e18d6e2e8cff27bfd0be4964336f', '2020-11-21', '20:29:15');
 
 -- --------------------------------------------------------
 
@@ -97,6 +97,14 @@ CREATE TABLE `tb_pedidos` (
   `ped_fretetipo` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Extraindo dados da tabela `tb_pedidos`
+--
+
+INSERT INTO `tb_pedidos` (`ped_id`, `ped_data`, `ped_hora`, `ped_cliente`, `ped_cod`, `ped_ref`, `ped_pagstatus`, `ped_pagforma`, `ped_pagtipo`, `ped_pagcod`, `ped_fretevalor`, `ped_fretetipo`) VALUES
+(14, '2020-11-21', '21:36:01', 12, '20112121115912', '20112121115912', '', '', '', '', 35.40, NULL),
+(15, '2020-11-21', '21:52:47', 12, '20112121114512', '20112121114512', '', '', '', '', 39.00, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -110,6 +118,15 @@ CREATE TABLE `tb_pedidositens` (
   `item_qtd` int(6) NOT NULL,
   `item_pedcod` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `tb_pedidositens`
+--
+
+INSERT INTO `tb_pedidositens` (`item_id`, `item_produto`, `item_valor`, `item_qtd`, `item_pedcod`) VALUES
+(18, 4, 45.50, 1, '20112121115912'),
+(19, 2, 12.50, 1, '20112121115912'),
+(20, 2, 12.50, 1, '20112121114512');
 
 -- --------------------------------------------------------
 
@@ -193,19 +210,19 @@ ALTER TABLE `tb_categorias`
 -- AUTO_INCREMENT de tabela `tb_clientes`
 --
 ALTER TABLE `tb_clientes`
-  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `cli_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidos`
 --
 ALTER TABLE `tb_pedidos`
-  MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidositens`
 --
 ALTER TABLE `tb_pedidositens`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de tabela `tb_produtos`
