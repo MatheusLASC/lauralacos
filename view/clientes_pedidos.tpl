@@ -1,7 +1,4 @@
-<!--  Esta página mostra os pedidos do cliente 
-Deixarei numa pasta chamada referências a imagem da tela
-Dai você monta estrutura conforme você imagina, mantendo o que precisamos
-
+<!--
 Foi criado uma tabela no qual os seus itens são exibidos pelo foreach (os dados moveis)
 
 Na lógica do IF se cria um label com o texto do status do pagamento
@@ -9,7 +6,7 @@ Na lógica do IF se cria um label com o texto do status do pagamento
 E o Detalhes é um Action do Forms que redireciona para o Itens do Pedido do Cliente (clientes_itens)
 Mantenha o mesmo name e id (cod_pedido) no Detalhes
 -->
-
+<center> 
 <br>
 
 <section id="pedidos" style="margin: 25px">
@@ -61,9 +58,11 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
        {else}
         <!-- Mensagem para estilizar da forma que prefirir-->
           Você não possui ainda um pedido, faça agora mesmo a sua compra!
-        {/if}
-      
-    
-    
+        {/if} 
+
+    <!--  paginação inferior   -->  
+    <section id="pagincao" class="row">
+    <center> {$PAGINAS} </center>
+    </section>   
 </section>
-      
+</center>  

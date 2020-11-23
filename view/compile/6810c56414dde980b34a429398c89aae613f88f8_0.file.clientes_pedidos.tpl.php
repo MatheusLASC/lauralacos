@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 11:51:57
+/* Smarty version 3.1.36, created on 2020-11-22 19:07:59
   from 'C:\xampp\htdocs\lauralacos\view\clientes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fba7b0dd870c9_88780464',
+  'unifunc' => 'content_5fbae13fb61410_64920931',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6810c56414dde980b34a429398c89aae613f88f8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_pedidos.tpl',
-      1 => 1606056716,
+      1 => 1606082877,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fba7b0dd870c9_88780464 (Smarty_Internal_Template $_smarty_tpl) {
-?><!--  Esta página mostra os pedidos do cliente 
-Deixarei numa pasta chamada referências a imagem da tela
-Dai você monta estrutura conforme você imagina, mantendo o que precisamos
-
+function content_5fbae13fb61410_64920931 (Smarty_Internal_Template $_smarty_tpl) {
+?><!--
 Foi criado uma tabela no qual os seus itens são exibidos pelo foreach (os dados moveis)
 
 Na lógica do IF se cria um label com o texto do status do pagamento
@@ -32,7 +29,7 @@ Na lógica do IF se cria um label com o texto do status do pagamento
 E o Detalhes é um Action do Forms que redireciona para o Itens do Pedido do Cliente (clientes_itens)
 Mantenha o mesmo name e id (cod_pedido) no Detalhes
 -->
-
+<center> 
 <br>
 
 <section id="pedidos" style="margin: 25px">
@@ -99,10 +96,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
        <?php } else { ?>
         <!-- Mensagem para estilizar da forma que prefirir-->
           Você não possui ainda um pedido, faça agora mesmo a sua compra!
-        <?php }?>
-      
-    
-    
+        <?php }?> 
+
+    <!--  paginação inferior   -->  
+    <section id="pagincao" class="row">
+    <center> <?php echo $_smarty_tpl->tpl_vars['PAGINAS']->value;?>
+ </center>
+    </section>   
 </section>
-      <?php }
+</center>  <?php }
 }

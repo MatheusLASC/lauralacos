@@ -17,11 +17,6 @@ Class Rotas
         static function get_SiteTEMA() {
             return self::get_SiteHOME() .'/' .self::$pasta_view;
         }
-        /*
-        static function pag_Home() {
-            return self::get_SiteHOME() .'/home';
-        }
-       */
 
         static function pag_Sobre() {
             return self::get_SiteHOME() .'/sobre';

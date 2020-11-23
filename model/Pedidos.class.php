@@ -45,6 +45,9 @@ Class Pedidos extends Conexao{
         {
             $cli = (int)$cliente;
             $query .= " WHERE p.ped_cliente = {$cli}";
+            $query .= " ORDER BY p.ped_id DESC"; // exibe os pedidos mais recentes adicionados
+            
+            $query .= $this->PaginacaoLinks("ped_id", $this->prefix."pedidos");
         }
 
         $this->ExecuteSQL($query);

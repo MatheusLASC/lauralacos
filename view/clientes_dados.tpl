@@ -1,20 +1,26 @@
 <!--Importando Script Jquery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
 <h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
 
 <div class="cadastro">
     <form name="cadcliente" id="cadcliente" method="post" action="">
         <fieldset>
+       
             <fieldset class="grupo">
+             
                 <div class="campo">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" style="width: 30em" value="{$CLI_NOME}" required>
                 </div>
+            
                 <div class="campo">
                     <label for="telefone">Telefone</label>
                     <input type="text" id="telefone" name="telefone" style="width: 10em" value="{$CLI_TELEFONE}" required>
                 </div>
+           
             </fieldset>
+           
             <div class="campo">
                 <label for="email">E-mail</label>
                 <input type="text" id="email" name="email" style="width: 20em" value="{$CLI_EMAIL}"  required>
@@ -84,6 +90,7 @@
                     </select>
                 </div>
             </fieldset>
+    
 
 <script type="text/javascript">
 		$("#cep").focusout(function(){
@@ -114,11 +121,8 @@
 			});
 		});
 	</script>
-
-    <label style="font-size: 20px">Digite sua senha atual por segurança<br><small style="font-size: 10px;">(sua senha não será alterada)</small></label>
-    <br>
+ <label style="font-size: 20px">Digite sua senha atual por segurança<br><small style="font-size: 10px;">(sua senha não será alterada)</small></label><br>
            <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
-            <button type="submit" name="submit" class="botao" style="font-weight: bold">Gravar</button>
-        </fieldset>
+        <button type="submit" name="submit" class="botao" style="font-weight: bold">Gravar</button>
     </form>
 </div>

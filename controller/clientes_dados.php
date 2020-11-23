@@ -61,7 +61,7 @@ $smarty->assign('CLI_UF', $_SESSION['CLI']['cli_uf']);
     $cli_horacad  = $_SESSION['CLI']['cli_horacad'];
 
      if($_SESSION['CLI']['cli_pass'] != md5($cli_senha)){
-     	echo'<div class="alert alert-danger"> <p>A senha para confirmar a alteração está incorreta</p></div>';
+     	echo'<h1 class="alert alert-danger"> <p>A senha para confirmar a alteração está incorreta</p></h1>';
      	Rotas::Redirecionar(3,Rotas::pag_ClienteDados());
      	exit();
      }
@@ -73,12 +73,10 @@ $smarty->assign('CLI_UF', $_SESSION['CLI']['cli_uf']);
      $clientes->Preparar($cli_nome, $cli_telefone,$cli_email,$cli_cpf,$cli_cep,$cli_endereco, $cli_numero,$cli_complemento,$cli_bairro,$cli_cidade,$cli_uf,$cli_senha, $cli_datacad, $cli_horacad);
 
      if(!$clientes->Editar($_SESSION['CLI']['cli_id'])){
-     	echo '<div class="alert alert-danger">Ocorreu um erro ao editar os dados</div>';
+     	echo '<h1 class="alert alert-danger">Ocorreu um erro ao editar os dados</h1>';
      		exit();
      }else{
-     	echo '<script> alert("Dados alterados com sucesso! Atualizando os dados do Login..."); </script>';
-     	echo '<div class="alert alert-success">Dados atualizados com sucesso!'; 
-     	echo '</div>';
+     	echo '<script> alert("Dados atualizados com sucesso"); </script>';
 
      	$login = new Login();
      	$login->GetLogin($cli_email, $cli_senha);

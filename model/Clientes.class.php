@@ -46,16 +46,16 @@ class Clientes extends Conexao
 
     function Inserir(){
     	if($this->GetClienteCPF($this->getCli_cpf()) > 0){
-    		echo '<div class="alert alert-danger " id="erro_mostrar"> Este CPF já existe';
+    		echo '<h1 class="alert alert-danger " id="erro_mostrar"> Este CPF já existe';
     		Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
-    		echo '  </div>';
+    		echo '  </h1>';
     		exit();
     	}
 
     	if($this->GetClienteEmail($this->getCli_email()) > 0){
-    		echo '<div class="alert alert-danger " id="erro_mostrar"> Este Email já existe';
+    		echo '<h1 class="alert alert-danger " id="erro_mostrar"> Este Email já existe';
     		Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
-    		echo '  </div>';
+    		echo '  </h1>';
     		exit();
     	}
 
@@ -125,13 +125,13 @@ class Clientes extends Conexao
               
         // verifico se ja tem este CPF no banco
       if($this->GetClienteCPF($this->getCli_cpf()) > 0 && $this->getCli_cpf() != $_SESSION['CLI']['cli_cpf']):
-              echo '<div class="alert alert-danger " id="erro_mostrar"> Este CPF já esta cadastrado </div>';
+              echo '<h1 class="alert alert-danger " id="erro_mostrar"> Este CPF já esta cadastrado </h1>';
               Rotas::Redirecionar(3,Rotas::pag_ClienteDados());
               exit();
       endif;
         // verifica se o email já esta cadastrado 
         if($this->GetClienteEmail($this->getCli_email()) > 0 && $this->getCli_email() != $_SESSION['CLI']['cli_email']):
-            echo '<div class="alert alert-danger " id="erro_mostrar"> Este E-mail já esta cadastrado </div>';
+            echo '<h1 class="alert alert-danger " id="erro_mostrar"> Este E-mail já esta cadastrado </h1>';
             Rotas::Redirecionar(3,Rotas::pag_ClienteDados());
               exit();
       endif;
@@ -234,7 +234,7 @@ class Clientes extends Conexao
        
         if(strlen($cli_nome) < 3):
             
-              echo '<div class="alert alert-danger " id="erro_mostrar"> Digite seu nome corretamente </div>';
+              echo '<h1 class="alert alert-danger " id="erro_mostrar"> Digite seu nome corretamente </h1>';
               Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
             else:
             $this->cli_nome = $cli_nome;   
@@ -278,7 +278,7 @@ class Clientes extends Conexao
          $uf = filter_var($cli_uf, FILTER_SANITIZE_STRING);
         
        if(strlen($uf) != 2): // 11111
-                echo '<div class="alert alert-danger " id="erro_mostrar"> UF incorreto </div>';
+                echo '<h1 class="alert alert-danger " id="erro_mostrar"> UF incorreto </h1>';
                 Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
            else:
            $this->cli_uf = $cli_uf;
@@ -291,7 +291,7 @@ class Clientes extends Conexao
        $cep = filter_var($cli_cep, FILTER_SANITIZE_NUMBER_INT);
         
        if(strlen($cep) != 8):
-                echo '<div class="alert alert-danger " id="erro_mostrar"> CEP incorreto, digite apenas números!! </div>';
+                echo '<h1 class="alert alert-danger " id="erro_mostrar"> CEP incorreto, digite apenas números!! </h1>';
                 Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
            else:
            $this->cli_cep = $cli_cep;
@@ -305,7 +305,7 @@ class Clientes extends Conexao
         
         if(!filter_var($cli_email, FILTER_VALIDATE_EMAIL)):
             
-                echo '<div class="alert alert-danger " id="erro_mostrar"> Email incorreto </div>'; 
+                echo '<h1 class="alert alert-danger " id="erro_mostrar"> Email incorreto </h1>'; 
                 Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
             exit();
             

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22-Nov-2020 às 02:10
+-- Tempo de geração: 23-Nov-2020 às 01:05
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.9
 
@@ -74,7 +74,7 @@ INSERT INTO `tb_clientes` (`cli_id`, `cli_nome`, `cli_telefone`, `cli_email`, `c
 (3, 'Lorraine Paloschi', '15988267473', 'lorraine.paloschi@gmail.com', '48478963420', 'Rua Maluca', '15', '', 'Centro', 'Araçoiaba da Serra', 'SP', '18190000', '100', '2020-11-19', '14:49:52'),
 (7, 'Jacira Machado', '15998218513', 'jacirabaltazar@gmail.com', '04903731863', 'Rua Bernardino de Campos', '305', '', 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '7a8ac4181dd1db5adef0fb02bf12e4ab08bc10d3', '2020-11-21', '03:06:51'),
 (8, 'Baltazar Domingues', '15998300909', 'pa.integra2020@gmail.com', '03211866809', 'Rua Davina da Silva Rosa Gurgel', '60', '', 'Jardim Campos do Conde II', 'Sorocaba', 'SP', '18104070', 'a121f47c643015472f3bc4280fe928a7466e9d1d', '2020-11-21', '03:23:14'),
-(12, 'Matheus Lima de Almeida', '15998218513', 'matheuslima.tipi@gmail.com', '48487164897', 'Rua Bernardino de Campos', '305', '', 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '6178e18d6e2e8cff27bfd0be4964336f', '2020-11-21', '20:29:15');
+(12, 'Matheus Lima de Almeida', '15998218513', 'matheuslima.tipi@gmail.com', '48487164897', 'Rua Bernardino de Campos', '310', '', 'Vila Dominguinho', 'Votorantim', 'SP', '18114070', '6178e18d6e2e8cff27bfd0be4964336f', '2020-11-21', '20:29:15');
 
 -- --------------------------------------------------------
 
@@ -103,7 +103,9 @@ CREATE TABLE `tb_pedidos` (
 
 INSERT INTO `tb_pedidos` (`ped_id`, `ped_data`, `ped_hora`, `ped_cliente`, `ped_cod`, `ped_ref`, `ped_pagstatus`, `ped_pagforma`, `ped_pagtipo`, `ped_pagcod`, `ped_fretevalor`, `ped_fretetipo`) VALUES
 (14, '2020-11-21', '21:36:01', 12, '20112121115912', '20112121115912', '', '', '', '', 35.40, NULL),
-(15, '2020-11-21', '21:52:47', 12, '20112121114512', '20112121114512', '', '', '', '', 39.00, NULL);
+(15, '2020-11-21', '21:52:47', 12, '20112121114512', '20112121114512', '', '', '', '', 39.00, NULL),
+(16, '2020-11-22', '20:47:32', 12, '20112220112912', '20112220112912', '', '', '', '', 39.00, NULL),
+(17, '2020-11-22', '20:53:21', 12, '20112220111912', '20112220111912', '', '', '', '', 35.40, NULL);
 
 -- --------------------------------------------------------
 
@@ -126,7 +128,11 @@ CREATE TABLE `tb_pedidositens` (
 INSERT INTO `tb_pedidositens` (`item_id`, `item_produto`, `item_valor`, `item_qtd`, `item_pedcod`) VALUES
 (18, 4, 45.50, 1, '20112121115912'),
 (19, 2, 12.50, 1, '20112121115912'),
-(20, 2, 12.50, 1, '20112121114512');
+(20, 2, 12.50, 1, '20112121114512'),
+(21, 4, 12.50, 1, '20112220112912'),
+(22, 2, 12.50, 1, '20112220112912'),
+(23, 1, 10.90, 1, '20112220112912'),
+(24, 4, 12.50, 2, '20112220111912');
 
 -- --------------------------------------------------------
 
@@ -145,22 +151,22 @@ CREATE TABLE `tb_produtos` (
   `pro_estoque` int(11) NOT NULL,
   `pro_ref` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `pro_comprimento` double(9,2) NOT NULL,
-  `pro_apliques` int(11) NOT NULL,
-  `pro_cores` int(11) NOT NULL,
+  `pro_apliques` char(3) COLLATE utf8_unicode_ci NOT NULL,
+  `pro_cores` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `pro_prendedor` double(9,2) NOT NULL,
-  `pro_ativo` char(1) COLLATE utf8_unicode_ci NOT NULL,
-  `pro_frete_free` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Não'
+  `pro_ativo` char(3) COLLATE utf8_unicode_ci NOT NULL,
+  `pro_fretefree` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Não'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_produtos`
 --
 
-INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_ref`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_frete_free`) VALUES
-(1, 1, 'Laço Double Cor', 'Laços com cores diferentes', 10.90, 'laco1.jpg', 'laco-flor', 2, '01111111', 2.00, 1, 1, 1.50, '1', 'Não'),
-(2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, '01222222', 2.00, 1, 2, 1.50, '1', 'Não'),
-(3, 1, 'LAÇO AMARELO', 'LAÇO AMARELO COMPRIDO', 12.56, 'laco3.jpg', 'laco-amarelo', 123, '01333333', 12.60, 123, 132, 123.10, '1', 'Não'),
-(4, 2, 'laço vermelho', 'laço vermelho curto', 45.50, 'laco4.jpg', 'laco-vermelho', 123, '01444444', 123.10, 1432, 132, 132.10, '1', 'Não');
+INSERT INTO `tb_produtos` (`pro_id`, `pro_categoria`, `pro_nome`, `pro_desc`, `pro_valor`, `pro_img`, `pro_slug`, `pro_estoque`, `pro_ref`, `pro_comprimento`, `pro_apliques`, `pro_cores`, `pro_prendedor`, `pro_ativo`, `pro_fretefree`) VALUES
+(1, 1, 'Laço Double Cor', 'Laços com cores diferentes', 10.90, 'laco1.jpg', 'laco-flor', 2, '01111111', 2.00, 'Sim', 'Rosa com combinações em Amarelo ou Azul', 1.50, 'Sim', 'Não'),
+(2, 2, 'Laço Rose Blue', 'Laços combinando dois tons inspirados na elegância francesa', 12.50, 'laco2.jpg', 'laco-rb', 3, '01222222', 2.00, 'Sim', 'Rosa com combinação em Azul', 1.50, 'Sim', 'Não'),
+(3, 1, 'Laço Amarelo', 'Laço Amarelo comprido', 12.56, 'laco3.jpg', 'laco-amarelo', 3, '01333333', 2.60, 'Sim', 'Amarelo', 1.10, 'Sim', 'Não'),
+(4, 2, 'Laço Vermelho', 'Laço vermelho curto', 12.50, 'laco4.jpg', 'laco-vermelho', 3, '01444444', 2.10, 'Sim', 'Vermelho', 1.10, 'Sim', 'Não');
 
 --
 -- Índices para tabelas despejadas
@@ -216,13 +222,13 @@ ALTER TABLE `tb_clientes`
 -- AUTO_INCREMENT de tabela `tb_pedidos`
 --
 ALTER TABLE `tb_pedidos`
-  MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ped_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidositens`
 --
 ALTER TABLE `tb_pedidositens`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de tabela `tb_produtos`

@@ -1,5 +1,6 @@
 <?php
 
+// Códigos prontos para padronizações de dados no banco
 class Sistema {
 
     static function DataAtualBR()

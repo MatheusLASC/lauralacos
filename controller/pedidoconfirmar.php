@@ -6,7 +6,7 @@ if(isset($_SESSION['PROC'])) {
 
 	if(!isset($_POST['frete_radio'])){
 		Rotas::Redirecionar(2, Rotas::pag_Carrinho().'#dadosfrete');
-		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
+		exit ('<h1 class="alert alert-danger"> Precisa selecionar o frete! </h1>');
 	}
 
 	$smarty = new Template();
@@ -33,7 +33,7 @@ if(isset($_SESSION['PROC'])) {
 	$smarty->display('pedido_confirmar.tpl');
 
 }else{
-	echo '<h4 class="alert alert-danger"> Não possui produtos no carrinho! </h4>';
+	echo '<h1 class="alert alert-danger"> Não possui produtos no carrinho! </h1>';
 	Rotas::Redirecionar(3, Rotas::pag_Produtos());
 }
 

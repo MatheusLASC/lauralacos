@@ -61,7 +61,7 @@ Class EnviarEmail extends PHPMailer {
                 $this->ClearAllRecipients();
 
             else:
-            echo "<h4>Mailer Error: " . $this->ErrorInfo . "</h4>";
+            echo "<h1>Mailer Error: " . $this->ErrorInfo . "</h1>";
 
             endif;
     }    

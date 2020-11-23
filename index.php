@@ -44,7 +44,7 @@ $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
 $smarty->assign('LOGADO', Login::Logado());
 
 if(Login::Logado()){
-	$smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
+	$smarty->assign('USER', strtoupper($_SESSION['CLI']['cli_nome']));
 }
 
 

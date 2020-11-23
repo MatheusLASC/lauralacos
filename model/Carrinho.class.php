@@ -45,7 +45,7 @@ class Carrinho
             return $this->itens;
         } else
         {
-            echo '<h4 class="alert alert-danger"> Não há produtos no carrinho </h4>';
+            echo '<h1 class="alert alert-danger"> Não há produtos no carrinho </h1>';
         }
     
     }
@@ -87,18 +87,18 @@ class Carrinho
 						 $_SESSION['PROC'][$ID]['QTD']   += $QTD;
 					}
 
-					echo '<h4 class="alert alert-success"> Produto Inserido! </h4>';
+					echo '<h1 class="alert alert-success"> Produto Inserido! </h1>';
 
 				break;
 
 			case 'del':
 				$this->CarrinhoDEL($id);
-				echo '<h4 class="alert alert-success"> Produto Removido! </h4>';
+				echo '<h1 class="alert alert-success"> Produto Removido! </h1>';
 				break;
 
 			case 'limpar':
 				$this->CarrinhoLimpar();
-				echo '<h4 class="alert alert-success"> Produtos Removidos! </h4>';
+				echo '<h1 class="alert alert-success"> Produtos Removidos! </h1>';
 				break;
             default:
             break;

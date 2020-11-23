@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e44bdb0639626540db975bfb401d9ce524294918',
+    'reference' => '09b937befd661eb2163438cecebaa4c0873316cc',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e44bdb0639626540db975bfb401d9ce524294918',
+      'reference' => '09b937befd661eb2163438cecebaa4c0873316cc',
     ),
     'phpmailer/phpmailer' => 
     array (

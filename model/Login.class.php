@@ -78,7 +78,7 @@ class Login extends Conexao{
     }
 
     static function AcessoNegado(){
-        echo '<div class="alert alert-danger"> Acesso Negado, faça o Login</div>';
+        echo '<h1 class="alert alert-danger"> Acesso Negado, faça o Login</h1>';
         // botão caso queira colocar: <a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a>
     }
     
@@ -93,7 +93,7 @@ class Login extends Conexao{
     static function Logoff()
     {
         unset($_SESSION['CLI']);
-        echo '<h4 class="aler alert-success"> Saindo...</h4>';
+        echo '<h1 class="aler alert-success"> Saindo...</h1>';
         Rotas::Redirecionar(2,Rotas::get_SiteHOME());
     }
 

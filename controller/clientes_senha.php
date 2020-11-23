@@ -11,14 +11,14 @@ if(isset($_POST['cli_senha_atual']) && isset($_POST['cli_senha'])){
 	$email = $_SESSION['CLI']['cli_email'];
 
 	if($senha_atual != $_SESSION['CLI']['cli_pass']){
-		echo'<div class="alert alert-danger"> A senha atual está incorreta</div>';
+		echo'<h1 class="alert alert-danger"> A senha atual está incorreta</h1>';
 		Rotas::Redirecionar(3, Rotas::pag_CLienteSenha());
 		exit();
 	}
 
 	$clientes = new Clientes();
 	$clientes->SenhaUpdate($senha_nova, $email);
-	//echo'<div class="alert alert-success"> A senha foi alterada com sucesso, faça login com a nova senha!!</div>';
+	//echo'<h1 class="alert alert-success"> A senha foi alterada com sucesso, faça login com a nova senha!!</h1>';
 	
 	//Rotas::Redirecionar(3, Rotas::pag_Logoff());
 

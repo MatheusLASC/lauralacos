@@ -7,7 +7,7 @@ if(!Login::Logado()){
 
 	if(!isset($_SESSION['PED']['frete'])){
 		Rotas::Redirecionar(2, Rotas::pag_Carrinho().'#dadosfrete');
-		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
+		exit ('<h1 class="alert alert-danger"> Precisa selecionar o frete! </h1>');
 	}	
 
 	$smarty = new Template();
@@ -66,7 +66,7 @@ if(!Login::Logado()){
 
 
 }else{
-	echo '<h4 class="alert alert-danger"> Não possui produtos no carrinho! </h4>';
+	echo '<h1 class="alert alert-danger"> Não possui produtos no carrinho! </h1>';
 	Rotas::Redirecionar(3, Rotas::pag_Produtos());
 }
 

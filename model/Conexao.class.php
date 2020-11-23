@@ -24,7 +24,7 @@ Class Conexao extends Config{
             }
                 } catch (Exception $e)
                     {
-                        exit($e->getMessage().'<h2> Erro na Conexão do Banco de Dados </h2>');
+                        exit($e->getMessage().'<h1> Erro na Conexão do Banco de Dados </h1>');
                     }
     }
 

@@ -56,7 +56,7 @@ if(isset($_POST['nome']) &&
 	$destinatarios = array($cli_email, Config::SITE_EMAIL_ADM);
     $email->Enviar($assunto, $msg, $destinatarios);
 
-    echo'<div class="alert alert-success"> Cadastro Efetuado!! A senha para fazer login foi enviada para seu email cadastrado. <br>' . 'Acesse seu email e confira!</div>';
+    echo'<h1 class="alert alert-success"> Cadastro Efetuado!! A senha para fazer login foi enviada para seu email cadastrado. <br>' . 'Acesse seu email e confira!</h1>';
     Rotas::Redirecionar(5, Rotas::pag_ClienteLogin());
 }
 else

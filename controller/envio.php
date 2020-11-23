@@ -1,7 +1,7 @@
 <?php
 
-//Caso não funcione quando for subir no servidor pode alterar o post por GET
-//Warning: mail(): Ocorre pois o site não está no servidor e não consegue identificar a porta
+//Só funcionará quando hospedar o site
+//Warning: mail(): Ocorre pois o site não está hospedado e não consegue identificar a porta
 //destinatário
 $dest = $_GET['txtinputemail'];
 //nome do destinatário
@@ -18,9 +18,9 @@ $message = 'Email de : ' . $nome . "\r\n" .'Celular: ' .$cel . "\r\n" . $_GET['t
 $headers = "From: ".$dest;
 
 //teste para mostrar as variáveis
-echo '<pre>';
+echo ' <pre>';
 echo $to;
-echo '</pre>';
+echo ' </pre>';
 echo '<pre>';
 echo $subject;
 echo '</pre>';
@@ -33,5 +33,5 @@ echo '</pre>';
 mail($to, $subject , $message , $headers);
 
 ?>
-<script>alert('Email enviado com sucesso!')</script>
+<script>alert('Email enviado com sucesso! -Só funcionará quando hospedar o site-')</script>
 <meta http-equiv="refresh" content="0; url=contato">

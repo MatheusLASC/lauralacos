@@ -26,13 +26,8 @@
                         <h2 class="text-center"> {$P.pro_nome}</h2> 
 
                         <h3 class="text-center text-danger">R$ {$P.pro_valor}</h3>
-
-                    <!--  Ao fazer o filtro e mostrar o produto pela segunda vez, a imagem do carrinho acaba não aparecendo 
-                    Acredito que o carrinho deveria estar somente na PaginasInfo
-                    ou a imagem virar um atributo do banco para todo produto, assim como o pro_img
-                    Pelo jeito não se carrega 2 vezes a mesma imagem--> 
-                    <p>Ver mais</p>
-                    {* <img class="carrinho" alt="Adicionar ao carrinho" src="view/assets/carrinho.svg"> *}       
+                        
+                    <p>Ver mais</p>      
                     </div>     
                 </a>
             </li>

@@ -1,6 +1,7 @@
 <div style="margin: 25px">
+    
     <h4 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Digite seu email cadatrado para receber uma nova senha </h4>
-
+  
     <form name="recuperarsenha" method="post" action="">
         
         <section>
