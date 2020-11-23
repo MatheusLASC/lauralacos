@@ -83,7 +83,7 @@ $(document).ready(function(){
                         <input type="hidden" name="pro_id" value="{$P.proc_id}">    
                         <input type="hidden" name="acao" value="del">    
                         
-                        <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
+                       <button class="limpar"><img src="view/assets/lixeira.png"></button>
                     </form>
                 </td>
                 

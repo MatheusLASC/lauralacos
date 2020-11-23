@@ -1,17 +1,18 @@
 <!--Importando Script Jquery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    
-<h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
 
 <div class="cadastro">
-    <form name="cadcliente" id="cadcliente" method="post" action="">
+<center>    
+<h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
+</center>
+    <form name="cadcliente" id="cadcliente" method="post" action="" style= "text-align:center;">
         <fieldset>
        
             <fieldset class="grupo">
              
                 <div class="campo">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" style="width: 30em" value="{$CLI_NOME}" required>
+                    <input type="text" id="nome" name="nome" style="width: 20em" value="{$CLI_NOME}" required>
                 </div>
             
                 <div class="campo">
@@ -19,7 +20,7 @@
                     <input type="text" id="telefone" name="telefone" style="width: 10em" value="{$CLI_TELEFONE}" required>
                 </div>
            
-            </fieldset>
+            
            
             <div class="campo">
                 <label for="email">E-mail</label>
@@ -29,16 +30,16 @@
                 <label for="cpf">CPF</label>
                 <input id="cpf" name="cpf" type="text" value="{$CLI_CPF}" required readonly/>
             </div>
-            <br><br><br><br>
+            </fieldset>
 
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="cep">CEP</label>
-		            <input id="cep" type="text" name="cep" style="width: 10em" value="{$CLI_CEP}" required/>
+		            <input id="cep" type="text" name="cep" style="width: 5em" value="{$CLI_CEP}" required/>
                 </div>
                 <div class="campo">
                     <label for="endereco">Endereço</label>
-		            <input id="endereco" type="text" name="endereco" style="width: 20em" value="{$CLI_ENDERECO}" required/>
+		            <input id="endereco" type="text" name="endereco" style="width: 15em" value="{$CLI_ENDERECO}" required/>
                 </div>
                 <div class="campo">
                     <label for="numero">Número</label>
@@ -46,19 +47,20 @@
                 </div>
                 <div class="campo">
                     <label for="complemento">Complemento</label>
-                    <input id="complemento" name="complemento" value="{$CLI_COMPLEMENTO}" type="text"/>
+                    <input id="complemento" name="complemento" value="{$CLI_COMPLEMENTO}" style="width: 10em" type="text"/>
                 </div>
                 <div class="campo">
                     <label for="bairro">Bairro</label>
-		            <input id="bairro" type="text" name="bairro" value="{$CLI_BAIRRO}" required/>
-                </div>
+		            <input id="bairro" type="text" name="bairro" value="{$CLI_BAIRRO}" style="width: 10em" required/>
+                </div>    
                 <div class="campo">
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" style="width: 15em" value="{$CLI_CIDADE}" required>
+                    <input type="text" id="cidade" name="cidade" style="width: 10em" value="{$CLI_CIDADE}" required>
                 </div>
+                
                 <div class="campo">
                     <label for="estado">Estado</label>
-                    <select name="estado" id="estado" required>
+                    <select name="estado" id="estado"  style="width: 11em" required>
                         <option value="{$CLI_UF}">{$CLI_UF}</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>

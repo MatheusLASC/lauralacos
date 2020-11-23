@@ -1,3 +1,4 @@
+<center>
 <div style="margin: 25px">
 <br>
 <h4 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Dados do pedido</h4>
@@ -95,3 +96,4 @@
 
 
 </div>
+</center>

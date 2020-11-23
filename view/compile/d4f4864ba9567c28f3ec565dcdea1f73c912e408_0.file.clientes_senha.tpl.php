@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 12:00:02
+/* Smarty version 3.1.36, created on 2020-11-23 12:14:03
   from 'C:\xampp\htdocs\lauralacos\view\clientes_senha.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fba7cf253cf16_66407072',
+  'unifunc' => 'content_5fbbd1bb11ef69_64178452',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd4f4864ba9567c28f3ec565dcdea1f73c912e408' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_senha.tpl',
-      1 => 1606057201,
+      1 => 1606144418,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fba7cf253cf16_66407072 (Smarty_Internal_Template $_smarty_tpl) {
-?><div style="margin-left: 25px">
+function content_5fbbd1bb11ef69_64178452 (Smarty_Internal_Template $_smarty_tpl) {
+?><center>
+<div style="margin-left: 25px">
     <h3 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Alteração de senha de acesso</h3>
 
 
@@ -62,5 +63,5 @@ function content_5fba7cf253cf16_66407072 (Smarty_Internal_Template $_smarty_tpl)
 
     </form>
 </div>
-<?php }
+</center><?php }
 }

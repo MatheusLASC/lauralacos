@@ -4,7 +4,7 @@
 
     <!-- botoes e opções de cima -->
     <section class="voltarcarrinho">
-        <a href="{$PAG_CARRINHO}" class="btn btn-info" title="">Voltar para Carrinho</a>
+        <a href="{$PAG_CARRINHO}" class="limpar" title="">Voltar para Carrinho</a>
     </section>
 
 

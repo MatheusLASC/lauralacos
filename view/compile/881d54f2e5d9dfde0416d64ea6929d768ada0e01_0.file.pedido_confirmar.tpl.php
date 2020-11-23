@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 02:01:38
+/* Smarty version 3.1.36, created on 2020-11-23 11:53:23
   from 'C:\xampp\htdocs\lauralacos\view\pedido_confirmar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb9f0b2b8a533_08153064',
+  'unifunc' => 'content_5fbbcce379f766_79431077',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '881d54f2e5d9dfde0416d64ea6929d768ada0e01' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_confirmar.tpl',
-      1 => 1606021296,
+      1 => 1606143191,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb9f0b2b8a533_08153064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbbcce379f766_79431077 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pedido">
     <!--Aqui é a forma onde a pessoa confirma o seu pedido para ai sim poder finalizar-->
     <h3>Confirmar Pedido</h3>
@@ -28,7 +28,7 @@ function content_5fb9f0b2b8a533_08153064 (Smarty_Internal_Template $_smarty_tpl)
     <!-- botoes e opções de cima -->
     <section class="voltarcarrinho">
         <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
-" class="btn btn-info" title="">Voltar para Carrinho</a>
+" class="limpar" title="">Voltar para Carrinho</a>
     </section>
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 01:37:54
+/* Smarty version 3.1.36, created on 2020-11-23 11:55:12
   from 'C:\xampp\htdocs\lauralacos\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb9eb22e9c606_37786597',
+  'unifunc' => 'content_5fbbcd50cce989_07024501',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f48ca779131c4338f944b1ba3ef76f4d34c3d1c1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\carrinho.tpl',
-      1 => 1606019873,
+      1 => 1606143310,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb9eb22e9c606_37786597 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbbcd50cce989_07024501 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="carrinho">
 
 <?php echo '<script'; ?>
@@ -117,7 +117,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 ">    
                         <input type="hidden" name="acao" value="del">    
                         
-                        <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
+                       <button class="limpar"><img src="view/assets/lixeira.png"></button>
                     </form>
                 </td>
                 

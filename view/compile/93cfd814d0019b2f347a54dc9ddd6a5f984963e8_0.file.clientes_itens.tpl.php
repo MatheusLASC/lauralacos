@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 12:12:02
+/* Smarty version 3.1.36, created on 2020-11-23 12:01:04
   from 'C:\xampp\htdocs\lauralacos\view\clientes_itens.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fba7fc2f0db60_19194098',
+  'unifunc' => 'content_5fbbceb0a4ab07_70538406',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93cfd814d0019b2f347a54dc9ddd6a5f984963e8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_itens.tpl',
-      1 => 1606057921,
+      1 => 1606143661,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fba7fc2f0db60_19194098 (Smarty_Internal_Template $_smarty_tpl) {
-?><div style="margin: 25px">
+function content_5fbbceb0a4ab07_70538406 (Smarty_Internal_Template $_smarty_tpl) {
+?><center>
+<div style="margin: 25px">
 <br>
 <h4 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Dados do pedido</h4>
 
@@ -139,5 +140,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <?php }?>
 
 
-</div><?php }
+</div>
+</center><?php }
 }

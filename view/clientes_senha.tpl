@@ -1,3 +1,4 @@
+<center>
 <div style="margin-left: 25px">
     <h3 style="font-size: 25px; font-family: var(--font-laura); margin-bottom: 15px">Alteração de senha de acesso</h3>
 
@@ -39,3 +40,4 @@
 
     </form>
 </div>
+</center>

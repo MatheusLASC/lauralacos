@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 19:27:21
+/* Smarty version 3.1.36, created on 2020-11-23 12:28:50
   from 'C:\xampp\htdocs\lauralacos\view\clientes_dados.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbae5c9e1fee9_36623170',
+  'unifunc' => 'content_5fbbd53213fe60_71334621',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1d0f697025853250fb3a0408db566202c3e1ac39' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_dados.tpl',
-      1 => 1606084039,
+      1 => 1606145327,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbae5c9e1fee9_36623170 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbbd53213fe60_71334621 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--Importando Script Jquery-->
 	<?php echo '<script'; ?>
  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"><?php echo '</script'; ?>
 >
-    
-<h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
 
 <div class="cadastro">
-    <form name="cadcliente" id="cadcliente" method="post" action="">
+<center>    
+<h3 style="font-size: 25px; font-family: var(--font-laura); margin: 25px">Meus Dados</h3>
+</center>
+    <form name="cadcliente" id="cadcliente" method="post" action="" style= "text-align:center;">
         <fieldset>
        
             <fieldset class="grupo">
              
                 <div class="campo">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" style="width: 30em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_NOME']->value;?>
+                    <input type="text" id="nome" name="nome" style="width: 20em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_NOME']->value;?>
 " required>
                 </div>
             
@@ -46,7 +47,7 @@ function content_5fbae5c9e1fee9_36623170 (Smarty_Internal_Template $_smarty_tpl)
 " required>
                 </div>
            
-            </fieldset>
+            
            
             <div class="campo">
                 <label for="email">E-mail</label>
@@ -58,17 +59,17 @@ function content_5fbae5c9e1fee9_36623170 (Smarty_Internal_Template $_smarty_tpl)
                 <input id="cpf" name="cpf" type="text" value="<?php echo $_smarty_tpl->tpl_vars['CLI_CPF']->value;?>
 " required readonly/>
             </div>
-            <br><br><br><br>
+            </fieldset>
 
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="cep">CEP</label>
-		            <input id="cep" type="text" name="cep" style="width: 10em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_CEP']->value;?>
+		            <input id="cep" type="text" name="cep" style="width: 5em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_CEP']->value;?>
 " required/>
                 </div>
                 <div class="campo">
                     <label for="endereco">Endereço</label>
-		            <input id="endereco" type="text" name="endereco" style="width: 20em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_ENDERECO']->value;?>
+		            <input id="endereco" type="text" name="endereco" style="width: 15em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_ENDERECO']->value;?>
 " required/>
                 </div>
                 <div class="campo">
@@ -79,21 +80,22 @@ function content_5fbae5c9e1fee9_36623170 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="campo">
                     <label for="complemento">Complemento</label>
                     <input id="complemento" name="complemento" value="<?php echo $_smarty_tpl->tpl_vars['CLI_COMPLEMENTO']->value;?>
-" type="text"/>
+" style="width: 10em" type="text"/>
                 </div>
                 <div class="campo">
                     <label for="bairro">Bairro</label>
 		            <input id="bairro" type="text" name="bairro" value="<?php echo $_smarty_tpl->tpl_vars['CLI_BAIRRO']->value;?>
-" required/>
-                </div>
+" style="width: 10em" required/>
+                </div>    
                 <div class="campo">
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" style="width: 15em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_CIDADE']->value;?>
+                    <input type="text" id="cidade" name="cidade" style="width: 10em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_CIDADE']->value;?>
 " required>
                 </div>
+                
                 <div class="campo">
                     <label for="estado">Estado</label>
-                    <select name="estado" id="estado" required>
+                    <select name="estado" id="estado"  style="width: 11em" required>
                         <option value="<?php echo $_smarty_tpl->tpl_vars['CLI_UF']->value;?>
 "><?php echo $_smarty_tpl->tpl_vars['CLI_UF']->value;?>
 </option>
@@ -164,5 +166,6 @@ function content_5fbae5c9e1fee9_36623170 (Smarty_Internal_Template $_smarty_tpl)
            <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
         <button type="submit" name="submit" class="botao" style="font-weight: bold">Gravar</button>
     </form>
-</div><?php }
+</div>
+<?php }
 }
