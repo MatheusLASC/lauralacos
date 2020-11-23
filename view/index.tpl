@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{$GET_TEMA}/contatos/contato.css">
     <link rel="stylesheet" href="{$GET_TEMA}/carrinhos/carrinho.css">
     <link rel="stylesheet" href="{$GET_TEMA}/styles/login-cadastro.css">
-    <!-- <link rel="stylesheet" href="{$GET_TEMA}/styles/rodape.css">  -->
     <link rel="stylesheet" href="{$GET_TEMA}/styles/responsive.css">
     <!-- JS -->
     <script src="{$GET_TEMA}/js/jquery-2.2.1.min.js" type="text/javascript"></script>
