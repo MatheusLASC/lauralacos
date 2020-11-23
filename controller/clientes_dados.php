@@ -3,9 +3,9 @@
 $smarty = new Template();
 
 Login::MenuCliente();
-
 //Chamando os dados da sessão do cliente
 $smarty->assign('CLI_NOME', $_SESSION['CLI']['cli_nome']);
+$smarty->assign('CLI_DDD',$_SESSION['CLI']['cli_ddd']);
 $smarty->assign('CLI_TELEFONE', $_SESSION['CLI']['cli_telefone']);
 $smarty->assign('CLI_EMAIL', $_SESSION['CLI']['cli_email']);
 $smarty->assign('CLI_CPF', $_SESSION['CLI']['cli_cpf']);
@@ -29,7 +29,8 @@ $smarty->assign('CLI_CIDADE', $_SESSION['CLI']['cli_cidade']);
 $smarty->assign('CLI_UF', $_SESSION['CLI']['cli_uf']);
 
 
-     if(isset($_POST['nome']) && 
+     if(isset($_POST['nome']) &&
+     isset($_POST['ddd']) &&
      isset($_POST['telefone']) &&
      isset($_POST['email']) && 
      isset($_POST['cpf']) &&
@@ -43,6 +44,7 @@ $smarty->assign('CLI_UF', $_SESSION['CLI']['cli_uf']);
    {
     //variaveis
     $cli_nome = $_POST['nome'];
+    $cli_ddd = $_POST['ddd'];
     $cli_telefone = $_POST['telefone'];
     $cli_email = $_POST['email'];
     $cli_cpf = $_POST['cpf'];
@@ -70,7 +72,7 @@ $smarty->assign('CLI_UF', $_SESSION['CLI']['cli_uf']);
 
      $clientes = new Clientes();
 
-     $clientes->Preparar($cli_nome, $cli_telefone,$cli_email,$cli_cpf,$cli_cep,$cli_endereco, $cli_numero,$cli_complemento,$cli_bairro,$cli_cidade,$cli_uf,$cli_senha, $cli_datacad, $cli_horacad);
+     $clientes->Preparar($cli_nome, $cli_ddd, $cli_telefone,$cli_email,$cli_cpf,$cli_cep,$cli_endereco, $cli_numero,$cli_complemento,$cli_bairro,$cli_cidade,$cli_uf,$cli_senha, $cli_datacad, $cli_horacad);
 
      if(!$clientes->Editar($_SESSION['CLI']['cli_id'])){
      	echo '<h1 class="alert alert-danger">Ocorreu um erro ao editar os dados</h1>';

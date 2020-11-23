@@ -15,12 +15,14 @@
                     <input type="text" id="nome" name="nome" style="width: 20em" value="{$CLI_NOME}" required>
                 </div>
             
+             <div class="campo">
+                    <label for="telefone">DDD</label>
+                    <input type="text" id="ddd" name="ddd" style="width: 4em" value="{$CLI_DDD}" required>
+                </div>
                 <div class="campo">
                     <label for="telefone">Telefone</label>
                     <input type="text" id="telefone" name="telefone" style="width: 10em" value="{$CLI_TELEFONE}" required>
                 </div>
-           
-            
            
             <div class="campo">
                 <label for="email">E-mail</label>

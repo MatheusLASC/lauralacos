@@ -30,12 +30,12 @@ class Login extends Conexao{
 
         $_SESSION['CLI']['cli_id'] = $lista['cli_id'];
         $_SESSION['CLI']['cli_nome'] =  $lista['cli_nome'];
+        $_SESSION['CLI']['cli_ddd'] =  $lista['cli_ddd'];
         $_SESSION['CLI']['cli_telefone']  =  $lista['cli_telefone'];
         $_SESSION['CLI']['cli_email']  =  $lista['cli_email'];
         $_SESSION['CLI']['cli_cpf'] =  $lista['cli_cpf'];
         $_SESSION['CLI']['cli_endereco']  =  $lista['cli_endereco'];
         $_SESSION['CLI']['cli_numero'] =  $lista['cli_numero'];
-
         if($lista['cli_complemento'] != null)
         {
             $_SESSION['CLI']['cli_complemento'] =  $lista['cli_complemento'];

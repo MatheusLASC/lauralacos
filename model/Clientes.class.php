@@ -3,6 +3,7 @@
 class Clientes extends Conexao
 {
     private $cli_nome,
+    $cli_ddd,
     $cli_telefone,
     $cli_email,
     $cli_cpf,
@@ -22,12 +23,13 @@ class Clientes extends Conexao
     }
     
     //Função preparando os dados para cadastro
-    function Preparar($cli_nome, $cli_telefone, $cli_email, $cli_cpf, 
+    function Preparar($cli_nome,$cli_ddd,$cli_telefone, $cli_email, $cli_cpf, 
     $cli_cep,$cli_endereco, $cli_numero, $cli_complemento,$cli_bairro,$cli_cidade,$cli_uf,
     $cli_senha, $cli_data_cad,$cli_hora_cad)
 
     {
     $this->setCli_nome($cli_nome);
+    $this->setCli_ddd($cli_ddd);
     $this->setCli_fone($cli_telefone);
     $this->setCli_email($cli_email);
     $this->setCli_cpf($cli_cpf);
@@ -45,6 +47,7 @@ class Clientes extends Conexao
 
 
     function Inserir(){
+
     	if($this->GetClienteCPF($this->getCli_cpf()) > 0){
     		echo '<h1 class="alert alert-danger " id="erro_mostrar"> Este CPF já existe';
     		Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
@@ -64,12 +67,13 @@ class Clientes extends Conexao
 
     	//query para inserir clientes
 
-  $query = " INSERT INTO {$this->prefix}clientes (cli_nome, cli_telefone, cli_email, cli_cpf, cli_endereco, cli_numero, cli_complemento, cli_bairro, cli_cidade, cli_uf, cli_cep, cli_pass, cli_datacad, cli_horacad)";   
+  $query = " INSERT INTO {$this->prefix}clientes (cli_nome, cli_ddd, cli_telefone, cli_email, cli_cpf, cli_endereco, cli_numero, cli_complemento, cli_bairro, cli_cidade, cli_uf, cli_cep, cli_pass, cli_datacad, cli_horacad)";   
         $query .=" VALUES ";
-        $query .=" (:cli_nome, :cli_telefone, :cli_email, :cli_cpf, :cli_endereco, :cli_numero, :cli_complemento, :cli_bairro, :cli_cidade, :cli_uf, :cli_cep, :cli_pass, :cli_datacad, :cli_horacad)"; 
+        $query .=" (:cli_nome, :cli_ddd, :cli_telefone, :cli_email, :cli_cpf, :cli_endereco, :cli_numero, :cli_complemento, :cli_bairro, :cli_cidade, :cli_uf, :cli_cep, :cli_pass, :cli_datacad, :cli_horacad)"; 
    
         $params = array(
-        ':cli_nome'     => $this->getCli_nome() ,  
+        ':cli_nome'     => $this->getCli_nome() ,
+        ':cli_ddd' => $this->getCli_ddd(),  
         ':cli_telefone'     => $this->getCli_fone() ,
         ':cli_email'    => $this->getCli_email() ,   
         ':cli_cpf'      => $this->getCli_cpf() ,        
@@ -139,11 +143,12 @@ class Clientes extends Conexao
       
       // caso passou na verificação grava no banco
       
-      $query = " UPDATE {$this->prefix}clientes SET cli_nome=:cli_nome, cli_telefone=:cli_telefone, cli_email=:cli_email, cli_cpf=:cli_cpf, cli_endereco=:cli_endereco, cli_numero=:cli_numero, cli_complemento=:cli_complemento, cli_bairro=:cli_bairro, cli_cidade=:cli_cidade, cli_uf=:cli_uf, cli_cep=:cli_cep, cli_pass=:cli_pass, cli_datacad=:cli_datacad, cli_horacad=:cli_horacad ";
+      $query = " UPDATE {$this->prefix}clientes SET cli_nome=:cli_nome, cli_ddd=:cli_ddd, cli_telefone=:cli_telefone, cli_email=:cli_email, cli_cpf=:cli_cpf, cli_endereco=:cli_endereco, cli_numero=:cli_numero, cli_complemento=:cli_complemento, cli_bairro=:cli_bairro, cli_cidade=:cli_cidade, cli_uf=:cli_uf, cli_cep=:cli_cep, cli_pass=:cli_pass, cli_datacad=:cli_datacad, cli_horacad=:cli_horacad ";
       $query .=" WHERE  cli_id = :cli_id";  
 
       $params = array(
         ':cli_nome'     => $this->getCli_nome() ,  
+        ':cli_ddd'     => $this->getCli_ddd() ,
         ':cli_telefone'     => $this->getCli_fone() ,
         ':cli_email'    => $this->getCli_email() ,   
         ':cli_cpf'      => $this->getCli_cpf() ,        
@@ -175,6 +180,10 @@ class Clientes extends Conexao
 
     function getCli_cpf() {  
         return $this->cli_cpf; 
+    }
+
+    function getCli_ddd() {
+        return $this->cli_ddd;
     }
 
     function getCli_fone() {
@@ -235,7 +244,8 @@ class Clientes extends Conexao
         if(strlen($cli_nome) < 3):
             
               echo '<h1 class="alert alert-danger " id="erro_mostrar"> Digite seu nome corretamente </h1>';
-              Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
+              Sistema::VoltarPagina();
+              exit();
             else:
             $this->cli_nome = $cli_nome;   
         endif;
@@ -246,6 +256,22 @@ class Clientes extends Conexao
     function setCli_cpf($cli_cpf) {
         $this->cli_cpf = $cli_cpf;  
     }
+
+    function setCli_ddd($cli_ddd) {
+        
+        $ddd = filter_var($cli_ddd, FILTER_SANITIZE_NUMBER_INT);
+
+       if(strlen($ddd) != 2):
+
+        echo '<h1 class="alert alert-danger " id="erro_mostrar"> Digite seu ddd corretamente </h1>';
+        Sistema::VoltarPagina();
+        exit();
+          else:
+          $this->cli_ddd = $cli_ddd;
+          
+      endif;
+           
+   }
 
     function setCli_fone($cli_fone) {
         $this->cli_telefone = $cli_fone;
@@ -279,7 +305,8 @@ class Clientes extends Conexao
         
        if(strlen($uf) != 2): // 11111
                 echo '<h1 class="alert alert-danger " id="erro_mostrar"> UF incorreto </h1>';
-                Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
+                Sistema::VoltarPagina();
+                exit();
            else:
            $this->cli_uf = $cli_uf;
        endif;
@@ -292,7 +319,8 @@ class Clientes extends Conexao
         
        if(strlen($cep) != 8):
                 echo '<h1 class="alert alert-danger " id="erro_mostrar"> CEP incorreto, digite apenas números!! </h1>';
-                Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
+                Sistema::VoltarPagina();
+                exit();
            else:
            $this->cli_cep = $cli_cep;
        endif;
@@ -306,7 +334,8 @@ class Clientes extends Conexao
         if(!filter_var($cli_email, FILTER_VALIDATE_EMAIL)):
             
                 echo '<h1 class="alert alert-danger " id="erro_mostrar"> Email incorreto </h1>'; 
-                Rotas::Redirecionar(2, Rotas::pag_ClienteCadastro());
+                Sistema::VoltarPagina();
+                exit();
             exit();
             
         else:

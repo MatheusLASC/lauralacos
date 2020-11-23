@@ -2,7 +2,8 @@
 
 $smarty = new Template();
 
-if(isset($_POST['nome']) && 
+if(isset($_POST['nome']) &&
+  isset($_POST['ddd']) &&
   isset($_POST['telefone']) &&
   isset($_POST['email']) && 
   isset($_POST['cpf']) &&
@@ -15,6 +16,7 @@ if(isset($_POST['nome']) &&
 )
 {
     $cli_nome = $_POST['nome'];
+    $cli_ddd = $_POST['ddd'];
     $cli_telefone = $_POST['telefone'];
     $cli_email = $_POST['email'];
     $cli_cpf = $_POST['cpf'];
@@ -38,7 +40,7 @@ if(isset($_POST['nome']) &&
 
     $clientes = new Clientes();
 
-    $clientes->Preparar($cli_nome, $cli_telefone,$cli_email,$cli_cpf,$cli_cep,$cli_endereco, $cli_numero,$cli_complemento,$cli_bairro,$cli_cidade,$cli_uf,$cli_senha, $cli_datacad, $cli_horacad);
+    $clientes->Preparar($cli_nome,$cli_ddd,$cli_telefone,$cli_email,$cli_cpf,$cli_cep,$cli_endereco, $cli_numero,$cli_complemento,$cli_bairro,$cli_cidade,$cli_uf,$cli_senha, $cli_datacad, $cli_horacad);
     
     $clientes->Inserir();
 

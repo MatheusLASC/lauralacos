@@ -9,6 +9,10 @@
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" style="width: 30em" value=""  required>
                 </div>
+                 <div class="campo">
+                    <label for="telefone">DDD</label>
+                    <input type="text" id="ddd" name="ddd" style="width: 4em" value=""  required>
+                </div>
                 <div class="campo">
                     <label for="telefone">Telefone</label>
                     <input type="text" id="telefone" name="telefone" style="width: 10em" value=""  required>

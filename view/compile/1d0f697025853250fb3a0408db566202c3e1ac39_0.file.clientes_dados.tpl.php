@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-23 12:28:50
+/* Smarty version 3.1.36, created on 2020-11-23 18:50:04
   from 'C:\xampp\htdocs\lauralacos\view\clientes_dados.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbbd53213fe60_71334621',
+  'unifunc' => 'content_5fbc2e8cbe58e7_52571925',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1d0f697025853250fb3a0408db566202c3e1ac39' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_dados.tpl',
-      1 => 1606145327,
+      1 => 1606165282,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbbd53213fe60_71334621 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbc2e8cbe58e7_52571925 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--Importando Script Jquery-->
 	<?php echo '<script'; ?>
  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"><?php echo '</script'; ?>
@@ -41,13 +41,16 @@ function content_5fbbd53213fe60_71334621 (Smarty_Internal_Template $_smarty_tpl)
 " required>
                 </div>
             
+             <div class="campo">
+                    <label for="telefone">DDD</label>
+                    <input type="text" id="ddd" name="ddd" style="width: 4em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_DDD']->value;?>
+" required>
+                </div>
                 <div class="campo">
                     <label for="telefone">Telefone</label>
                     <input type="text" id="telefone" name="telefone" style="width: 10em" value="<?php echo $_smarty_tpl->tpl_vars['CLI_TELEFONE']->value;?>
 " required>
                 </div>
-           
-            
            
             <div class="campo">
                 <label for="email">E-mail</label>
