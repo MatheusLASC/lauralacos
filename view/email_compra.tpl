@@ -86,7 +86,7 @@
         
             <tr style="border: 1px solid #b2dba1">
             
-            <td> <img src="{$P.proc_img}" alt="{$P.proc_nome}"> </td>
+          <!--  <td> <img src="{$P.proc_img}" alt="{$P.proc_nome}"> </td> -->
             <td>  {$P.proc_nome}  </td>
             <td>  {$P.proc_valor} </td>
             <td>  {$P.proc_qtd}   </td>
