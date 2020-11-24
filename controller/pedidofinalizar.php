@@ -55,10 +55,22 @@ if(!Login::Logado()){
 	$assunto = 'Pedido da Laura Laços - ' . Sistema::DataAtualBR();
 	$msg = $smarty->fetch('email_compra.tpl');
 
-	$email->Enviar($assunto, $msg, $destinatarios);
+	//$email->Enviar($assunto, $msg, $destinatarios);
 
 	if($pedido->PedidoGravar($cliente, $cod, $ref, $frete)){
-		$pedido->LimparSessoes();
+
+		$pag = new PagamentoPS();
+      
+            $pag->Pagamento($_SESSION['CLI'], $_SESSION['PED'], $carrinho->GetCarrinhos());
+            
+          //  var_dump($pag);
+            
+              // passando para o template dados do PS
+              $smarty->assign('PS_URL', $pag->psURL);            
+              $smarty->assign('PS_COD', $pag->psCod); // Aqui é o Token
+              $smarty->assign('PS_SCRIPT', $pag->psURL_Script);
+
+		//$pedido->LimparSessoes();
 	}
 
 

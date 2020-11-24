@@ -98,7 +98,17 @@ Class Rotas
             return self::get_SiteHOME() .'/' .self::get_ImagePasta();
     
         }
-    
+
+        static function pag_PedidoRetorno(){
+        
+            return self::get_SiteHOME() .'/pedido_retorno' ;
+        }
+       
+       static function pag_PedidoRetornoERRO(){
+            
+            return self::get_SiteHOME() .'/pedido_retorno_erro' ;
+        }
+        
         static function ImageLink($img, $largura, $altura){
             $imagem = self::get_ImageURL() ."thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
     
@@ -109,7 +119,7 @@ Class Rotas
 	static function Redirecionar($tempo, $pagina){
 		$url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">';
 		echo $url;
-	}
+    }
 
     static function get_Pagina(){
 		if(isset($_GET['pag'])){

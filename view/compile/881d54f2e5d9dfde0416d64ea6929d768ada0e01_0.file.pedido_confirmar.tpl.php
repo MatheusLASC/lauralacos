@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-23 11:53:23
+/* Smarty version 3.1.36, created on 2020-11-23 23:37:16
   from 'C:\xampp\htdocs\lauralacos\view\pedido_confirmar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbbcce379f766_79431077',
+  'unifunc' => 'content_5fbc71dcdf1000_01790129',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '881d54f2e5d9dfde0416d64ea6929d768ada0e01' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_confirmar.tpl',
-      1 => 1606143191,
+      1 => 1606185266,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbbcce379f766_79431077 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbc71dcdf1000_01790129 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pedido">
     <!--Aqui é a forma onde a pessoa confirma o seu pedido para ai sim poder finalizar-->
     <h3>Confirmar Pedido</h3>
@@ -37,11 +37,6 @@ function content_5fbbcce379f766_79431077 (Smarty_Internal_Template $_smarty_tpl)
     
         <center>
         <table class="table table-bordered" style="width: 95%">
-
-    <!--
-            <tr> 
-                <td colspan="6" align="right"><a href="" class="btn btn-success" title="">Comprar Mais</a></td> 
-            </tr> -->
         
             <tr class="cabecalho">
                 <td></td> 

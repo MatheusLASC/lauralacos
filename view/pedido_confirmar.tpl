@@ -13,11 +13,6 @@
     
         <center>
         <table class="table table-bordered" style="width: 95%">
-
-    <!--
-            <tr> 
-                <td colspan="6" align="right"><a href="" class="btn btn-success" title="">Comprar Mais</a></td> 
-            </tr> -->
         
             <tr class="cabecalho">
                 <td></td> 

@@ -59,9 +59,9 @@ Class Config{
 
     // Configurações para o PagSeguro
     const PS_EMAIL  = "lorraine.paloschi@gmail.com"; // meu email do pagseguro
-    const PS_TOKEN  = "85DDFF2A601348A4BA17C9C70E9E1656"; // token da produção (para testes)
-    const PS_TOKEN_SBX = "2D37D781026448E8B4B95EF2B8C92110";  // token do sandbox (valores reais)
-    const PS_AMBIENTE = "production"; // production (para testes)   /  sandbox (valores reais)
+    const PS_TOKEN  = "85DDFF2A601348A4BA17C9C70E9E1656"; // token da produção (valores reais)
+    const PS_TOKEN_SBX = "2D37D781026448E8B4B95EF2B8C92110";  // token do sandbox (para testes) 
+    const PS_AMBIENTE = "sandbox"; // production (valores reais)   /  sandbox (para testes)  - Status: Janela Funcionando 
 
 }
 

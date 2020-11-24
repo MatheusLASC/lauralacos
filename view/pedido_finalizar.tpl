@@ -58,6 +58,13 @@
 </section>
 <br>
     
+    <section class="pagamentos">
+      <center>
+        <button class="finalizar" onclick="PagSeguroLightbox('{$PS_COD}')" style="background-color: var(--color-rosa);width: 800px;
+    padding: 8px;font-size: 22px;font-weight: bold;border-radius: 8px;border-width: 0;">Pague com o PagSeguro </button>
+      </center>
+      <script type="text/javascript" src="{$PS_SCRIPT}"></script>
+     </section>
 
 <!--
    <section class="row">

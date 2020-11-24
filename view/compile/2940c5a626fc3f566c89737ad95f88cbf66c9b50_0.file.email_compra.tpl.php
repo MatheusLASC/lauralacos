@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-21 21:27:06
+/* Smarty version 3.1.36, created on 2020-11-23 23:17:54
   from 'C:\xampp\htdocs\lauralacos\view\email_compra.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb9b05ab53135_89762903',
+  'unifunc' => 'content_5fbc6d52465202_30065460',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2940c5a626fc3f566c89737ad95f88cbf66c9b50' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\email_compra.tpl',
-      1 => 1605812894,
+      1 => 1606173091,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb9b05ab53135_89762903 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbc6d52465202_30065460 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .tabela {
     border-collapse: collapse;
@@ -120,9 +120,9 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
         
             <tr style="border: 1px solid #b2dba1">
             
-            <td> <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['proc_img'];?>
+          <!--  <td> <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['proc_img'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['P']->value['proc_nome'];?>
-"> </td>
+"> </td> -->
             <td>  <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_nome'];?>
   </td>
             <td>  <?php echo $_smarty_tpl->tpl_vars['P']->value['proc_valor'];?>
