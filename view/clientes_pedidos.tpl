@@ -57,7 +57,7 @@ Mantenha o mesmo name e id (cod_pedido) no Detalhes
     </table>
        {else}
         <!-- Mensagem para estilizar da forma que prefirir-->
-          Você não possui ainda um pedido, faça agora mesmo a sua compra!
+            <h4 style="margin: 25px; font-size: 18px; font-weight: normal;">Você não possui ainda um pedido, faça agora mesmo a sua compra!</h4>
         {/if} 
 
     <!--  paginação inferior   -->  

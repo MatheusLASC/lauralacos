@@ -1,4 +1,4 @@
-
+<?php
 // chamando o objeto do template
 $smarty = new Template();
 
@@ -11,7 +11,7 @@ $smarty->assign('PAG_ITENS', Rotas::pag_CLienteItens());
 
 // mostrando o template
 $smarty->display('pedido_retorno_erro.tpl');
-
+?>
 
 
 

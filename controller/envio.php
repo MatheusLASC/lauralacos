@@ -33,5 +33,5 @@ echo '</pre>';
 mail($to, $subject , $message , $headers);
 
 ?>
-<script>alert('Email enviado com sucesso! -Só funcionará quando hospedar o site-')</script>
+<script>alert('Email enviado com sucesso!')</script>
 <meta http-equiv="refresh" content="0; url=contato">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 19:07:59
+/* Smarty version 3.1.36, created on 2020-11-24 15:39:52
   from 'C:\xampp\htdocs\lauralacos\view\clientes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbae13fb61410_64920931',
+  'unifunc' => 'content_5fbd5378882271_20990284',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6810c56414dde980b34a429398c89aae613f88f8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_pedidos.tpl',
-      1 => 1606082877,
+      1 => 1606243187,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbae13fb61410_64920931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbd5378882271_20990284 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--
 Foi criado uma tabela no qual os seus itens são exibidos pelo foreach (os dados moveis)
 
@@ -95,7 +95,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </table>
        <?php } else { ?>
         <!-- Mensagem para estilizar da forma que prefirir-->
-          Você não possui ainda um pedido, faça agora mesmo a sua compra!
+            <h4 style="margin: 25px; font-size: 18px; font-weight: normal;">Você não possui ainda um pedido, faça agora mesmo a sua compra!</h4>
         <?php }?> 
 
     <!--  paginação inferior   -->  

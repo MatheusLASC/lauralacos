@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-23 12:01:04
+/* Smarty version 3.1.36, created on 2020-11-24 17:47:15
   from 'C:\xampp\htdocs\lauralacos\view\clientes_itens.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbbceb0a4ab07_70538406',
+  'unifunc' => 'content_5fbd71530ca631_22598184',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93cfd814d0019b2f347a54dc9ddd6a5f984963e8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\clientes_itens.tpl',
-      1 => 1606143661,
+      1 => 1606250829,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbbceb0a4ab07_70538406 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbd71530ca631_22598184 (Smarty_Internal_Template $_smarty_tpl) {
 ?><center>
 <div style="margin: 25px">
 <br>
@@ -118,25 +118,37 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         
         <?php if ($_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_pagstatus'] == 'NAO') {?>          
         <!--  modos de pagamento e outras informações --> 
-        <section class="row">
-            <h3 class="text-center"> Formas de pagamento </h3>     
-
-            <!-- botao de pagamento  -->
-            <div class="col-md-4">
-               
-                BOTÃO DE PAGAMENTO
-                
-                
-                   <img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
-/images/logo-pagseguro.png"  alt=""> 
-                   <?php echo '<script'; ?>
- type="text/javascript" src=""><?php echo '</script'; ?>
+        <section class="pagamentos">
+      <center>
+        <button class="finalizar" onclick="PagSeguroLightbox({
+    code: '<?php echo $_smarty_tpl->tpl_vars['PS_COD']->value;?>
+'
+    }, {
+    success : function(transactionCode) {
+      alert('Transação efetuada - ' + transactionCode);
+        window.location ='<?php echo $_smarty_tpl->tpl_vars['PAG_RETORNO']->value;?>
+/<?php echo $_smarty_tpl->tpl_vars['REF']->value;?>
+';
+    },
+    abort : function() {
+       alert('Erro no processo de pagamento');
+         window.location ='<?php echo $_smarty_tpl->tpl_vars['PAG_ERRO']->value;?>
+/<?php echo $_smarty_tpl->tpl_vars['REF']->value;?>
+';
+    }
+});" style=" background-color: var(--color-rosa);
+    width: 800px;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: 0;">Pague com o PagSeguro </button>
+      </center>
+      <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['PS_SCRIPT']->value;?>
+"><?php echo '</script'; ?>
 >
-                
-            </div>
-            
-        </section>
-
+     </section>
         <?php }?>
 
 

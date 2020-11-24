@@ -85,7 +85,7 @@ class PagamentoPS extends Conexao{
         $dados['senderCPF']    = $cliente['cli_cpf'];        
         $dados['shippingAddressStreet']   = $cliente['cli_endereco'];
         $dados['shippingAddressNumber']   = $cliente['cli_numero'];
-        //$dados['shippingAddressComplement'] = $cliente['cli_complemento'];
+        $dados['shippingAddressComplement'] = $cliente['cli_complemento'];
         $dados['shippingAddressDistrict'] = $cliente['cli_bairro'];
         $dados['shippingAddressPostalCode']  = $cliente['cli_cep'];
         $dados['shippingAddressCity']    = $cliente['cli_cidade'];
@@ -195,14 +195,14 @@ class PagamentoPS extends Conexao{
         $dados['senderCPF']    = $cliente['cli_cpf'];        
         $dados['shippingAddressStreet']   = $cliente['cli_endereco'];
         $dados['shippingAddressNumber']   = $cliente['cli_numero'];
-       // $dados['shippingAddressComplement'] = $cliente['cli_complemento'];
+        $dados['shippingAddressComplement'] = $cliente['cli_complemento'];
         $dados['shippingAddressDistrict'] = $cliente['cli_bairro'];
-        $dados['shippingAddressPostalCode']  = $cliente['cli_cep'];
-        $dados['shippingAddressCity']    = $cliente['cli_cidade'];
+       $dados['shippingAddressPostalCode']  = $cliente['cli_cep'];
+       $dados['shippingAddressCity']    = $cliente['cli_cidade'];
         $dados['shippingAddressState']    = strtoupper($cliente['cli_uf']); 
         $dados['shippingType'] = '3'; // sem especificar
-        $dados['shippingAddressCountry']   = 'BRA';
-        $dados['shippingCost']    = $pedido['ped_frete_valor']; // valor do frete
+       $dados['shippingAddressCountry']   = 'BRA';
+        $dados['shippingCost']    = $pedido['ped_fretevalor']; // valor do frete
        
         /* varrendo o array de produtos  para montar os itens */
         $i= 1;
@@ -351,7 +351,7 @@ class PagamentoPS extends Conexao{
             //----tratando o tipo de pagamento que vem numérico
             switch ($transaction->paymentMethod->type):
                 
-                case 1 : $this->forma_pag = "Cartao";
+                case 1 : $this->forma_pag = "Cartão";
                     break;
                 case 2 : $this->forma_pag = "Boleto";
                     break;
@@ -487,8 +487,8 @@ class PagamentoPS extends Conexao{
     private function PedidoUpdate($codigo,$pago,$forma_pag,$referencia){        
                   
             // montando a SQL
-            $query = "UPDATE {$this->prefix}pedidos SET ped_pag_codigo = :cod, ped_pag_tipo = 'PAGSEGURO',";
-            $query .="ped_pag_status = :pago, ped_pag_forma = :forma  WHERE ped_ref = :ref";
+            $query = "UPDATE {$this->prefix}pedidos SET ped_pagcod = :cod, ped_pagtipo = 'PAGSEGURO',";
+            $query .="ped_pagstatus = :pago, ped_pagforma = :forma  WHERE ped_ref = :ref";
            
             // passando parâmetros                             
             $params = array(

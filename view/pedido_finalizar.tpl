@@ -60,40 +60,27 @@
     
     <section class="pagamentos">
       <center>
-        <button class="finalizar" onclick="PagSeguroLightbox('{$PS_COD}')" style="background-color: var(--color-rosa);width: 800px;
-    padding: 8px;font-size: 22px;font-weight: bold;border-radius: 8px;border-width: 0;">Pague com o PagSeguro </button>
+        <button class="finalizar" onclick="PagSeguroLightbox({
+    code: '{$PS_COD}'
+    }, {
+    success : function(transactionCode) {
+      alert('Transação efetuada - ' + transactionCode);
+        window.location ='{$PAG_RETORNO}/{$REF}';
+    },
+    abort : function() {
+       alert('Erro no processo de pagamento');
+         window.location ='{$PAG_ERRO}/{$REF}';
+    }
+});" style=" background-color: var(--color-rosa);
+    width: 800px;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: 0;">Pague com o PagSeguro </button>
       </center>
       <script type="text/javascript" src="{$PS_SCRIPT}"></script>
      </section>
-
-<!--
-   <section class="row">
-            <h3 class="text-center"> Formas de pagamento </h3>     
-            
-            <div class="col-md-4">
-              
-            </div>
-            botao de pagamento  
-            <div class="col-md-4">
-
-
-            FORMAS DE PAGAMENTO AQUI
-            Você pode ou gerar um texto ou imagem para exibir no site
-            Pode ser replicado em outros locais 
-            <img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> 
-
-
-                
-            </div>
-            
-
-            <div class="col-md-4">
-              
-            </div>
-         
-            
-        </section>
--->
 
 
 <br>

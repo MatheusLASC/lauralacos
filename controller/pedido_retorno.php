@@ -1,4 +1,4 @@
-
+<?php
 $smarty = new Template();
 
 // chamando a classe de pagamento 
@@ -24,12 +24,6 @@ $smarty->assign('REF',       $pag->info['referencia']);
 $smarty->assign('FORMA_PAG', $pag->info['forma_pag']);
 $smarty->assign('PAG_ITENS', Rotas::pag_CLienteItens());
 
-// 'pago' => $pago,
-//             'codigo'=>$codigo,
-//             'referencia'=> $referencia,
-//             'forma_pag'=>$forma_pag    
-
-
 
 // chamando o temnplate
 $smarty->display('pedido_retorno.tpl');
@@ -40,5 +34,4 @@ else:
     echo '<div class="alert alert-danger">Sem transações  para informar </div>';
     
 endif;
-
-
+?>

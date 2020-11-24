@@ -24,6 +24,12 @@ if(!Login::Logado()){
 		if(!isset($_SESSION['PED']['ref'])){
 			$_SESSION['PED']['ref'] = $ref_cod_pedido;
 		}
+	
+	$pedido = new Pedidos();
+	$cliente = $_SESSION['CLI']['cli_id'];
+	$cod = $_SESSION['PED']['pedido'];
+	$ref = $_SESSION['PED']['ref'];
+	$frete = $_SESSION['PED']['frete'];
 
 	$smarty->assign('PROC', $carrinho->GetCarrinhos());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
@@ -37,16 +43,9 @@ if(!Login::Logado()){
 	$smarty->assign('FRETE', Sistema::MoedaBR($_SESSION['PED']['frete']));
 	$smarty->assign('TOTAL_FRETE', Sistema::MoedaBR($_SESSION['PED']['total_com_frete']));
  
-
-	$pedido = new Pedidos();
-	//por enquanto o cliente fica único no pedido, alterar isso depois
-	$cliente = $_SESSION['CLI']['cli_id'];
-	$cod = $_SESSION['PED']['pedido'];
-	$ref = $_SESSION['PED']['ref'];
-	$frete = $_SESSION['PED']['frete'];
-	
-	
-
+	$smarty->assign('PAG_RETORNO', Rotas::pag_PedidoRetorno());
+	$smarty->assign('PAG_ERRO',Rotas::pag_PedidoRetornoERRO());
+	$smarty->assign('REF', $ref);
 
 
 	$email = new EnviarEmail();
@@ -55,7 +54,7 @@ if(!Login::Logado()){
 	$assunto = 'Pedido da Laura Laços - ' . Sistema::DataAtualBR();
 	$msg = $smarty->fetch('email_compra.tpl');
 
-	//$email->Enviar($assunto, $msg, $destinatarios);
+	$email->Enviar($assunto, $msg, $destinatarios);
 
 	if($pedido->PedidoGravar($cliente, $cod, $ref, $frete)){
 
@@ -70,7 +69,7 @@ if(!Login::Logado()){
               $smarty->assign('PS_COD', $pag->psCod); // Aqui é o Token
               $smarty->assign('PS_SCRIPT', $pag->psURL_Script);
 
-		//$pedido->LimparSessoes();
+		 $pedido->LimparSessoes();
 	}
 
 
@@ -84,11 +83,4 @@ if(!Login::Logado()){
 
 }
 
-
-
-/*
-echo '<pre>';
-var_dump($carrinho->GetCarrinho());
-echo '</pre>';
-*/
  ?>

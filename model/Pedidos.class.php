@@ -13,9 +13,9 @@ Class Pedidos extends Conexao{
         $retorno = false;
 
         $query  = "INSERT INTO ".$this->prefix."pedidos ";   
-        $query .= "(ped_data, ped_hora, ped_cliente, ped_cod, ped_ref, ped_fretevalor, ped_fretetipo)"; 
+        $query .= "(ped_data, ped_hora, ped_cliente, ped_cod, ped_ref, ped_fretevalor, ped_fretetipo, ped_pagstatus)"; 
         $query .= " VALUES ";
-        $query .= "(:data, :hora, :cliente, :cod, :ref, :frete_valor, :frete_tipo)";
+        $query .= "(:data, :hora, :cliente, :cod, :ref, :frete_valor, :frete_tipo, :ped_pagstatus)";
         
         $params = array(
             //salvando da forma padrão do Banco (modelo americano)
@@ -25,7 +25,8 @@ Class Pedidos extends Conexao{
             ':cod' => $cod,
             ':ref' => $ref,
             ':frete_valor'=>$fretevalor,
-            ':frete_tipo' =>$fretetipo
+            ':frete_tipo' =>$fretetipo,
+            ':ped_pagstatus'=> 'NAO'
         );
 
         $this->ExecuteSQL($query,$params);

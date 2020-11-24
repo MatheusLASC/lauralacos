@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 21:36:22
+/* Smarty version 3.1.36, created on 2020-11-24 13:08:26
   from 'C:\xampp\htdocs\lauralacos\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbb0406e9a3d2_49842607',
+  'unifunc' => 'content_5fbd2ffa9b2406_24385109',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b30306cbce243b55c77f306f16eb2c09a82910ef' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\index.tpl',
-      1 => 1606091781,
+      1 => 1606231069,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbb0406e9a3d2_49842607 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbd2ffa9b2406_24385109 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -29,6 +29,30 @@ function content_5fbb0406e9a3d2_49842607 (Smarty_Internal_Template $_smarty_tpl)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Laços </title>
     <link rel="icon" href="view/assets/laco-preto.svg">
+
+<!-- Imprementação Mapa de Calor (Funciona somente na hospedagem) -  Yandex.Metrika counter -->
+
+<!--
+
+
+<?php echo '<script'; ?>
+ type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(69698470, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+<?php echo '</script'; ?>
+>
+
+ -->
+
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">

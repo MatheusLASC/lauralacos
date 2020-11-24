@@ -76,22 +76,29 @@
                         
         {if $ITENS.1.ped_pagstatus =='NAO'}          
         <!--  modos de pagamento e outras informações --> 
-        <section class="row">
-            <h3 class="text-center"> Formas de pagamento </h3>     
-
-            <!-- botao de pagamento  -->
-            <div class="col-md-4">
-               
-                BOTÃO DE PAGAMENTO
-                
-                
-                   <img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> 
-                   <script type="text/javascript" src=""></script>
-                
-            </div>
-            
-        </section>
-
+        <section class="pagamentos">
+      <center>
+        <button class="finalizar" onclick="PagSeguroLightbox({
+    code: '{$PS_COD}'
+    }, {
+    success : function(transactionCode) {
+      alert('Transação efetuada - ' + transactionCode);
+        window.location ='{$PAG_RETORNO}/{$REF}';
+    },
+    abort : function() {
+       alert('Erro no processo de pagamento');
+         window.location ='{$PAG_ERRO}/{$REF}';
+    }
+});" style=" background-color: var(--color-rosa);
+    width: 800px;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: 0;">Pague com o PagSeguro </button>
+      </center>
+      <script type="text/javascript" src="{$PS_SCRIPT}"></script>
+     </section>
         {/if}
 
 
