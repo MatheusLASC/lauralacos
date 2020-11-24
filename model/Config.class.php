@@ -24,11 +24,11 @@ Class Config{
   /* 
       //Configurações do Site Hospedado
 
-   const SITE_URL = "http://lauralacos-cc.umbler.net";
+  const SITE_URL = "http://lauralacos-com.umbler.net";
    const SITE_PASTA = "";
    const SITE_NOME = "Laura Laços";
    //Alterar e-mail para pessoa que for usar
-   const SITE_EMAIL_ADM = "180770@facens.br";
+   const SITE_EMAIL_ADM = "180018@facens.br";
 
    //BANCO DE DADOS
    const BD_HOST = "mysql741.umbler.com",
@@ -41,6 +41,7 @@ Class Config{
  const SITE_CEP = '18114070';
 
  */
+
     //PHP MAILLER
      //Alterar e-mail para pessoa que for usar
   const EMAIL_HOST = "smtp.office365.com";
