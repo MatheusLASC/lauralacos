@@ -1,3 +1,4 @@
+<center>
 <div style="margin:25px">
     <h3  style="    font-size: 30px;
                     font-family: var(--font-laura);"> Obrigado pelo seu pedido </h3>
@@ -26,4 +27,4 @@
         </div> 
     </section>
 </div>
-
+</center>

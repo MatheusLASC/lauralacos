@@ -85,7 +85,7 @@ class PagamentoPS extends Conexao{
         $dados['senderCPF']    = $cliente['cli_cpf'];        
         $dados['shippingAddressStreet']   = $cliente['cli_endereco'];
         $dados['shippingAddressNumber']   = $cliente['cli_numero'];
-        $dados['shippingAddressComplement'] = $cliente['cli_complemento'];
+        //$dados['shippingAddressComplement'] = $cliente['cli_complemento'];
         $dados['shippingAddressDistrict'] = $cliente['cli_bairro'];
         $dados['shippingAddressPostalCode']  = $cliente['cli_cep'];
         $dados['shippingAddressCity']    = $cliente['cli_cidade'];
@@ -195,7 +195,7 @@ class PagamentoPS extends Conexao{
         $dados['senderCPF']    = $cliente['cli_cpf'];        
         $dados['shippingAddressStreet']   = $cliente['cli_endereco'];
         $dados['shippingAddressNumber']   = $cliente['cli_numero'];
-        $dados['shippingAddressComplement'] = $cliente['cli_complemento'];
+        //$dados['shippingAddressComplement'] = $cliente['cli_complemento'];
         $dados['shippingAddressDistrict'] = $cliente['cli_bairro'];
        $dados['shippingAddressPostalCode']  = $cliente['cli_cep'];
        $dados['shippingAddressCity']    = $cliente['cli_cidade'];

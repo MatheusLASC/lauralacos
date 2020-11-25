@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-24 21:47:20
+/* Smarty version 3.1.36, created on 2020-11-25 00:46:37
   from 'C:\xampp\htdocs\lauralacos\view\pedido_retorno_erro.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbda998271dc2_13798028',
+  'unifunc' => 'content_5fbdd39db7b255_58399768',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4bb6a6b3fe29ba913574bfbff21a35b0644e332' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_retorno_erro.tpl',
-      1 => 1606265239,
+      1 => 1606273778,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbda998271dc2_13798028 (Smarty_Internal_Template $_smarty_tpl) {
-?><div style="margin:25px">
+function content_5fbdd39db7b255_58399768 (Smarty_Internal_Template $_smarty_tpl) {
+?><center>
+<div style="margin:25px">
     <h3 style="     font-size: 30px;
                     font-family: var(--font-laura);"> Ocorreu um problema no pagamento, ou foi cancelado</h3>
     <section>
@@ -33,8 +34,8 @@ function content_5fbda998271dc2_13798028 (Smarty_Internal_Template $_smarty_tpl)
  </b>
             </p> 
             <br>
-            <p style=" font-size: 16px"> Ou pode tentar novamente o pagamento na seção "Pedidos" clicando em "Detalhes",<br>
-            verá seus itens comprados e o abaixo o botão "Completar Pagamento Agora"
+            <p style=" font-size: 16px"> Ou tente novamente o pagamento na seção "Pedidos" clicando em "Detalhes",<br>
+            você verá seus itens comprados e abaixo o botão "Pague com o PagSeguro"
             </p>  
             <br>
             <p style=" font-size: 16px"> Para ir a tela do pedido e efetivar o pagamento, clique no botão.</p>  
@@ -57,5 +58,6 @@ function content_5fbda998271dc2_13798028 (Smarty_Internal_Template $_smarty_tpl)
             </p>
         </div>
     </section>
-</div><?php }
+</div>
+</center><?php }
 }

@@ -9,8 +9,8 @@ Class Config{
     const SITE_PASTA = "lauralacos";
     const SITE_NOME = "Laura Laços";
     //Alterar e-mail para pessoa que for usar
-    const SITE_EMAIL_ADM = "180018@facens.br";
-
+    //const SITE_EMAIL_ADM = "180770@facens.br";
+    const SITE_EMAIL_ADM = "gaivotaxp@gmail.com";
     //BANCO DE DADOS
     const BD_HOST = "localhost",
     BD_USER= "root",
@@ -44,18 +44,18 @@ Class Config{
 
     //PHP MAILLER
      //Alterar e-mail para pessoa que for usar
-  const EMAIL_HOST = "smtp.office365.com";
-  //  const EMAIL_HOST = "smtp.gmail.com";
-  const EMAIL_USER = "180018@facens.br";
-  // const EMAIL_USER = "gaivotaxp@gmail.com";
+  // const EMAIL_HOST = "smtp.office365.com";
+    const EMAIL_HOST = "smtp.gmail.com";
+  //const EMAIL_USER = "180770@facens.br";
+   const EMAIL_USER = "gaivotaxp@gmail.com";
     const EMAIL_NOME = "Laura Laços";
   //const EMAIL_SENHA = "facens";
-   // const EMAIL_SENHA = "gq.gxp2020";
-   const EMAIL_SENHA = "limatite2013";
+    const EMAIL_SENHA = "gq.gxp2020";
+   //const EMAIL_SENHA = "f4c3n5";
     const EMAIL_PORTA= 587;
     const EMAIL_SMTPAUTH= true;
     //Secure exclusiva do Hotmail
-    const EMAIL_SMTPSECURE= "STARTTLS";
+   // const EMAIL_SMTPSECURE= "STARTTLS";
     const EMAIL_COPIA= "pa.integra2020@gmail.com";
 
     // Configurações para o PagSeguro

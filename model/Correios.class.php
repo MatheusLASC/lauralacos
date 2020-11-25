@@ -30,9 +30,9 @@ class Correios{
 				//peso em kilogramas
 				//dados da caixa de envio
 				$this->peso 		= $peso;
-				$this->comprimento      = '35';//em cm
-				$this->altura 		= '35';//em cm
-				$this->largura     	= '35';//em cm
+				$this->comprimento      = '18';//em cm
+				$this->altura 		= '6';//em cm
+				$this->largura     	= '18';//em cm
 				$this->diametro 	= '0';//em cm
 				//Pode ser que pare de funcionar a qualquer momento pois é um código fornecido na WEB
 				//Caso as donas da loja tenha o seu código da empresa e a senha podemos usar com segurança
