@@ -24,7 +24,7 @@ Este projeto consiste em um e-commerce para auxiliar duas microempreendedoras, o
 		
 	- Após isso, o servidor local já estará funcionando. 
 		
-	- Será necessário acessar a pagina http://localhost/phpmyadmin/ para poder inserir o banco de dados do projeto, para isso você precisará clicar em "Novo" e inserir o nome de "lauralacos". Após a base criada, clique sobre ela e procure o botão "Importar" que está na aba superior do site. Clique em "escolher arquivo" e vá para a pasta: C:\xampp\htdocs\lauralacos\Banco de Dados e outras informações selecione o arquivo "lauralacos.sql" e pressione em "Abrir", você será redirecionado ao navegador novamente, basta buscar o botão "Executar" na parte inferior da pagina e pressiona-lo.
+	- Será necessário acessar a pagina http://localhost/phpmyadmin/ para poder inserir o banco de dados do projeto, para isso você precisará clicar em "Novo" e inserir o nome de "lauralacos". Após a base criada, clique sobre ela e procure o botão "Importar" que está na aba superior do site. Clique em "escolher arquivo" e vá para a pasta: C:\xampp\htdocs\lauralacos\Banco de Dados, selecione o arquivo "lauralacos.sql" e pressione em "Abrir", você será redirecionado ao navegador novamente, basta buscar o botão "Executar" na parte inferior da pagina e pressiona-lo.
 		
 	- Após o banco de dados inserido, você já está pronto para acessar a página da loja.
 	
