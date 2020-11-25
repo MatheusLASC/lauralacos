@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-24 16:36:26
+/* Smarty version 3.1.36, created on 2020-11-24 21:36:10
   from 'C:\xampp\htdocs\lauralacos\view\pedido_finalizar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbd60baae6580_90287376',
+  'unifunc' => 'content_5fbda6faae6601_50807221',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8386e0657fbd4ca1b796afb8299a65f4dbbc8e96' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_finalizar.tpl',
-      1 => 1606246542,
+      1 => 1606263013,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbd60baae6580_90287376 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbda6faae6601_50807221 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div style="margin: 25px">
 <!-- Parte em que a pessoa finaliza o seu pedido-->
 <h3 style="font-size: 45px; font-family: var(--font-laura)">Finalizar Pedido</h3>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-22 19:08:30
+/* Smarty version 3.1.36, created on 2020-11-24 21:33:45
   from 'C:\xampp\htdocs\lauralacos\view\menu_cliente.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbae15ec98792_18916326',
+  'unifunc' => 'content_5fbda669a92946_76379035',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f00b9ffff556b44b4f86942db41fb492adba89e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\menu_cliente.tpl',
-      1 => 1606082903,
+      1 => 1606263013,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbae15ec98792_18916326 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbda669a92946_76379035 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--  Esta página é o menu completo das funções do cliente
 Deixarei numa pasta chamada referências a imagem da tela
 Dai você monta estrutura conforme você imagina, mantendo o que precisamos

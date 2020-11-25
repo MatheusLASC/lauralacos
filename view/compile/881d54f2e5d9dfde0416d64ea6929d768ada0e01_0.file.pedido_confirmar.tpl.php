@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-23 23:37:16
+/* Smarty version 3.1.36, created on 2020-11-24 21:35:45
   from 'C:\xampp\htdocs\lauralacos\view\pedido_confirmar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fbc71dcdf1000_01790129',
+  'unifunc' => 'content_5fbda6e19063a8_25678355',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '881d54f2e5d9dfde0416d64ea6929d768ada0e01' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lauralacos\\view\\pedido_confirmar.tpl',
-      1 => 1606185266,
+      1 => 1606263013,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbc71dcdf1000_01790129 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fbda6e19063a8_25678355 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pedido">
     <!--Aqui é a forma onde a pessoa confirma o seu pedido para ai sim poder finalizar-->
     <h3>Confirmar Pedido</h3>

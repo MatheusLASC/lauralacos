@@ -48,16 +48,13 @@
     width: 260px;
 }
 
-/* #loja main .cards + .cards {
-    margin: auto;
-} */
+
 
 #loja .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #loja main .carrinho {
-    /* margin-top: 25px; */
     margin: auto;
     max-width: 50px;
     max-height: 35px;
