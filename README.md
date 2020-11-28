@@ -1,5 +1,6 @@
 # lauralacos
-Projeto de Desenvolvimento WEB - Site Laura Laços
+Projeto de Desenvolvimento WEB - Site Laura Laços - Grupo 12
+Desenvolvedores: Matheus Lima de Almeida e Lorraine Paloschi (matéria Desenvolvimento Web e PA VI) e Amanda Perrone (exclusivamente integrante pela matéria de PA VI)
 
 
 ### Descrição do Projeto
